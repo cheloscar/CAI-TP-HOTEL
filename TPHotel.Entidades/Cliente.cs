@@ -24,11 +24,13 @@ namespace TPHotel.Entidades
         public int ID { get => _id; set => _id = value; }
         public DateTime FechaAlta { get => _fechaAlta; set => _fechaAlta = value; }
         public bool Activo { get => _activo; set => _activo = value; }
+        
         public override string ToString()
         {
             return this.Dni + " " + this.Nombre + " " + this.Apellido + " " + this.Direccion + " " + this.Email + " "
                 + this.Telefono + " " + this.FechaNacimiento.ToString() + " " + this.FechaAlta.ToString()
                 + this.Activo.ToString() + " " + this.ID;
         }
+        
     }
 }

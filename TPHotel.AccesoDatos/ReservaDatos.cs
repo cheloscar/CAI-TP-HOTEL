@@ -17,7 +17,6 @@ namespace TPHotel.AccesoDatos
         {
             string json2 = WebHelper.Get("Hotel/Reservas");
             List<Reserva> reservas = MapList(json2);
-
             return reservas;
         }
 
