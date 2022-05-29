@@ -12,42 +12,26 @@ namespace TPHotel.Entidades
         private string _nombre;
         private string _direccion;
         private bool _amenities;
-        private int _usuario;
-        
+        private int _id;
 
-        public int Estrellas
+        public HotelEntidad(int estrellas, string nombre, string direccion, bool amenities, int id)
         {
-            get { return _estrellas; }
-            set { _estrellas = value; }
+            _estrellas = estrellas;
+            _nombre = nombre;
+            _direccion = direccion;
+            _amenities = amenities;
+            _id = id;
         }
 
-        public string Nombre
-        {
-            get { return _nombre; }
-            set { _nombre = value; } 
-        }
-
-        public string Direccion
-        {
-            get { return _direccion; }
-            set { _direccion = value; }
-        }
-
-        public bool Amenities
-        {
-            get { return _amenities; }
-            set { _amenities = value; }
-        }
-
-        public int Usuario
-        {
-            get { return _usuario; }
-            set { _usuario = value; }
-        }
+        public int Estrellas { get => _estrellas; set => _estrellas = value; }
+        public string Nombre { get => _nombre; set => _nombre = value; }
+        public string Direccion { get => _direccion; set => _direccion = value; }
+        public bool Amenities { get => _amenities; set => _amenities = value; }
+        public int ID { get => _id; set => _id = value; }
 
         public override string ToString()
         {
-            return this.Estrellas + " " + this.Nombre + " " + this.Direccion + " " + this.Amenities + " " + this.Usuario;
+            return this.Estrellas + " " + this.Nombre + " " + this.Direccion + " " + this.Amenities + " " + this.ID;
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TPHotel.Entidades;
 using TPHotel.AccesoDatos.Utilidades;
 using Newtonsoft.Json;
+using System.Collections.Specialized;
 
 namespace TPHotel.AccesoDatos
 {
@@ -13,52 +14,72 @@ namespace TPHotel.AccesoDatos
     {
         public List<Cliente> TraerTodosLosClientes()
         {
-            string json2 = WebHelper.Get("cliente");
-            List<Cliente> clientes = MapList(json2);
-            return clientes;
+            string json2 = WebHelper.Get("cliente/860540"); // trae un texto en formato json de una web
+            List<Cliente> resultado = MapList(json2);
+            return resultado;
         }
 
-        public Cliente TraerClientePorID(int idCliente)
+        public Cliente TraerClientePorID(int id)
         {
-            //string json2 = WebHelper.Get("Cliente/"+ idCliente);
-            string json2 = WebHelper.Get("Cliente/");
-            List<Cliente> clientes = MapList(json2);
-            Cliente cli = ClientePorID(clientes, idCliente);
-            //Cliente cliente = MapObj(json2);
-            return cli;
+            string json2 = WebHelper.Get("cliente/" + id.ToString()); // trae un texto en formato json de una web
+            Cliente resultado = MapObj(json2);
+            return resultado;
+        }
+        public Cliente TraerPorTelefono(string telefono)
+        {
+            string json2 = WebHelper.Get("cliente/" + telefono + "/telefono"); // trae un texto en formato json de una web
+            Cliente resultado = MapObj(json2);
+            return resultado;
         }
 
-        //Prueba
-        private Cliente ClientePorID(List<Cliente> clientes, int id)
-        {
-            Cliente c = null;
-            foreach (Cliente cli in clientes)
-            {
-                if (cli.ID == id)
-                {
-                    c = cli;
-                    break;
-                }
-            }
-            if(c == null)
-            { 
-                 throw new Exception("El cliente no existe");
-            }
-            return c;
-        }
-    
-        
-        //rueba
+
         private List<Cliente> MapList(string json)
-         {
-            List<Cliente> clientes = JsonConvert.DeserializeObject<List<Cliente>>(json);
-            return clientes;
-         }
+        {
+            List<Cliente> lst = JsonConvert.DeserializeObject<List<Cliente>>(json); // deserializacion
+            return lst;
+            //JsonConvert.D
+        }
 
         private Cliente MapObj(string json)
         {
-            Cliente cliente = JsonConvert.DeserializeObject<Cliente>(json);
-            return cliente;
+            Cliente lst = JsonConvert.DeserializeObject<Cliente>(json); // deserializacion
+            return lst;
+        }
+
+        public TransactionResult Insertar(Cliente cliente)
+        {
+            NameValueCollection obj = ReverseMap(cliente); //serializacion -> json
+
+            string json = WebHelper.Post("cliente", obj);
+
+            TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
+
+            return lst;
+        }
+
+        public TransactionResult Actualizar(Cliente cliente)
+        {
+            NameValueCollection obj = ReverseMap(cliente);
+
+            string json = WebHelper.Put("cliente", obj);
+
+            TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
+
+            return lst;
+        }
+        private NameValueCollection ReverseMap(Cliente cliente)
+        {
+            NameValueCollection n = new NameValueCollection();
+            n.Add("id", cliente.ID.ToString());
+            n.Add("FechaAlta", cliente.FechaAlta.ToString("yyy-MM-dd"));
+            n.Add("Activo", cliente.Activo.ToString());
+            n.Add("Nombre", cliente.Nombre);
+            n.Add("Apellido", cliente.Apellido);
+            n.Add("Direccion", cliente.Direccion);
+            n.Add("Telefono", cliente.Telefono);
+            n.Add("FechaNacimiento", cliente.FechaNacimiento.ToString("yyyy-MM-dd"));
+            n.Add("Usuario", "860540");
+            return n;
         }
     }
 }

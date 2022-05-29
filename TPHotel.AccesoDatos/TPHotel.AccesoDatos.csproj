@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteDatos.cs" />
+    <Compile Include="HabitacionDatos.cs" />
     <Compile Include="HotelDatos.cs" />
     <Compile Include="PersonaDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

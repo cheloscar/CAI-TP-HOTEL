@@ -15,32 +15,64 @@ namespace TPHotel.AccesoDatos
     public class HotelDatos
     {
 
-        public List<HotelEntidad> TraerHoteles()
+        public  List<HotelEntidad> TraerHoteles()
         {
-            string json2 = WebHelper.Get("Hotel/Hoteles");
-            List<HotelEntidad> hoteles = MapList(json2);
-
-            return hoteles;
+            string json2 = WebHelper.Get("Hoteles/860540"); // trae un texto en formato json de una web
+            List<HotelEntidad> resultado = MapList(json2);
+            return resultado;
         }
 
-        public HotelEntidad TraerHotelPorNumeroDeReserva(int idRegistro)
+        public  List<HotelEntidad> Traer(int usuario)
         {
-            string json2 = WebHelper.Get("Cliente/" + idRegistro);
-            HotelEntidad hotel = MapObj(json2);
-            return hotel;
-        }
-        private List<HotelEntidad> MapList(string json)
-        {
-            List<HotelEntidad> hoteles = JsonConvert.DeserializeObject<List<HotelEntidad>>(json);
-
-            return hoteles;
+            string json2 = WebHelper.Get("Hoteles/" + usuario.ToString()); // trae un texto en formato json de una web
+            List<HotelEntidad> resultado = MapList(json2);
+            return resultado;
         }
 
-        private HotelEntidad MapObj(string json)
+        private  List<HotelEntidad> MapList(string json)
         {
-            HotelEntidad hotel = JsonConvert.DeserializeObject<HotelEntidad>(json);
+            List<HotelEntidad> lst = JsonConvert.DeserializeObject<List<HotelEntidad>>(json); // deserializacion
+            return lst;
+            //JsonConvert.D
+        }
 
-            return hotel;
+        private  HotelEntidad MapObj(string json)
+        {
+            HotelEntidad lst = JsonConvert.DeserializeObject<HotelEntidad>(json); // deserializacion
+            return lst;
+        }
+
+        public  TransactionResult Insertar(HotelEntidad hotel)
+        {
+            NameValueCollection obj = ReverseMap(hotel); //serializacion -> json
+
+            string json = WebHelper.Post("Hoteles", obj);
+
+            TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
+
+            return lst;
+        }
+
+        public  TransactionResult Actualizar(HotelEntidad hotel)
+        {
+            NameValueCollection obj = ReverseMap(hotel);
+
+            string json = WebHelper.Put("Hoteles", obj);
+
+            TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
+
+            return lst;
+        }
+        private  NameValueCollection ReverseMap(HotelEntidad hotel)
+        {
+            NameValueCollection n = new NameValueCollection();
+            n.Add("Estrellas", hotel.Estrellas.ToString());
+            n.Add("Nombre", hotel.Nombre);
+            n.Add("Direccion", hotel.Direccion);
+            n.Add("Amenities", hotel.Amenities.ToString());
+            n.Add("ID", hotel.ID.ToString());
+            n.Add("Usuario", "860540");
+            return n;
         }
     }
 }
