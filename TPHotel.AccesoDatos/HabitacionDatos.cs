@@ -11,7 +11,7 @@ namespace TPHotel.AccesoDatos
     {
         public List<Habitacion> TraerTodasPorHotel(int hotel)
         {
-            string json2 = WebHelper.Get("habitaciones/" + hotel.ToString()); // trae un texto en formato json de una web
+            string json2 = WebHelper.Get("Hotel/Habitaciones/" + hotel.ToString()); // trae un texto en formato json de una web
             List<Habitacion> resultado = MapList(json2);
             return resultado;
         }
@@ -33,7 +33,7 @@ namespace TPHotel.AccesoDatos
         {
             NameValueCollection obj = ReverseMap(habitacion); //serializacion -> json
 
-            string json = WebHelper.Post("habitaciones", obj);
+            string json = WebHelper.Post("Hotel/habitaciones", obj);
 
             TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
 
@@ -44,7 +44,7 @@ namespace TPHotel.AccesoDatos
         {
             NameValueCollection obj = ReverseMap(habitacion);
 
-            string json = WebHelper.Put("habitaciones", obj);
+            string json = WebHelper.Put("Hotel/Habitaciones", obj);
 
             TransactionResult lst = JsonConvert.DeserializeObject<TransactionResult>(json);
 

@@ -19,14 +19,14 @@ namespace TPHotel.Entidades
         private int _idCliente;
         private int _cantidadHuespedes;
         private DateTime _fechaIngreso;
-        private DateTime __fechaEgreso;
+        private DateTime _fechaEgreso;
         private int _id;
 
         public int IdHabitacion { get => _idHabitacion; set => _idHabitacion = value; }
         public int IdCliente { get => _idCliente; set => _idCliente = value; }
         public int CantidadHuespedes { get => _cantidadHuespedes; set => _cantidadHuespedes = value; }
         public DateTime FechaIngreso { get => _fechaIngreso; set => _fechaIngreso = value; }
-        public DateTime FechaEgreso { get => __fechaEgreso; set => __fechaEgreso = value; }
+        public DateTime FechaEgreso { get => _fechaEgreso; set => _fechaEgreso = value; }
         public int Id { get => _id; set => _id = value; }
 
         public override string ToString()
