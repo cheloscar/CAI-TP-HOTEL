@@ -32,5 +32,9 @@ namespace TPHotel.Entidades
         public bool Cancelable { get => _cancelable; set => _cancelable = value; }
         public decimal Precio { get => _precio; set => _precio = value; }
 
+        public override string ToString()
+        {
+            return this.IdHabitacion.ToString() + this.IdHotel.ToString() + this.CantidadPlazas.ToString() + this.Categoria.ToString() + this.Cancelable.ToString() + this.Precio.ToString();
+        }
     }
 }

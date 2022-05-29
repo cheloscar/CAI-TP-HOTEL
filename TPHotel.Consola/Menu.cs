@@ -27,7 +27,7 @@ namespace TPHotel.Consola
             Console.WriteLine("1 - Listar todas las reservas");
             Console.WriteLine("2 - Listar todos los clientes");
             Console.WriteLine("3 - Listar todos los hoteles");
-            Console.WriteLine("4 - ");
+            Console.WriteLine("4 - Listar habitaciones del hotel 1");
             Console.WriteLine("5 - ");
             Console.WriteLine("6 - Salir del sistema");
             Console.WriteLine();

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using TPHotel.AccesoDatos.Utilidades;
@@ -7,7 +8,7 @@ using TPHotel.Entidades;
 
 namespace TPHotel.AccesoDatos
 {
-    internal class HabitacionDatos
+    public class HabitacionDatos
     {
         public List<Habitacion> TraerTodasPorHotel(int hotel)
         {

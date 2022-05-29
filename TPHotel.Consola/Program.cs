@@ -15,6 +15,8 @@ namespace TPHotel.Consola
             HotelNegocio _hotel = new HotelNegocio();
             List<Reserva> _reservaList = new List<Reserva>();
             List<Cliente> _clienteList = new List<Cliente>();
+            List<HotelEntidad> _hotelList = new List<HotelEntidad>();
+            List<Habitacion> _habitacionList = new List<Habitacion>();
             bool _continuar = true;
             int _opcionMenu;
 
@@ -43,7 +45,25 @@ namespace TPHotel.Consola
                     }
                     Menu.Pausa();
                 }
-                
+                else if (_opcionMenu == 3)
+                {
+                    _hotelList = _hotel.TraerHoteles();
+                    foreach (HotelEntidad hotel in _hotelList)
+                    {
+                        Console.WriteLine(hotel.ToString());
+                    }
+                    Menu.Pausa();
+                }
+                else if (_opcionMenu == 4)
+                {
+                    //Las habitaciones están asociadas a un hotel, hay que especificar el hotel
+                    _habitacionList = _hotel.TraerHabitaciones(1);
+                    foreach (Habitacion habitacion in _habitacionList)
+                    {
+                        Console.WriteLine(habitacion.ToString());
+                    }
+                    Menu.Pausa();
+                }
                 else
                 {
                     Menu.Salir();

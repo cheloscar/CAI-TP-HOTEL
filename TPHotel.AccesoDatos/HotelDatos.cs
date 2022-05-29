@@ -17,7 +17,7 @@ namespace TPHotel.AccesoDatos
 
         public  List<HotelEntidad> TraerHoteles()
         {
-            string json2 = WebHelper.Get("Hotel/Hoteles/860540"); // trae un texto en formato json de una web
+            string json2 = WebHelper.Get("Hotel/Hoteles"); // trae un texto en formato json de una web
             List<HotelEntidad> resultado = MapList(json2);
             return resultado;
         }
