@@ -54,6 +54,10 @@
       <Project>{36c6272c-c5d8-4ccc-ba34-3da2c4615c0d}</Project>
       <Name>TPHotel.Entidades</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TPHotel.Negocio\TPHotel.Negocio.csproj">
+      <Project>{5a2148d1-710a-484f-921d-5f3681661168}</Project>
+      <Name>TPHotel.Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

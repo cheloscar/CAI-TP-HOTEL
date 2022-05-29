@@ -4,15 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace TPHotel.Entidades
 {
-    public abstract class Cliente
+    public class Cliente : Persona
     {
         int _id;
         DateTime _fechaAlta;
         bool _activo;
 
-        public Cliente(int id, DateTime fechaAlta, bool activo)
+        public Cliente(int id, DateTime fechaAlta, bool activo, string nombre, string apellido, string direccion, string telefono, string email, DateTime fechaNacimiento)
+            : base (nombre, apellido, direccion, telefono, email, fechaNacimiento)
         {
             _id = id;
             _fechaAlta = fechaAlta;
@@ -22,5 +24,11 @@ namespace TPHotel.Entidades
         public int ID { get => _id; set => _id = value; }
         public DateTime FechaAlta { get => _fechaAlta; set => _fechaAlta = value; }
         public bool Activo { get => _activo; set => _activo = value; }
+        public override string ToString()
+        {
+            return this.Dni + " " + this.Nombre + " " + this.Apellido + " " + this.Direccion + " " + this.Email + " "
+                + this.Telefono + " " + this.FechaNacimiento.ToString() + " " + this.FechaAlta.ToString()
+                + this.Activo.ToString() + " " + this.ID;
+        }
     }
 }

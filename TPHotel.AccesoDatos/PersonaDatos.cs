@@ -12,41 +12,41 @@ namespace TPHotel.AccesoDatos
 {
     public class PersonaDatos
     {
-        public static List<ClientePersona> TraerTodos()
+        public static List<Cliente> TraerTodos()
         {
             string json2 = WebHelper.Get("cliente/860540"); // trae un texto en formato json de una web
-            List<ClientePersona> resultado = MapList(json2);
+            List<Cliente> resultado = MapList(json2);
             return resultado;
         }
 
-        public static List<ClientePersona> Traer(int usuario)
+        public static List<Cliente> Traer(int usuario)
         {
             string json2 = WebHelper.Get("cliente/" + usuario.ToString()); // trae un texto en formato json de una web
-            List<ClientePersona> resultado = MapList(json2);
+            List<Cliente> resultado = MapList(json2);
             return resultado;
         }
-        public static ClientePersona TraerPorTelefono(string telefono)
+        public static Cliente TraerPorTelefono(string telefono)
         {
             string json2 = WebHelper.Get("cliente/" + telefono + "/telefono"); // trae un texto en formato json de una web
-            ClientePersona resultado = MapObj(json2);
+            Cliente resultado = MapObj(json2);
             return resultado;
         }
 
 
-        private static List<ClientePersona> MapList(string json)
+        private static List<Cliente> MapList(string json)
         {
-            List<ClientePersona> lst = JsonConvert.DeserializeObject<List<ClientePersona>>(json); // deserializacion
+            List<Cliente> lst = JsonConvert.DeserializeObject<List<Cliente>>(json); // deserializacion
             return lst;
             //JsonConvert.D
         }
 
-        private static ClientePersona MapObj(string json)
+        private static Cliente MapObj(string json)
         {
-            ClientePersona lst = JsonConvert.DeserializeObject<ClientePersona>(json); // deserializacion
+            Cliente lst = JsonConvert.DeserializeObject<Cliente>(json); // deserializacion
             return lst;
         }
 
-        public static TransactionResult Insertar(ClientePersona persona)
+        public static TransactionResult Insertar(Cliente persona)
         {
             NameValueCollection obj = ReverseMap(persona); //serializacion -> json
 
@@ -57,7 +57,7 @@ namespace TPHotel.AccesoDatos
             return lst;
         }
 
-        public static TransactionResult Actualizar(ClientePersona persona)
+        public static TransactionResult Actualizar(Cliente persona)
         {
             NameValueCollection obj = ReverseMap(persona);
 
@@ -67,7 +67,7 @@ namespace TPHotel.AccesoDatos
 
             return lst;
         }
-        private static NameValueCollection ReverseMap(ClientePersona persona)
+        private static NameValueCollection ReverseMap(Cliente persona)
         {
             NameValueCollection n = new NameValueCollection();
             n.Add("id", persona.ID.ToString());
@@ -79,7 +79,7 @@ namespace TPHotel.AccesoDatos
             n.Add("Telefono", persona.Telefono);
             n.Add("FechaNacimiento", persona.FechaNacimiento.ToString("yyyy-MM-dd"));
             n.Add("Usuario", "860540");
-            n.Add("Host", persona.Host);
+            //n.Add("Host", persona.Host);
             return n;
         }
     }

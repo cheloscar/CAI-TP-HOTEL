@@ -1,0 +1,17 @@
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.exe.config
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.exe
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.pdb
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.Entidades.dll
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.Negocio.dll
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.AccesoDatos.dll
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.Entidades.pdb
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.Negocio.pdb
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\TPHotel.AccesoDatos.pdb
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\obj\Debug\TPHotel.Consola.csproj.AssemblyReference.cache
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\obj\Debug\TPHotel.Consola.csproj.SuggestedBindingRedirects.cache
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\obj\Debug\TPHotel.Consola.csproj.CoreCompileInputs.cache
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\obj\Debug\TPHotel.Consola.csproj.CopyComplete
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\obj\Debug\TPHotel.exe
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Consola\obj\Debug\TPHotel.pdb
