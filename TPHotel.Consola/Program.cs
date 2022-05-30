@@ -64,6 +64,11 @@ namespace TPHotel.Consola
                     }
                     Menu.Pausa();
                 }
+                else if (_opcionMenu == 5)
+                {
+                    
+                    _hotel.AgregarCliente(Interacciones.SolicitarDatosCliente());
+                }
                 else
                 {
                     Menu.Salir();

@@ -74,7 +74,10 @@ namespace TPHotel.Negocio
         #endregion
 
         #region Métodos para la carga de datos
-
+        public void AgregarCliente(Cliente cliente)
+        {
+            _clienteDatos.Insertar(cliente);
+        }
 
         #endregion
     }
