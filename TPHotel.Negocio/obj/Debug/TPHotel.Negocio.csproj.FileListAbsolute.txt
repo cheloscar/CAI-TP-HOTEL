@@ -11,3 +11,16 @@ C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Nego
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.csproj.CopyComplete
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.dll
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.pdb
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\TPHotel.Negocio.dll
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\TPHotel.Negocio.pdb
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\TPHotel.AccesoDatos.dll
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\TPHotel.Entidades.dll
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\TPHotel.AccesoDatos.pdb
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\TPHotel.Entidades.pdb
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.csproj.AssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.csproj.CopyComplete
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.dll
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.Negocio\obj\Debug\TPHotel.Negocio.pdb

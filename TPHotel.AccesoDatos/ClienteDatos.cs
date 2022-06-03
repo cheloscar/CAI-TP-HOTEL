@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using System.Collections.Specialized;
 
 namespace TPHotel.AccesoDatos
-{
+{ //hola
     public class ClienteDatos
     {
         public List<Cliente> TraerTodosLosClientes()
