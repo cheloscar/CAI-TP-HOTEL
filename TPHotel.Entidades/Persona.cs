@@ -34,5 +34,14 @@ namespace TPHotel.Entidades
         public long Dni { get => _dni; set => _dni = value; }
         public DateTime FechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
 
+        //public string Nombre 
+        //{ get => _nombre; 
+        //    set {
+        //        if (value == string.Empty) throw new Exception("El campo está vacío");
+        //        else { 
+        //            _nombre = value; }
+        //             } 
+        //        }
+
     }
 }

@@ -27,6 +27,7 @@ namespace TPHotel.Entidades
             _idHabitacion = idHabitacion;
             _idCliente = idCliente;
             _cantidadHuespedes = cantidadHuespedes;
+            
             _fechaIngreso = fechaIngreso;
             _fechaEgreso = fechaEgreso;
             _id = id;

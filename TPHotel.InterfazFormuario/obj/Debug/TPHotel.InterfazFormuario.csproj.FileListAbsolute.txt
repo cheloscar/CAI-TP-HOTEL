@@ -17,4 +17,5 @@ C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormu
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.exe
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.pdb
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.Form1.resources
-C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FormIngresarConsultarClientes.resources
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FormIngresarAltaClientes.resources
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FormConsultaClientes.resources

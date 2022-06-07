@@ -23,14 +23,30 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnIngresarConsultarClientes_Click(object sender, EventArgs e)
         {
-            FormIngresarConsultarClientes frm = new FormIngresarConsultarClientes();
-
-            frm.Show();
+            
         }
 
         private void _btnIngresarConsultarReservas_Click(object sender, EventArgs e)
         {
             FormIngresarConsultarReservas frm = new FormIngresarConsultarReservas();
+            frm.Show();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormIngresarAltaClientes frm = new FormIngresarAltaClientes();
+
+            frm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormConsultaClientes frm = new FormConsultaClientes();
             frm.Show();
         }
     }

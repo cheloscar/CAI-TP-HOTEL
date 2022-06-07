@@ -29,84 +29,167 @@ namespace TPHotel.InterfazFormuario
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this._btnIngresarConsultarReservas = new System.Windows.Forms.Button();
-            this._btnIngresarConsultarClientes = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.altasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hotelesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.habitacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reservasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hotelesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.habitacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reservasPorClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.habitacionesPorHotelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // menuStrip1
             // 
-            this.button1.Location = new System.Drawing.Point(461, 102);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 28);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(556, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // button2
+            // menuStrip2
             // 
-            this.button2.Location = new System.Drawing.Point(559, 102);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.altasToolStripMenuItem,
+            this.consultasToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(556, 28);
+            this.menuStrip2.TabIndex = 7;
+            this.menuStrip2.Text = "menuStrip2";
             // 
-            // _btnIngresarConsultarReservas
+            // altasToolStripMenuItem
             // 
-            this._btnIngresarConsultarReservas.Location = new System.Drawing.Point(294, 93);
-            this._btnIngresarConsultarReservas.Name = "_btnIngresarConsultarReservas";
-            this._btnIngresarConsultarReservas.Size = new System.Drawing.Size(127, 91);
-            this._btnIngresarConsultarReservas.TabIndex = 3;
-            this._btnIngresarConsultarReservas.Text = "Ingresar/consultar reservas";
-            this._btnIngresarConsultarReservas.UseVisualStyleBackColor = true;
-            this._btnIngresarConsultarReservas.Click += new System.EventHandler(this._btnIngresarConsultarReservas_Click);
+            this.altasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem,
+            this.reservasToolStripMenuItem,
+            this.hotelesToolStripMenuItem,
+            this.habitacionesToolStripMenuItem});
+            this.altasToolStripMenuItem.Image = global::TPHotel.InterfazFormuario.Properties.Resources.Arriba;
+            this.altasToolStripMenuItem.Name = "altasToolStripMenuItem";
+            this.altasToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.altasToolStripMenuItem.Text = "Altas";
             // 
-            // _btnIngresarConsultarClientes
+            // clientesToolStripMenuItem
             // 
-            this._btnIngresarConsultarClientes.Location = new System.Drawing.Point(134, 93);
-            this._btnIngresarConsultarClientes.Name = "_btnIngresarConsultarClientes";
-            this._btnIngresarConsultarClientes.Size = new System.Drawing.Size(131, 91);
-            this._btnIngresarConsultarClientes.TabIndex = 4;
-            this._btnIngresarConsultarClientes.Text = "Ingresar/consultar clientes";
-            this._btnIngresarConsultarClientes.UseVisualStyleBackColor = true;
-            this._btnIngresarConsultarClientes.Click += new System.EventHandler(this._btnIngresarConsultarClientes_Click);
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
-            // label1
+            // reservasToolStripMenuItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(445, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 17);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Estos botones son para los otras funcionalidades ";
+            this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
+            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reservasToolStripMenuItem.Text = "Reservas";
+            // 
+            // hotelesToolStripMenuItem
+            // 
+            this.hotelesToolStripMenuItem.Name = "hotelesToolStripMenuItem";
+            this.hotelesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hotelesToolStripMenuItem.Text = "Hoteles";
+            // 
+            // habitacionesToolStripMenuItem
+            // 
+            this.habitacionesToolStripMenuItem.Name = "habitacionesToolStripMenuItem";
+            this.habitacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.habitacionesToolStripMenuItem.Text = "Habitaciones";
+            // 
+            // consultasToolStripMenuItem
+            // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem1,
+            this.reservasToolStripMenuItem1,
+            this.hotelesToolStripMenuItem1,
+            this.habitacionesToolStripMenuItem1,
+            this.reservasPorClienteToolStripMenuItem,
+            this.habitacionesPorHotelToolStripMenuItem});
+            this.consultasToolStripMenuItem.Image = global::TPHotel.InterfazFormuario.Properties.Resources.Signo_de_pregunta;
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
+            this.consultasToolStripMenuItem.Text = "Consultas";
+            // 
+            // clientesToolStripMenuItem1
+            // 
+            this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(244, 26);
+            this.clientesToolStripMenuItem1.Text = "Clientes";
+            this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
+            // 
+            // reservasToolStripMenuItem1
+            // 
+            this.reservasToolStripMenuItem1.Name = "reservasToolStripMenuItem1";
+            this.reservasToolStripMenuItem1.Size = new System.Drawing.Size(244, 26);
+            this.reservasToolStripMenuItem1.Text = "Reservas";
+            // 
+            // hotelesToolStripMenuItem1
+            // 
+            this.hotelesToolStripMenuItem1.Name = "hotelesToolStripMenuItem1";
+            this.hotelesToolStripMenuItem1.Size = new System.Drawing.Size(244, 26);
+            this.hotelesToolStripMenuItem1.Text = "Hoteles";
+            // 
+            // habitacionesToolStripMenuItem1
+            // 
+            this.habitacionesToolStripMenuItem1.Name = "habitacionesToolStripMenuItem1";
+            this.habitacionesToolStripMenuItem1.Size = new System.Drawing.Size(244, 26);
+            this.habitacionesToolStripMenuItem1.Text = "Habitaciones";
+            // 
+            // reservasPorClienteToolStripMenuItem
+            // 
+            this.reservasPorClienteToolStripMenuItem.Name = "reservasPorClienteToolStripMenuItem";
+            this.reservasPorClienteToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.reservasPorClienteToolStripMenuItem.Text = "Reservas por cliente";
+            // 
+            // habitacionesPorHotelToolStripMenuItem
+            // 
+            this.habitacionesPorHotelToolStripMenuItem.Name = "habitacionesPorHotelToolStripMenuItem";
+            this.habitacionesPorHotelToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.habitacionesPorHotelToolStripMenuItem.Text = "Habitaciones por hotel";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this._btnIngresarConsultarClientes);
-            this.Controls.Add(this._btnIngresarConsultarReservas);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = global::TPHotel.InterfazFormuario.Properties.Resources.Texan;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(556, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip2);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button _btnIngresarConsultarReservas;
-        private System.Windows.Forms.Button _btnIngresarConsultarClientes;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem altasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hotelesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem habitacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem hotelesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem habitacionesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reservasPorClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem habitacionesPorHotelToolStripMenuItem;
     }
 }
 

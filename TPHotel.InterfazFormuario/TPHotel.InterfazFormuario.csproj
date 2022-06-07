@@ -46,17 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clase validadora\CombinadoraDeControles.cs" />
+    <Compile Include="Clase validadora\Validador.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormIngresarConsultarClientes.cs">
+    <Compile Include="FormConsultaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormIngresarConsultarClientes.Designer.cs">
-      <DependentUpon>FormIngresarConsultarClientes.cs</DependentUpon>
+    <Compile Include="FormConsultaClientes.Designer.cs">
+      <DependentUpon>FormConsultaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresarAltaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresarAltaClientes.Designer.cs">
+      <DependentUpon>FormIngresarAltaClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="FormIngresarConsultarReservas.cs">
       <SubType>Form</SubType>
@@ -69,8 +77,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormIngresarConsultarClientes.resx">
-      <DependentUpon>FormIngresarConsultarClientes.cs</DependentUpon>
+    <EmbeddedResource Include="FormConsultaClientes.resx">
+      <DependentUpon>FormConsultaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresarAltaClientes.resx">
+      <DependentUpon>FormIngresarAltaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,6 +115,15 @@
       <Project>{5a2148d1-710a-484f-921d-5f3681661168}</Project>
       <Name>TPHotel.Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Texan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signo de pregunta.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
