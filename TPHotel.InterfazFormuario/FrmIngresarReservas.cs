@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TPHotel.InterfazFormuario
 {
-    public partial class FormIngresarConsultarReservas : Form
+    public partial class FrmIngresarConsultarReservas : Form
     {
-        public FormIngresarConsultarReservas()
+        public FrmIngresarConsultarReservas()
         {
             InitializeComponent();
         }

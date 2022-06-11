@@ -48,40 +48,40 @@
   <ItemGroup>
     <Compile Include="Clase validadora\CombinadoraDeControles.cs" />
     <Compile Include="Clase validadora\Validador.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormConsultaClientes.cs">
+    <Compile Include="FrmConsultaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConsultaClientes.Designer.cs">
-      <DependentUpon>FormConsultaClientes.cs</DependentUpon>
+    <Compile Include="FrmConsultaClientes.Designer.cs">
+      <DependentUpon>FrmConsultaClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormIngresarAltaClientes.cs">
+    <Compile Include="FrmAltaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormIngresarAltaClientes.Designer.cs">
-      <DependentUpon>FormIngresarAltaClientes.cs</DependentUpon>
+    <Compile Include="FrmAltaClientes.Designer.cs">
+      <DependentUpon>FrmAltaClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormIngresarConsultarReservas.cs">
+    <Compile Include="FrmIngresarConsultarReservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormIngresarConsultarReservas.Designer.cs">
-      <DependentUpon>FormIngresarConsultarReservas.cs</DependentUpon>
+    <Compile Include="FrmIngresarConsultarReservas.Designer.cs">
+      <DependentUpon>FrmIngresarConsultarReservas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConsultaClientes.resx">
-      <DependentUpon>FormConsultaClientes.cs</DependentUpon>
+    <EmbeddedResource Include="FrmConsultaClientes.resx">
+      <DependentUpon>FrmConsultaClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormIngresarAltaClientes.resx">
-      <DependentUpon>FormIngresarAltaClientes.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAltaClientes.resx">
+      <DependentUpon>FrmAltaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

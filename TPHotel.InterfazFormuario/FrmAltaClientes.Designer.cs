@@ -1,7 +1,7 @@
 ﻿
 namespace TPHotel.InterfazFormuario
 {
-    partial class FormIngresarAltaClientes
+    partial class FrmAltaClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,6 @@ namespace TPHotel.InterfazFormuario
             this._txtNombre = new System.Windows.Forms.TextBox();
             this._lblId = new System.Windows.Forms.Label();
             this._lblFechaAlta = new System.Windows.Forms.Label();
-            this._lblActivo = new System.Windows.Forms.Label();
             this._lblNombre = new System.Windows.Forms.Label();
             this._lblApellido = new System.Windows.Forms.Label();
             this._lblDireccion = new System.Windows.Forms.Label();
@@ -58,7 +57,7 @@ namespace TPHotel.InterfazFormuario
             this._txtFechaNacimiento = new System.Windows.Forms.TextBox();
             this._lblFechaDeNacimiento = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this._chkActivo = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,43 +147,44 @@ namespace TPHotel.InterfazFormuario
             // 
             // _txtId
             // 
-            this._txtId.Location = new System.Drawing.Point(201, 43);
+            this._txtId.BackColor = System.Drawing.Color.White;
+            this._txtId.ForeColor = System.Drawing.Color.Black;
+            this._txtId.Location = new System.Drawing.Point(200, 97);
             this._txtId.Name = "_txtId";
             this._txtId.Size = new System.Drawing.Size(100, 22);
             this._txtId.TabIndex = 1;
-
             // 
             // _txtFechaAlta
             // 
-            this._txtFechaAlta.Location = new System.Drawing.Point(201, 71);
+            this._txtFechaAlta.Location = new System.Drawing.Point(200, 400);
             this._txtFechaAlta.Name = "_txtFechaAlta";
             this._txtFechaAlta.Size = new System.Drawing.Size(100, 22);
             this._txtFechaAlta.TabIndex = 2;
             // 
             // _txtActivo
             // 
-            this._txtActivo.Location = new System.Drawing.Point(201, 99);
+            this._txtActivo.Location = new System.Drawing.Point(680, 43);
             this._txtActivo.Name = "_txtActivo";
             this._txtActivo.Size = new System.Drawing.Size(100, 22);
             this._txtActivo.TabIndex = 3;
             // 
             // _txtDireccion
             // 
-            this._txtDireccion.Location = new System.Drawing.Point(201, 185);
+            this._txtDireccion.Location = new System.Drawing.Point(200, 213);
             this._txtDireccion.Name = "_txtDireccion";
             this._txtDireccion.Size = new System.Drawing.Size(100, 22);
             this._txtDireccion.TabIndex = 4;
             // 
             // _txtApellido
             // 
-            this._txtApellido.Location = new System.Drawing.Point(201, 155);
+            this._txtApellido.Location = new System.Drawing.Point(200, 183);
             this._txtApellido.Name = "_txtApellido";
             this._txtApellido.Size = new System.Drawing.Size(100, 22);
             this._txtApellido.TabIndex = 5;
             // 
             // _txtNombre
             // 
-            this._txtNombre.Location = new System.Drawing.Point(201, 127);
+            this._txtNombre.Location = new System.Drawing.Point(200, 155);
             this._txtNombre.Name = "_txtNombre";
             this._txtNombre.Size = new System.Drawing.Size(100, 22);
             this._txtNombre.TabIndex = 6;
@@ -192,7 +192,7 @@ namespace TPHotel.InterfazFormuario
             // _lblId
             // 
             this._lblId.AutoSize = true;
-            this._lblId.Location = new System.Drawing.Point(174, 43);
+            this._lblId.Location = new System.Drawing.Point(173, 97);
             this._lblId.Name = "_lblId";
             this._lblId.Size = new System.Drawing.Size(21, 17);
             this._lblId.TabIndex = 7;
@@ -201,25 +201,16 @@ namespace TPHotel.InterfazFormuario
             // _lblFechaAlta
             // 
             this._lblFechaAlta.AutoSize = true;
-            this._lblFechaAlta.Location = new System.Drawing.Point(103, 74);
+            this._lblFechaAlta.Location = new System.Drawing.Point(92, 403);
             this._lblFechaAlta.Name = "_lblFechaAlta";
             this._lblFechaAlta.Size = new System.Drawing.Size(92, 17);
             this._lblFechaAlta.TabIndex = 8;
             this._lblFechaAlta.Text = "FECHA ALTA";
             // 
-            // _lblActivo
-            // 
-            this._lblActivo.AutoSize = true;
-            this._lblActivo.Location = new System.Drawing.Point(137, 102);
-            this._lblActivo.Name = "_lblActivo";
-            this._lblActivo.Size = new System.Drawing.Size(58, 17);
-            this._lblActivo.TabIndex = 9;
-            this._lblActivo.Text = "ACTIVO";
-            // 
             // _lblNombre
             // 
             this._lblNombre.AutoSize = true;
-            this._lblNombre.Location = new System.Drawing.Point(128, 130);
+            this._lblNombre.Location = new System.Drawing.Point(127, 158);
             this._lblNombre.Name = "_lblNombre";
             this._lblNombre.Size = new System.Drawing.Size(68, 17);
             this._lblNombre.TabIndex = 10;
@@ -228,7 +219,7 @@ namespace TPHotel.InterfazFormuario
             // _lblApellido
             // 
             this._lblApellido.AutoSize = true;
-            this._lblApellido.Location = new System.Drawing.Point(120, 158);
+            this._lblApellido.Location = new System.Drawing.Point(119, 186);
             this._lblApellido.Name = "_lblApellido";
             this._lblApellido.Size = new System.Drawing.Size(75, 17);
             this._lblApellido.TabIndex = 11;
@@ -237,7 +228,7 @@ namespace TPHotel.InterfazFormuario
             // _lblDireccion
             // 
             this._lblDireccion.AutoSize = true;
-            this._lblDireccion.Location = new System.Drawing.Point(113, 185);
+            this._lblDireccion.Location = new System.Drawing.Point(112, 213);
             this._lblDireccion.Name = "_lblDireccion";
             this._lblDireccion.Size = new System.Drawing.Size(82, 17);
             this._lblDireccion.TabIndex = 12;
@@ -245,7 +236,7 @@ namespace TPHotel.InterfazFormuario
             // 
             // _txtTelefono
             // 
-            this._txtTelefono.Location = new System.Drawing.Point(201, 213);
+            this._txtTelefono.Location = new System.Drawing.Point(200, 241);
             this._txtTelefono.Name = "_txtTelefono";
             this._txtTelefono.Size = new System.Drawing.Size(100, 22);
             this._txtTelefono.TabIndex = 13;
@@ -253,7 +244,7 @@ namespace TPHotel.InterfazFormuario
             // _lblTelefono
             // 
             this._lblTelefono.AutoSize = true;
-            this._lblTelefono.Location = new System.Drawing.Point(113, 213);
+            this._lblTelefono.Location = new System.Drawing.Point(112, 241);
             this._lblTelefono.Name = "_lblTelefono";
             this._lblTelefono.Size = new System.Drawing.Size(83, 17);
             this._lblTelefono.TabIndex = 14;
@@ -261,7 +252,7 @@ namespace TPHotel.InterfazFormuario
             // 
             // _txtEmail
             // 
-            this._txtEmail.Location = new System.Drawing.Point(201, 243);
+            this._txtEmail.Location = new System.Drawing.Point(200, 271);
             this._txtEmail.Name = "_txtEmail";
             this._txtEmail.Size = new System.Drawing.Size(100, 22);
             this._txtEmail.TabIndex = 15;
@@ -269,7 +260,7 @@ namespace TPHotel.InterfazFormuario
             // _lblEmail
             // 
             this._lblEmail.AutoSize = true;
-            this._lblEmail.Location = new System.Drawing.Point(147, 243);
+            this._lblEmail.Location = new System.Drawing.Point(146, 271);
             this._lblEmail.Name = "_lblEmail";
             this._lblEmail.Size = new System.Drawing.Size(48, 17);
             this._lblEmail.TabIndex = 16;
@@ -277,7 +268,7 @@ namespace TPHotel.InterfazFormuario
             // 
             // _txtFechaNacimiento
             // 
-            this._txtFechaNacimiento.Location = new System.Drawing.Point(201, 271);
+            this._txtFechaNacimiento.Location = new System.Drawing.Point(200, 299);
             this._txtFechaNacimiento.Name = "_txtFechaNacimiento";
             this._txtFechaNacimiento.Size = new System.Drawing.Size(100, 22);
             this._txtFechaNacimiento.TabIndex = 17;
@@ -285,7 +276,7 @@ namespace TPHotel.InterfazFormuario
             // _lblFechaDeNacimiento
             // 
             this._lblFechaDeNacimiento.AutoSize = true;
-            this._lblFechaDeNacimiento.Location = new System.Drawing.Point(32, 271);
+            this._lblFechaDeNacimiento.Location = new System.Drawing.Point(31, 299);
             this._lblFechaDeNacimiento.Name = "_lblFechaDeNacimiento";
             this._lblFechaDeNacimiento.Size = new System.Drawing.Size(164, 17);
             this._lblFechaDeNacimiento.TabIndex = 18;
@@ -301,21 +292,22 @@ namespace TPHotel.InterfazFormuario
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // _chkActivo
             // 
-            this.button2.Location = new System.Drawing.Point(1167, 197);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 48);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this._chkActivo.AutoSize = true;
+            this._chkActivo.Location = new System.Drawing.Point(191, 348);
+            this._chkActivo.Name = "_chkActivo";
+            this._chkActivo.Size = new System.Drawing.Size(141, 21);
+            this._chkActivo.TabIndex = 20;
+            this._chkActivo.Text = "CLIENTE ACTIVO";
+            this._chkActivo.UseVisualStyleBackColor = true;
             // 
-            // FormIngresarConsultarClientes
+            // FrmAltaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1324, 598);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this._chkActivo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this._lblFechaDeNacimiento);
             this.Controls.Add(this._txtFechaNacimiento);
@@ -326,7 +318,6 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._lblDireccion);
             this.Controls.Add(this._lblApellido);
             this.Controls.Add(this._lblNombre);
-            this.Controls.Add(this._lblActivo);
             this.Controls.Add(this._lblFechaAlta);
             this.Controls.Add(this._lblId);
             this.Controls.Add(this._txtNombre);
@@ -336,8 +327,8 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._txtFechaAlta);
             this.Controls.Add(this._txtId);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FormIngresarConsultarClientes";
-            this.Text = "FormIngresarConsultarClientes";
+            this.Name = "FrmAltaClientes";
+            this.Text = "FormIngresarClientes";
             this.Load += new System.EventHandler(this.FormIngresarConsultarClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -365,7 +356,6 @@ namespace TPHotel.InterfazFormuario
         private System.Windows.Forms.DataGridViewTextBoxColumn _clnFechaNacimiento;
         private System.Windows.Forms.Label _lblId;
         private System.Windows.Forms.Label _lblFechaAlta;
-        private System.Windows.Forms.Label _lblActivo;
         private System.Windows.Forms.Label _lblNombre;
         private System.Windows.Forms.Label _lblApellido;
         private System.Windows.Forms.Label _lblDireccion;
@@ -376,6 +366,6 @@ namespace TPHotel.InterfazFormuario
         private System.Windows.Forms.TextBox _txtFechaNacimiento;
         private System.Windows.Forms.Label _lblFechaDeNacimiento;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox _chkActivo;
     }
 }

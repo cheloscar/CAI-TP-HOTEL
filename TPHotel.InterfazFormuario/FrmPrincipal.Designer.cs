@@ -1,7 +1,7 @@
 ﻿
 namespace TPHotel.InterfazFormuario
 {
-    partial class Form1
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -51,9 +51,10 @@ namespace TPHotel.InterfazFormuario
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Location = new System.Drawing.Point(0, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(556, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(556, 28);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
+          
             // 
             // menuStrip2
             // 
@@ -82,26 +83,26 @@ namespace TPHotel.InterfazFormuario
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // reservasToolStripMenuItem
             // 
             this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
-            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.reservasToolStripMenuItem.Text = "Reservas";
             // 
             // hotelesToolStripMenuItem
             // 
             this.hotelesToolStripMenuItem.Name = "hotelesToolStripMenuItem";
-            this.hotelesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hotelesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.hotelesToolStripMenuItem.Text = "Hoteles";
             // 
             // habitacionesToolStripMenuItem
             // 
             this.habitacionesToolStripMenuItem.Name = "habitacionesToolStripMenuItem";
-            this.habitacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.habitacionesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.habitacionesToolStripMenuItem.Text = "Habitaciones";
             // 
             // consultasToolStripMenuItem
@@ -155,7 +156,7 @@ namespace TPHotel.InterfazFormuario
             this.habitacionesPorHotelToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.habitacionesPorHotelToolStripMenuItem.Text = "Habitaciones por hotel";
             // 
-            // Form1
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -165,7 +166,7 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "FrmPrincipal";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip2.ResumeLayout(false);

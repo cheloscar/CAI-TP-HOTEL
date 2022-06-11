@@ -75,8 +75,27 @@ namespace TPHotel.Negocio
 
         #region Métodos para la carga de datos
         public void AgregarCliente(Cliente cliente)
-        { 
+        {
+            if (cliente.ID == -1)
+            {
+                throw new Exception("No se admiten ID's con strings ni numero negativos");
+            }
+
+            else
+            { 
             _clienteDatos.Insertar(cliente);
+
+            }
+
+        }
+
+        //prueba
+        public void AgregarClienteFunciondePrueba(Cliente cliente)
+        {
+            if (cliente.ID <= 0)
+            {
+                throw new Exception("No se admiten ID's con strings ni numero negativos");
+            }
         }
 
         #endregion

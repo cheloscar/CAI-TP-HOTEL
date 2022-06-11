@@ -13,10 +13,10 @@ using TPHotel.Negocio;
 namespace TPHotel.InterfazFormuario
 {
     
-    public partial class Form1 : Form
+    public partial class FrmPrincipal : Form
     {
         
-        public Form1()
+        public FrmPrincipal()
         {
             InitializeComponent();
         }
@@ -28,13 +28,13 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnIngresarConsultarReservas_Click(object sender, EventArgs e)
         {
-            FormIngresarConsultarReservas frm = new FormIngresarConsultarReservas();
+            FrmIngresarConsultarReservas frm = new FrmIngresarConsultarReservas();
             frm.Show();
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormIngresarAltaClientes frm = new FormIngresarAltaClientes();
+            FrmAltaClientes frm = new FrmAltaClientes(this);
 
             frm.Show();
         }
@@ -46,8 +46,10 @@ namespace TPHotel.InterfazFormuario
 
         private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormConsultaClientes frm = new FormConsultaClientes();
+            FrmConsultaClientes frm = new FrmConsultaClientes(this);
             frm.Show();
+            this.Hide();
         }
+
     }
 }

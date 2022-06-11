@@ -1,7 +1,7 @@
 ﻿
 namespace TPHotel.InterfazFormuario
 {
-    partial class FormIngresarConsultarReservas
+    partial class FrmIngresarConsultarReservas
     {
         /// <summary>
         /// Required designer variable.

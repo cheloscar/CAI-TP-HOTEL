@@ -1,7 +1,7 @@
 ﻿
 namespace TPHotel.InterfazFormuario
 {
-    partial class FormConsultaClientes
+    partial class FrmConsultaClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -233,7 +233,7 @@ namespace TPHotel.InterfazFormuario
             this.label9.TabIndex = 21;
             this.label9.Text = "FECHA DE NACIMIENTO";
             // 
-            // FormConsultaClientes
+            // FrmConsultaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -260,8 +260,9 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._lblIDReserva);
             this.Controls.Add(this._btnBuscarPorIdReserva);
             this.Controls.Add(this._txtIdReserva);
-            this.Name = "FormConsultaClientes";
+            this.Name = "FrmConsultaClientes";
             this.Text = "FormConsultaClientes";
+            this.Load += new System.EventHandler(this.FrmConsultaClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
