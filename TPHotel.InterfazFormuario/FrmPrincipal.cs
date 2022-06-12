@@ -28,7 +28,7 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnIngresarConsultarReservas_Click(object sender, EventArgs e)
         {
-            FrmIngresarConsultarReservas frm = new FrmIngresarConsultarReservas();
+            FrmIngresarReservas frm = new FrmIngresarReservas();
             frm.Show();
         }
 
@@ -51,5 +51,17 @@ namespace TPHotel.InterfazFormuario
             this.Hide();
         }
 
+        private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIngresarReservas frm = new FrmIngresarReservas();
+            frm.Show();
+        }
+
+        private void habitacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAltaHabitaciones frm = new FrmAltaHabitaciones();
+
+            frm.Show();
+        }
     }
 }

@@ -29,19 +29,8 @@ namespace TPHotel.InterfazFormuario
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnFechaAlta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnActivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._clnFechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._txtId = new System.Windows.Forms.TextBox();
             this._txtFechaAlta = new System.Windows.Forms.TextBox();
-            this._txtActivo = new System.Windows.Forms.TextBox();
             this._txtDireccion = new System.Windows.Forms.TextBox();
             this._txtApellido = new System.Windows.Forms.TextBox();
             this._txtNombre = new System.Windows.Forms.TextBox();
@@ -58,92 +47,7 @@ namespace TPHotel.InterfazFormuario
             this._lblFechaDeNacimiento = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this._chkActivo = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this._clnId,
-            this._clnFechaAlta,
-            this._clnActivo,
-            this._clnNombre,
-            this._clnApellido,
-            this._clnDireccion,
-            this._clnTelefono,
-            this._clnEmail,
-            this._clnFechaNacimiento});
-            this.dataGridView1.Location = new System.Drawing.Point(368, 127);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 238);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // _clnId
-            // 
-            this._clnId.HeaderText = "ID";
-            this._clnId.MinimumWidth = 6;
-            this._clnId.Name = "_clnId";
-            this._clnId.Width = 125;
-            // 
-            // _clnFechaAlta
-            // 
-            this._clnFechaAlta.HeaderText = "FechaAlta";
-            this._clnFechaAlta.MinimumWidth = 6;
-            this._clnFechaAlta.Name = "_clnFechaAlta";
-            this._clnFechaAlta.Width = 125;
-            // 
-            // _clnActivo
-            // 
-            this._clnActivo.HeaderText = "Activo";
-            this._clnActivo.MinimumWidth = 6;
-            this._clnActivo.Name = "_clnActivo";
-            this._clnActivo.Width = 125;
-            // 
-            // _clnNombre
-            // 
-            this._clnNombre.HeaderText = "Nombre";
-            this._clnNombre.MinimumWidth = 6;
-            this._clnNombre.Name = "_clnNombre";
-            this._clnNombre.Width = 125;
-            // 
-            // _clnApellido
-            // 
-            this._clnApellido.HeaderText = "Apellido";
-            this._clnApellido.MinimumWidth = 6;
-            this._clnApellido.Name = "_clnApellido";
-            this._clnApellido.Width = 125;
-            // 
-            // _clnDireccion
-            // 
-            this._clnDireccion.HeaderText = "Direccion";
-            this._clnDireccion.MinimumWidth = 6;
-            this._clnDireccion.Name = "_clnDireccion";
-            this._clnDireccion.Width = 125;
-            // 
-            // _clnTelefono
-            // 
-            this._clnTelefono.HeaderText = "Telefono";
-            this._clnTelefono.MinimumWidth = 6;
-            this._clnTelefono.Name = "_clnTelefono";
-            this._clnTelefono.Width = 125;
-            // 
-            // _clnEmail
-            // 
-            this._clnEmail.HeaderText = "Email";
-            this._clnEmail.MinimumWidth = 6;
-            this._clnEmail.Name = "_clnEmail";
-            this._clnEmail.Width = 125;
-            // 
-            // _clnFechaNacimiento
-            // 
-            this._clnFechaNacimiento.HeaderText = "FechaNacimiento";
-            this._clnFechaNacimiento.MinimumWidth = 6;
-            this._clnFechaNacimiento.Name = "_clnFechaNacimiento";
-            this._clnFechaNacimiento.Width = 125;
             // 
             // _txtId
             // 
@@ -153,6 +57,7 @@ namespace TPHotel.InterfazFormuario
             this._txtId.Name = "_txtId";
             this._txtId.Size = new System.Drawing.Size(100, 22);
             this._txtId.TabIndex = 1;
+            this._txtId.TextChanged += new System.EventHandler(this._txtId_TextChanged);
             // 
             // _txtFechaAlta
             // 
@@ -161,19 +66,13 @@ namespace TPHotel.InterfazFormuario
             this._txtFechaAlta.Size = new System.Drawing.Size(100, 22);
             this._txtFechaAlta.TabIndex = 2;
             // 
-            // _txtActivo
-            // 
-            this._txtActivo.Location = new System.Drawing.Point(680, 43);
-            this._txtActivo.Name = "_txtActivo";
-            this._txtActivo.Size = new System.Drawing.Size(100, 22);
-            this._txtActivo.TabIndex = 3;
-            // 
             // _txtDireccion
             // 
             this._txtDireccion.Location = new System.Drawing.Point(200, 213);
             this._txtDireccion.Name = "_txtDireccion";
             this._txtDireccion.Size = new System.Drawing.Size(100, 22);
             this._txtDireccion.TabIndex = 4;
+            this._txtDireccion.TextChanged += new System.EventHandler(this._txtDireccion_TextChanged);
             // 
             // _txtApellido
             // 
@@ -181,6 +80,7 @@ namespace TPHotel.InterfazFormuario
             this._txtApellido.Name = "_txtApellido";
             this._txtApellido.Size = new System.Drawing.Size(100, 22);
             this._txtApellido.TabIndex = 5;
+            this._txtApellido.TextChanged += new System.EventHandler(this._txtApellido_TextChanged);
             // 
             // _txtNombre
             // 
@@ -188,6 +88,7 @@ namespace TPHotel.InterfazFormuario
             this._txtNombre.Name = "_txtNombre";
             this._txtNombre.Size = new System.Drawing.Size(100, 22);
             this._txtNombre.TabIndex = 6;
+            this._txtNombre.TextChanged += new System.EventHandler(this._txtNombre_TextChanged);
             // 
             // _lblId
             // 
@@ -240,6 +141,7 @@ namespace TPHotel.InterfazFormuario
             this._txtTelefono.Name = "_txtTelefono";
             this._txtTelefono.Size = new System.Drawing.Size(100, 22);
             this._txtTelefono.TabIndex = 13;
+            this._txtTelefono.TextChanged += new System.EventHandler(this._txtTelefono_TextChanged);
             // 
             // _lblTelefono
             // 
@@ -256,6 +158,7 @@ namespace TPHotel.InterfazFormuario
             this._txtEmail.Name = "_txtEmail";
             this._txtEmail.Size = new System.Drawing.Size(100, 22);
             this._txtEmail.TabIndex = 15;
+            this._txtEmail.TextChanged += new System.EventHandler(this._txtEmail_TextChanged);
             // 
             // _lblEmail
             // 
@@ -272,6 +175,7 @@ namespace TPHotel.InterfazFormuario
             this._txtFechaNacimiento.Name = "_txtFechaNacimiento";
             this._txtFechaNacimiento.Size = new System.Drawing.Size(100, 22);
             this._txtFechaNacimiento.TabIndex = 17;
+            this._txtFechaNacimiento.TextChanged += new System.EventHandler(this._txtFechaNacimiento_TextChanged);
             // 
             // _lblFechaDeNacimiento
             // 
@@ -284,9 +188,9 @@ namespace TPHotel.InterfazFormuario
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(391, 71);
+            this.button1.Location = new System.Drawing.Point(379, 155);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 32);
+            this.button1.Size = new System.Drawing.Size(125, 90);
             this.button1.TabIndex = 19;
             this.button1.Text = "Dar de alta";
             this.button1.UseVisualStyleBackColor = true;
@@ -306,7 +210,7 @@ namespace TPHotel.InterfazFormuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1324, 598);
+            this.ClientSize = new System.Drawing.Size(556, 598);
             this.Controls.Add(this._chkActivo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this._lblFechaDeNacimiento);
@@ -323,37 +227,22 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._txtNombre);
             this.Controls.Add(this._txtApellido);
             this.Controls.Add(this._txtDireccion);
-            this.Controls.Add(this._txtActivo);
             this.Controls.Add(this._txtFechaAlta);
             this.Controls.Add(this._txtId);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "FrmAltaClientes";
             this.Text = "FormIngresarClientes";
             this.Load += new System.EventHandler(this.FormIngresarConsultarClientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox _txtId;
         private System.Windows.Forms.TextBox _txtFechaAlta;
-        private System.Windows.Forms.TextBox _txtActivo;
         private System.Windows.Forms.TextBox _txtDireccion;
         private System.Windows.Forms.TextBox _txtApellido;
         private System.Windows.Forms.TextBox _txtNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnFechaAlta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnActivo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnApellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnDireccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnTelefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnEmail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn _clnFechaNacimiento;
         private System.Windows.Forms.Label _lblId;
         private System.Windows.Forms.Label _lblFechaAlta;
         private System.Windows.Forms.Label _lblNombre;

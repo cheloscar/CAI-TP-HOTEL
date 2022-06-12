@@ -71,7 +71,7 @@ namespace TPHotel.InterfazFormuario
                 listaCombinadora.Add(txtlb9);
 
 
-            
+          
             numero = Validador.pedirInteger(_txtId, _lblId);
             activo = Checked(_chkActivo);
             fechaAlta = DateTime.Now;
@@ -94,7 +94,7 @@ namespace TPHotel.InterfazFormuario
             else if (fechaNacimiento.ToString() == "1/1/0001 00:00:00")
             {
                 //da de alta cliente abriendo try catch
-                MessageBox.Show("Ingrese fechac válida");
+                MessageBox.Show("Ingrese fecha válida");
                 _txtFechaNacimiento.Text = string.Empty;
             }
 
@@ -109,7 +109,7 @@ namespace TPHotel.InterfazFormuario
                     _txtEmail.Text.ToString(), DateTime.Now);
 
 
-                    _hotelNegocio.AgregarClienteFunciondePrueba(cli);
+                    _hotelNegocio.AgregarCliente(cli);
 
                     _txtFechaAlta.Enabled = true;
                     _txtFechaAlta.Text = fechaAlta.ToString();
@@ -155,6 +155,41 @@ namespace TPHotel.InterfazFormuario
             }
 
             return resultado;
+        }
+
+        private void _txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _txtFechaNacimiento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _txtApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _txtId_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -48,6 +48,18 @@
   <ItemGroup>
     <Compile Include="Clase validadora\CombinadoraDeControles.cs" />
     <Compile Include="Clase validadora\Validador.cs" />
+    <Compile Include="FrmAltaHabitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaHabitaciones.Designer.cs">
+      <DependentUpon>FrmAltaHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaHoteles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaHoteles.Designer.cs">
+      <DependentUpon>FrmAltaHoteles.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,14 +78,23 @@
     <Compile Include="FrmAltaClientes.Designer.cs">
       <DependentUpon>FrmAltaClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmIngresarConsultarReservas.cs">
+    <Compile Include="FrmIngresarReservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIngresarConsultarReservas.Designer.cs">
-      <DependentUpon>FrmIngresarConsultarReservas.cs</DependentUpon>
+    <Compile Include="FrmIngresarReservas.Designer.cs">
+      <DependentUpon>FrmIngresarReservas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAltaHabitaciones.resx">
+      <DependentUpon>FrmAltaHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaHoteles.resx">
+      <DependentUpon>FrmAltaHoteles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresarReservas.resx">
+      <DependentUpon>FrmIngresarReservas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

@@ -19,3 +19,6 @@ C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormu
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmPrincipal.resources
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmConsultaClientes.resources
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaClientes.resources
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmIngresarReservas.resources
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaHabitaciones.resources
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaHoteles.resources

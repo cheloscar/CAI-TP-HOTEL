@@ -25,10 +25,12 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
             
             
             List<string> lstEx = new List<string>();
-            lstEx.Add("El/los siguientes campos No debe / deben quedar vacio /s" + "\n");
+
+            lstEx.Add("Los siguientes campos no deben quedar vacios" + "\n");
+
             foreach (CombinadoraDeControles cdc in lstCombinadora)
             {
-                
+
                 if (cdc.CajaDeTexto.Text == string.Empty)
                 {
                     lstEx.Add(cdc.Etiqueta.Text);
@@ -39,12 +41,20 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
                 {
                     cdc.Etiqueta.BackColor = System.Drawing.Color.White;
                 }
+                
             }
-           
+            if (lstEx.Count == 2)
+            {
+                lstEx[0] = "El siguiente elemento no puede quedar vacío";
+            }
+
 
             foreach (var s in lstEx)
             {
+                
                 todojunto = todojunto + s.ToString() + "\n";
+
+               
             }
             return todojunto;
 
@@ -87,16 +97,16 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
             }
             return pudeConvertir;
         }
-        public static double pedirDouble(string numero)
+        public static decimal pedirDecimal(TextBox tx, Label lb)
         {
-            double retorno = 0;
+            decimal retorno = 0;
             bool pudeConvertir;
          
-                pudeConvertir = Double.TryParse(numero, out retorno);
+                pudeConvertir = decimal.TryParse(tx.Text, out retorno);
                
                 if (!pudeConvertir)
                 {
-                   throw new Exception();
+                    pudeConvertir = false;
                 }
              
             return retorno;

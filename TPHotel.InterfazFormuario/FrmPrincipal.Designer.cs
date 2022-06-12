@@ -51,10 +51,9 @@ namespace TPHotel.InterfazFormuario
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Location = new System.Drawing.Point(0, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(556, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(556, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
-          
             // 
             // menuStrip2
             // 
@@ -83,27 +82,29 @@ namespace TPHotel.InterfazFormuario
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // reservasToolStripMenuItem
             // 
             this.reservasToolStripMenuItem.Name = "reservasToolStripMenuItem";
-            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.reservasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.reservasToolStripMenuItem.Text = "Reservas";
+            this.reservasToolStripMenuItem.Click += new System.EventHandler(this.reservasToolStripMenuItem_Click);
             // 
             // hotelesToolStripMenuItem
             // 
             this.hotelesToolStripMenuItem.Name = "hotelesToolStripMenuItem";
-            this.hotelesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.hotelesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.hotelesToolStripMenuItem.Text = "Hoteles";
             // 
             // habitacionesToolStripMenuItem
             // 
             this.habitacionesToolStripMenuItem.Name = "habitacionesToolStripMenuItem";
-            this.habitacionesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.habitacionesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.habitacionesToolStripMenuItem.Text = "Habitaciones";
+            this.habitacionesToolStripMenuItem.Click += new System.EventHandler(this.habitacionesToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
