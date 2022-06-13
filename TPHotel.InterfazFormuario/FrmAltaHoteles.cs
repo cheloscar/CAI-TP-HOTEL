@@ -43,7 +43,7 @@ namespace TPHotel.InterfazFormuario
             listaCombinadora.Add(txtlb5);
 
             numeroEstrellas = Validador.pedirInteger(_txtEstrellas, _lblEstrellas);
-            numeroID = Validador.pedirInteger(_txtId, _lblId);
+            numeroID = Validador.pedirInteger(_txtId, _lblId); //ya no corre.
             amenities = Checked(_chkAmenities);
 
             if (_txtId.Text == string.Empty || _txtNombre.Text == string.Empty || _txtEstrellas.Text == string.Empty
@@ -57,7 +57,7 @@ namespace TPHotel.InterfazFormuario
                 try
                 {
                     HotelEntidad hotel = new HotelEntidad(numeroEstrellas,
-                        _txtNombre.Text, _txtDireccion.Text, amenities, numeroID);
+                        _txtNombre.Text, _txtDireccion.Text, amenities);
                     _hotelNegocio.AgregarHotel(hotel);
 
                     MessageBox.Show("Hotel agregado exitosamente");

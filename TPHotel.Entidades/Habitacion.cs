@@ -15,6 +15,7 @@ namespace TPHotel.Entidades
         bool _cancelable;
         double _precio;
 
+        //Primer constructor.
         public Habitacion(int idHotel, int cantidadPlazas, string categoria, bool cancelable, double precio)
         {
             //_idHabitacion = idHabitacion;
@@ -25,6 +26,17 @@ namespace TPHotel.Entidades
             _precio = precio;
         }
 
+        //Segundo constructor.
+        //public Habitacion(int idHabitacion,int idHotel, int cantidadPlazas, string categoria, bool cancelable, double precio)
+        //{
+        //    _idHabitacion = idHabitacion;
+        //    _idHotel = idHotel;
+        //    _cantidadPlazas = cantidadPlazas;
+        //    _categoria = categoria;
+        //    _cancelable = cancelable;
+        //    _precio = precio;
+        //}
+
         public int IdHabitacion { get => _idHabitacion; set => _idHabitacion = value; }
         public int IdHotel { get => _idHotel; set => _idHotel = value; }
         public int CantidadPlazas { get => _cantidadPlazas; set => _cantidadPlazas = value; }
@@ -34,7 +46,7 @@ namespace TPHotel.Entidades
 
         public override string ToString()
         {
-            return this.IdHabitacion.ToString() + this.IdHotel.ToString() + this.CantidadPlazas.ToString() + this.Categoria.ToString() + this.Cancelable.ToString() + this.Precio.ToString();
+            return this.IdHabitacion.ToString()+ " " + this.IdHotel.ToString() + " " + this.CantidadPlazas.ToString() + this.Categoria.ToString() + this.Cancelable.ToString() + this.Precio.ToString();
         }
     }
 }

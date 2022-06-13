@@ -50,7 +50,7 @@ namespace TPHotel.InterfazFormuario
             DateTime fechaNacimiento = DateTime.Now;
             bool activo;
 
-                CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtId, _lblId);
+                //CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtId, _lblId);
                 //CombinadoraDeControles txtlb2 = new CombinadoraDeControles(_txtFechaAlta, _lblFechaAlta);
                 //CombinadoraDeControles txtlb3 = new CombinadoraDeControles(_txtActivo, _lblActivo);
                 CombinadoraDeControles txtlb4 = new CombinadoraDeControles(_txtNombre, _lblNombre);
@@ -60,7 +60,7 @@ namespace TPHotel.InterfazFormuario
                 CombinadoraDeControles txtlb8 = new CombinadoraDeControles(_txtEmail, _lblEmail);
                 CombinadoraDeControles txtlb9 = new CombinadoraDeControles(_txtFechaNacimiento, _lblFechaDeNacimiento);
 
-                listaCombinadora.Add(txtlb1);
+                //listaCombinadora.Add(txtlb1);
                 //listaCombinadora.Add(txtlb2);
                // listaCombinadora.Add(txtlb3);
                 listaCombinadora.Add(txtlb4);
@@ -72,7 +72,7 @@ namespace TPHotel.InterfazFormuario
 
 
           
-            numero = Validador.pedirInteger(_txtId, _lblId);
+            //numero = Validador.pedirInteger(_txtId, _lblId);
             activo = Checked(_chkActivo);
             fechaAlta = DateTime.Now;
             fechaNacimiento = Validador.pedirFecha(txtlb9.CajaDeTexto.Text);
@@ -80,7 +80,7 @@ namespace TPHotel.InterfazFormuario
             //MessageBox.Show(fechaAlta.ToString());
 
 
-            if (txtlb1.ToString() == string.Empty || txtlb4.ToString() == string.Empty || txtlb5.ToString() == string.Empty || txtlb6.ToString() == string.Empty
+            if (txtlb4.ToString() == string.Empty || txtlb5.ToString() == string.Empty || txtlb6.ToString() == string.Empty
                  || txtlb7.ToString() == string.Empty || txtlb8.ToString() == string.Empty || txtlb9.ToString() == string.Empty)
             //|| fechaAlta      
             {
@@ -113,13 +113,18 @@ namespace TPHotel.InterfazFormuario
 
                     _txtFechaAlta.Enabled = true;
                     _txtFechaAlta.Text = fechaAlta.ToString();
+
+                    MessageBox.Show("Cliente agregado exitosamente");
+                    
+
+                    this.Close();
                 }
 
 
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                    _lblId.BackColor = System.Drawing.Color.White;
+                    //_lblId.BackColor = System.Drawing.Color.White;
                     _lblFechaAlta.BackColor = System.Drawing.Color.White;
                     //_lblActivo.BackColor = System.Drawing.Color.White;
                     _lblNombre.BackColor = System.Drawing.Color.White;

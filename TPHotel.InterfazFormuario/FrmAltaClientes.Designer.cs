@@ -29,12 +29,10 @@ namespace TPHotel.InterfazFormuario
         /// </summary>
         private void InitializeComponent()
         {
-            this._txtId = new System.Windows.Forms.TextBox();
             this._txtFechaAlta = new System.Windows.Forms.TextBox();
             this._txtDireccion = new System.Windows.Forms.TextBox();
             this._txtApellido = new System.Windows.Forms.TextBox();
             this._txtNombre = new System.Windows.Forms.TextBox();
-            this._lblId = new System.Windows.Forms.Label();
             this._lblFechaAlta = new System.Windows.Forms.Label();
             this._lblNombre = new System.Windows.Forms.Label();
             this._lblApellido = new System.Windows.Forms.Label();
@@ -48,16 +46,6 @@ namespace TPHotel.InterfazFormuario
             this.button1 = new System.Windows.Forms.Button();
             this._chkActivo = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
-            // 
-            // _txtId
-            // 
-            this._txtId.BackColor = System.Drawing.Color.White;
-            this._txtId.ForeColor = System.Drawing.Color.Black;
-            this._txtId.Location = new System.Drawing.Point(200, 97);
-            this._txtId.Name = "_txtId";
-            this._txtId.Size = new System.Drawing.Size(100, 22);
-            this._txtId.TabIndex = 1;
-            this._txtId.TextChanged += new System.EventHandler(this._txtId_TextChanged);
             // 
             // _txtFechaAlta
             // 
@@ -89,15 +77,6 @@ namespace TPHotel.InterfazFormuario
             this._txtNombre.Size = new System.Drawing.Size(100, 22);
             this._txtNombre.TabIndex = 6;
             this._txtNombre.TextChanged += new System.EventHandler(this._txtNombre_TextChanged);
-            // 
-            // _lblId
-            // 
-            this._lblId.AutoSize = true;
-            this._lblId.Location = new System.Drawing.Point(173, 97);
-            this._lblId.Name = "_lblId";
-            this._lblId.Size = new System.Drawing.Size(21, 17);
-            this._lblId.TabIndex = 7;
-            this._lblId.Text = "ID";
             // 
             // _lblFechaAlta
             // 
@@ -223,12 +202,10 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._lblApellido);
             this.Controls.Add(this._lblNombre);
             this.Controls.Add(this._lblFechaAlta);
-            this.Controls.Add(this._lblId);
             this.Controls.Add(this._txtNombre);
             this.Controls.Add(this._txtApellido);
             this.Controls.Add(this._txtDireccion);
             this.Controls.Add(this._txtFechaAlta);
-            this.Controls.Add(this._txtId);
             this.Name = "FrmAltaClientes";
             this.Text = "FormIngresarClientes";
             this.Load += new System.EventHandler(this.FormIngresarConsultarClientes_Load);
@@ -238,12 +215,10 @@ namespace TPHotel.InterfazFormuario
         }
 
         #endregion
-        private System.Windows.Forms.TextBox _txtId;
         private System.Windows.Forms.TextBox _txtFechaAlta;
         private System.Windows.Forms.TextBox _txtDireccion;
         private System.Windows.Forms.TextBox _txtApellido;
         private System.Windows.Forms.TextBox _txtNombre;
-        private System.Windows.Forms.Label _lblId;
         private System.Windows.Forms.Label _lblFechaAlta;
         private System.Windows.Forms.Label _lblNombre;
         private System.Windows.Forms.Label _lblApellido;

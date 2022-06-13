@@ -63,5 +63,10 @@ namespace TPHotel.InterfazFormuario
 
             frm.Show();
         }
+
+        private void hotelesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

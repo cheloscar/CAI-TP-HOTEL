@@ -32,26 +32,26 @@ namespace TPHotel.InterfazFormuario
             int idHabitacion = 0;
             int CantidadPlazas = 0;
             string categoria = "";
-            decimal precio = 0;
+            double precio = 0;
             bool cancelable;
 
-            CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtIdHabitacion, _lblIdHabitacion);
+            //CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtIdHabitacion, _lblIdHabitacion);
             CombinadoraDeControles txtlb2 = new CombinadoraDeControles(_txtCantidadPlazas, _lblCantidadPlazas);
             CombinadoraDeControles txtlb3 = new CombinadoraDeControles(_txtPrecio, _lblPrecio);
             CombinadoraDeControles txtlb4 = new CombinadoraDeControles(_txtCategoria, _lblCategoria);
             
-            listaCombinadora.Add(txtlb1);
+            //listaCombinadora.Add(txtlb1);
             listaCombinadora.Add(txtlb2);
             listaCombinadora.Add(txtlb3);
             listaCombinadora.Add(txtlb4);
 
 
-            idHabitacion = Validador.pedirInteger(_txtIdHabitacion, _lblIdHabitacion);
+            //idHabitacion = Validador.pedirInteger(_txtIdHabitacion, _lblIdHabitacion);
             cancelable = Checked(_chkCancelable);
             CantidadPlazas = Validador.pedirInteger(_txtCantidadPlazas, _lblCantidadPlazas);
             precio = Validador.pedirDecimal(_txtPrecio, _lblPrecio);
 
-            if (_txtIdHabitacion.Text == string.Empty || _txtCantidadPlazas.Text == string.Empty || _txtPrecio.Text == string.Empty || _txtCategoria.Text == string.Empty)
+            if ( _txtCantidadPlazas.Text == string.Empty || _txtPrecio.Text == string.Empty || _txtCategoria.Text == string.Empty)
 
             {
                 resultado = Validador.PedirStringLista(listaCombinadora);
@@ -72,7 +72,7 @@ namespace TPHotel.InterfazFormuario
             {
                 try
                 {
-                    Habitacion habitacion = new Habitacion(idHabitacion, Convert.ToInt32(_cmbIdHotel.SelectedItem), CantidadPlazas, _txtCategoria.Text, cancelable, precio);
+                    Habitacion habitacion = new Habitacion(idHabitacion, CantidadPlazas, _txtCategoria.Text, cancelable, precio);
                     _hotelNegocio.AgregarHabitacion(habitacion);
                 }
 

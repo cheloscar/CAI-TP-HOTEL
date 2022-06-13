@@ -30,106 +30,95 @@ namespace TPHotel.InterfazFormuario
         private void InitializeComponent()
         {
             this._btnAltaHotel = new System.Windows.Forms.Button();
-            this._txtIdCliente = new System.Windows.Forms.TextBox();
+            this._txtIdHotel = new System.Windows.Forms.TextBox();
             this._txtCantidadDeHuespedes = new System.Windows.Forms.TextBox();
             this._txtFechaIngreso = new System.Windows.Forms.TextBox();
             this._txtFechaEgreso = new System.Windows.Forms.TextBox();
-            this._txtId = new System.Windows.Forms.TextBox();
-            this._cmbClientesPorId = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this._cmbNombreHoteles = new System.Windows.Forms.ComboBox();
             this._lblNombreHotel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this._txtNombre = new System.Windows.Forms.TextBox();
-            this._txtApellido = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this._txtDireccionHotel = new System.Windows.Forms.TextBox();
+            this._txtEstrellas = new System.Windows.Forms.TextBox();
+            this._lblCliente = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this._lblCantidadHuespedes = new System.Windows.Forms.Label();
             this._lblFechaIngreso = new System.Windows.Forms.Label();
             this._lblFechaEgreso = new System.Windows.Forms.Label();
-            this._lblIdReserva = new System.Windows.Forms.Label();
+            this._lstHabitaciones = new System.Windows.Forms.ListBox();
+            this._lstHoteles = new System.Windows.Forms.ListBox();
+            this._txtNombreHotel = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this._lstClientes = new System.Windows.Forms.ListBox();
+            this._btnAltaCliente = new System.Windows.Forms.Button();
+            this._btnRefrescar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this._txtCantidaPlazas = new System.Windows.Forms.TextBox();
+            this._txtIdHabitacion = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this._txtPrecio = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this._txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.clienteID = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this._txtApellidoCliente = new System.Windows.Forms.TextBox();
+            this._txtFechaNacimiento = new System.Windows.Forms.TextBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // _btnAltaHotel
             // 
-            this._btnAltaHotel.Location = new System.Drawing.Point(406, 268);
+            this._btnAltaHotel.Location = new System.Drawing.Point(305, 13);
             this._btnAltaHotel.Name = "_btnAltaHotel";
-            this._btnAltaHotel.Size = new System.Drawing.Size(184, 94);
+            this._btnAltaHotel.Size = new System.Drawing.Size(117, 99);
             this._btnAltaHotel.TabIndex = 0;
             this._btnAltaHotel.Text = "ALTA HOTEL";
             this._btnAltaHotel.UseVisualStyleBackColor = true;
             this._btnAltaHotel.Click += new System.EventHandler(this.button1_Click);
             // 
-            // _txtIdCliente
+            // _txtIdHotel
             // 
-            this._txtIdCliente.Enabled = false;
-            this._txtIdCliente.Location = new System.Drawing.Point(406, 158);
-            this._txtIdCliente.Name = "_txtIdCliente";
-            this._txtIdCliente.Size = new System.Drawing.Size(31, 22);
-            this._txtIdCliente.TabIndex = 1;
+            this._txtIdHotel.Enabled = false;
+            this._txtIdHotel.Location = new System.Drawing.Point(17, 58);
+            this._txtIdHotel.Name = "_txtIdHotel";
+            this._txtIdHotel.Size = new System.Drawing.Size(31, 22);
+            this._txtIdHotel.TabIndex = 1;
             // 
             // _txtCantidadDeHuespedes
             // 
-            this._txtCantidadDeHuespedes.Location = new System.Drawing.Point(186, 212);
+            this._txtCantidadDeHuespedes.Location = new System.Drawing.Point(144, 21);
             this._txtCantidadDeHuespedes.Name = "_txtCantidadDeHuespedes";
             this._txtCantidadDeHuespedes.Size = new System.Drawing.Size(100, 22);
             this._txtCantidadDeHuespedes.TabIndex = 2;
             // 
             // _txtFechaIngreso
             // 
-            this._txtFechaIngreso.Location = new System.Drawing.Point(186, 240);
+            this._txtFechaIngreso.Location = new System.Drawing.Point(144, 51);
             this._txtFechaIngreso.Name = "_txtFechaIngreso";
             this._txtFechaIngreso.Size = new System.Drawing.Size(100, 22);
             this._txtFechaIngreso.TabIndex = 3;
             // 
             // _txtFechaEgreso
             // 
-            this._txtFechaEgreso.Location = new System.Drawing.Point(186, 268);
+            this._txtFechaEgreso.Location = new System.Drawing.Point(144, 79);
             this._txtFechaEgreso.Name = "_txtFechaEgreso";
             this._txtFechaEgreso.Size = new System.Drawing.Size(100, 22);
             this._txtFechaEgreso.TabIndex = 4;
             // 
-            // _txtId
-            // 
-            this._txtId.Location = new System.Drawing.Point(186, 307);
-            this._txtId.Name = "_txtId";
-            this._txtId.Size = new System.Drawing.Size(100, 22);
-            this._txtId.TabIndex = 5;
-            // 
-            // _cmbClientesPorId
-            // 
-            this._cmbClientesPorId.FormattingEnabled = true;
-            this._cmbClientesPorId.Location = new System.Drawing.Point(183, 155);
-            this._cmbClientesPorId.Name = "_cmbClientesPorId";
-            this._cmbClientesPorId.Size = new System.Drawing.Size(100, 24);
-            this._cmbClientesPorId.TabIndex = 6;
-            this._cmbClientesPorId.SelectedIndexChanged += new System.EventHandler(this._cmbClientesPorId_SelectedIndexChanged);
-            this._cmbClientesPorId.SelectedValueChanged += new System.EventHandler(this._cmbClientesPorId_SelectedValueChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(183, 113);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(103, 24);
-            this.comboBox2.TabIndex = 7;
-            // 
-            // _cmbNombreHoteles
-            // 
-            this._cmbNombreHoteles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._cmbNombreHoteles.FormattingEnabled = true;
-            this._cmbNombreHoteles.Location = new System.Drawing.Point(183, 68);
-            this._cmbNombreHoteles.Name = "_cmbNombreHoteles";
-            this._cmbNombreHoteles.Size = new System.Drawing.Size(103, 24);
-            this._cmbNombreHoteles.TabIndex = 8;
-            // 
             // _lblNombreHotel
             // 
             this._lblNombreHotel.AutoSize = true;
-            this._lblNombreHotel.Location = new System.Drawing.Point(44, 68);
+            this._lblNombreHotel.Location = new System.Drawing.Point(12, 28);
             this._lblNombreHotel.Name = "_lblNombreHotel";
             this._lblNombreHotel.Size = new System.Drawing.Size(133, 17);
             this._lblNombreHotel.TabIndex = 9;
@@ -138,41 +127,41 @@ namespace TPHotel.InterfazFormuario
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 116);
+            this.label1.Location = new System.Drawing.Point(14, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 17);
+            this.label1.Size = new System.Drawing.Size(148, 17);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Habitaciones por ID";
+            this.label1.Text = "Habitaciones del hotel";
             // 
-            // _txtNombre
+            // _txtDireccionHotel
             // 
-            this._txtNombre.Enabled = false;
-            this._txtNombre.Location = new System.Drawing.Point(443, 157);
-            this._txtNombre.Name = "_txtNombre";
-            this._txtNombre.Size = new System.Drawing.Size(100, 22);
-            this._txtNombre.TabIndex = 11;
+            this._txtDireccionHotel.Enabled = false;
+            this._txtDireccionHotel.Location = new System.Drawing.Point(167, 58);
+            this._txtDireccionHotel.Name = "_txtDireccionHotel";
+            this._txtDireccionHotel.Size = new System.Drawing.Size(100, 22);
+            this._txtDireccionHotel.TabIndex = 11;
             // 
-            // _txtApellido
+            // _txtEstrellas
             // 
-            this._txtApellido.Enabled = false;
-            this._txtApellido.Location = new System.Drawing.Point(549, 157);
-            this._txtApellido.Name = "_txtApellido";
-            this._txtApellido.Size = new System.Drawing.Size(100, 22);
-            this._txtApellido.TabIndex = 12;
+            this._txtEstrellas.Enabled = false;
+            this._txtEstrellas.Location = new System.Drawing.Point(273, 58);
+            this._txtEstrellas.Name = "_txtEstrellas";
+            this._txtEstrellas.Size = new System.Drawing.Size(100, 22);
+            this._txtEstrellas.TabIndex = 12;
             // 
-            // label2
+            // _lblCliente
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(77, 158);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 17);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Clientes por ID";
+            this._lblCliente.AutoSize = true;
+            this._lblCliente.Location = new System.Drawing.Point(14, 232);
+            this._lblCliente.Name = "_lblCliente";
+            this._lblCliente.Size = new System.Drawing.Size(126, 17);
+            this._lblCliente.TabIndex = 13;
+            this._lblCliente.Text = "Listado de clientes";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(416, 138);
+            this.label3.Location = new System.Drawing.Point(27, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(21, 17);
             this.label3.TabIndex = 14;
@@ -182,35 +171,16 @@ namespace TPHotel.InterfazFormuario
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(455, 137);
+            this.label4.Location = new System.Drawing.Point(68, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 15;
             this.label4.Text = "NOMBRE";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(561, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 17);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "APELLIDO";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(306, 116);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 64);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Ver detalle seleccion";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // _lblCantidadHuespedes
             // 
             this._lblCantidadHuespedes.AutoSize = true;
-            this._lblCantidadHuespedes.Location = new System.Drawing.Point(39, 215);
+            this._lblCantidadHuespedes.Location = new System.Drawing.Point(6, 21);
             this._lblCantidadHuespedes.Name = "_lblCantidadHuespedes";
             this._lblCantidadHuespedes.Size = new System.Drawing.Size(138, 17);
             this._lblCantidadHuespedes.TabIndex = 18;
@@ -219,7 +189,7 @@ namespace TPHotel.InterfazFormuario
             // _lblFechaIngreso
             // 
             this._lblFechaIngreso.AutoSize = true;
-            this._lblFechaIngreso.Location = new System.Drawing.Point(77, 243);
+            this._lblFechaIngreso.Location = new System.Drawing.Point(30, 54);
             this._lblFechaIngreso.Name = "_lblFechaIngreso";
             this._lblFechaIngreso.Size = new System.Drawing.Size(98, 17);
             this._lblFechaIngreso.TabIndex = 19;
@@ -228,51 +198,301 @@ namespace TPHotel.InterfazFormuario
             // _lblFechaEgreso
             // 
             this._lblFechaEgreso.AutoSize = true;
-            this._lblFechaEgreso.Location = new System.Drawing.Point(77, 268);
+            this._lblFechaEgreso.Location = new System.Drawing.Point(33, 84);
             this._lblFechaEgreso.Name = "_lblFechaEgreso";
             this._lblFechaEgreso.Size = new System.Drawing.Size(95, 17);
             this._lblFechaEgreso.TabIndex = 20;
             this._lblFechaEgreso.Text = "Fecha egreso";
             // 
-            // _lblIdReserva
+            // _lstHabitaciones
             // 
-            this._lblIdReserva.AutoSize = true;
-            this._lblIdReserva.Location = new System.Drawing.Point(95, 307);
-            this._lblIdReserva.Name = "_lblIdReserva";
-            this._lblIdReserva.Size = new System.Drawing.Size(78, 17);
-            this._lblIdReserva.TabIndex = 21;
-            this._lblIdReserva.Text = "ID Reserva";
+            this._lstHabitaciones.FormattingEnabled = true;
+            this._lstHabitaciones.ItemHeight = 16;
+            this._lstHabitaciones.Location = new System.Drawing.Point(17, 154);
+            this._lstHabitaciones.Name = "_lstHabitaciones";
+            this._lstHabitaciones.Size = new System.Drawing.Size(326, 68);
+            this._lstHabitaciones.TabIndex = 22;
+            this._lstHabitaciones.SelectedIndexChanged += new System.EventHandler(this._lstHabitaciones_SelectedIndexChanged);
+            // 
+            // _lstHoteles
+            // 
+            this._lstHoteles.FormattingEnabled = true;
+            this._lstHoteles.ItemHeight = 16;
+            this._lstHoteles.Location = new System.Drawing.Point(15, 51);
+            this._lstHoteles.Name = "_lstHoteles";
+            this._lstHoteles.Size = new System.Drawing.Size(336, 68);
+            this._lstHoteles.TabIndex = 23;
+            this._lstHoteles.SelectedIndexChanged += new System.EventHandler(this._lstHoteles_SelectedIndexChanged);
+            // 
+            // _txtNombreHotel
+            // 
+            this._txtNombreHotel.Enabled = false;
+            this._txtNombreHotel.Location = new System.Drawing.Point(61, 58);
+            this._txtNombreHotel.Name = "_txtNombreHotel";
+            this._txtNombreHotel.Size = new System.Drawing.Size(100, 22);
+            this._txtNombreHotel.TabIndex = 24;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Salmon;
+            this.groupBox1.Controls.Add(this._txtFechaEgreso);
+            this.groupBox1.Controls.Add(this._txtCantidadDeHuespedes);
+            this.groupBox1.Controls.Add(this._txtFechaIngreso);
+            this.groupBox1.Controls.Add(this._lblCantidadHuespedes);
+            this.groupBox1.Controls.Add(this._lblFechaIngreso);
+            this.groupBox1.Controls.Add(this._lblFechaEgreso);
+            this.groupBox1.Controls.Add(this._btnAltaHotel);
+            this.groupBox1.Location = new System.Drawing.Point(17, 377);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(594, 150);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // _lstClientes
+            // 
+            this._lstClientes.FormattingEnabled = true;
+            this._lstClientes.ItemHeight = 16;
+            this._lstClientes.Location = new System.Drawing.Point(17, 252);
+            this._lstClientes.Name = "_lstClientes";
+            this._lstClientes.Size = new System.Drawing.Size(326, 68);
+            this._lstClientes.TabIndex = 26;
+            this._lstClientes.SelectedIndexChanged += new System.EventHandler(this._lstClientes_SelectedIndexChanged);
+            // 
+            // _btnAltaCliente
+            // 
+            this._btnAltaCliente.Location = new System.Drawing.Point(190, 325);
+            this._btnAltaCliente.Name = "_btnAltaCliente";
+            this._btnAltaCliente.Size = new System.Drawing.Size(161, 29);
+            this._btnAltaCliente.TabIndex = 27;
+            this._btnAltaCliente.Text = "Dar de alta cliente";
+            this._btnAltaCliente.UseVisualStyleBackColor = true;
+            this._btnAltaCliente.Click += new System.EventHandler(this._btnAltaCliente_Click);
+            // 
+            // _btnRefrescar
+            // 
+            this._btnRefrescar.Location = new System.Drawing.Point(40, 326);
+            this._btnRefrescar.Name = "_btnRefrescar";
+            this._btnRefrescar.Size = new System.Drawing.Size(134, 28);
+            this._btnRefrescar.TabIndex = 28;
+            this._btnRefrescar.Text = "Refrescar lista";
+            this._btnRefrescar.UseVisualStyleBackColor = true;
+            this._btnRefrescar.Click += new System.EventHandler(this._btnRefrescar_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(282, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 17);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "ESTRELLAS";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(164, 38);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 17);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "DIRECCIÓN";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this._txtNombreHotel);
+            this.groupBox2.Controls.Add(this._txtIdHotel);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this._txtDireccionHotel);
+            this.groupBox2.Controls.Add(this._txtEstrellas);
+            this.groupBox2.Location = new System.Drawing.Point(381, 28);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(379, 100);
+            this.groupBox2.TabIndex = 32;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Detalle hotel seleccionado";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this._txtCantidaPlazas);
+            this.groupBox3.Controls.Add(this._txtIdHabitacion);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this._txtPrecio);
+            this.groupBox3.Location = new System.Drawing.Point(381, 134);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(379, 100);
+            this.groupBox3.TabIndex = 33;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Detalle habitación seleccionada";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(234, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 17);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "PRECIO";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(27, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(21, 17);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "ID";
+            // 
+            // _txtCantidaPlazas
+            // 
+            this._txtCantidaPlazas.Enabled = false;
+            this._txtCantidaPlazas.Location = new System.Drawing.Point(91, 58);
+            this._txtCantidaPlazas.Name = "_txtCantidaPlazas";
+            this._txtCantidaPlazas.Size = new System.Drawing.Size(100, 22);
+            this._txtCantidaPlazas.TabIndex = 24;
+            // 
+            // _txtIdHabitacion
+            // 
+            this._txtIdHabitacion.Enabled = false;
+            this._txtIdHabitacion.Location = new System.Drawing.Point(17, 58);
+            this._txtIdHabitacion.Name = "_txtIdHabitacion";
+            this._txtIdHabitacion.Size = new System.Drawing.Size(31, 22);
+            this._txtIdHabitacion.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(68, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(134, 17);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "CANTIDAD PLAZAS";
+            // 
+            // _txtPrecio
+            // 
+            this._txtPrecio.Enabled = false;
+            this._txtPrecio.Location = new System.Drawing.Point(223, 58);
+            this._txtPrecio.Name = "_txtPrecio";
+            this._txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this._txtPrecio.TabIndex = 11;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this._txtNombreCliente);
+            this.groupBox4.Controls.Add(this.clienteID);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this._txtApellidoCliente);
+            this.groupBox4.Controls.Add(this._txtFechaNacimiento);
+            this.groupBox4.Location = new System.Drawing.Point(381, 240);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(414, 100);
+            this.groupBox4.TabIndex = 34;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Detalle cliente seleccionado";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(181, 38);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(75, 17);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "APELLIDO";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(27, 38);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(21, 17);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "ID";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(270, 38);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(126, 17);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "FECHA DE NACIM.";
+            // 
+            // _txtNombreCliente
+            // 
+            this._txtNombreCliente.Enabled = false;
+            this._txtNombreCliente.Location = new System.Drawing.Point(61, 58);
+            this._txtNombreCliente.Name = "_txtNombreCliente";
+            this._txtNombreCliente.Size = new System.Drawing.Size(100, 22);
+            this._txtNombreCliente.TabIndex = 24;
+            // 
+            // clienteID
+            // 
+            this.clienteID.Enabled = false;
+            this.clienteID.Location = new System.Drawing.Point(17, 58);
+            this.clienteID.Name = "clienteID";
+            this.clienteID.Size = new System.Drawing.Size(31, 22);
+            this.clienteID.TabIndex = 1;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(68, 38);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 17);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "NOMBRE";
+            // 
+            // _txtApellidoCliente
+            // 
+            this._txtApellidoCliente.Enabled = false;
+            this._txtApellidoCliente.Location = new System.Drawing.Point(167, 58);
+            this._txtApellidoCliente.Name = "_txtApellidoCliente";
+            this._txtApellidoCliente.Size = new System.Drawing.Size(100, 22);
+            this._txtApellidoCliente.TabIndex = 11;
+            // 
+            // _txtFechaNacimiento
+            // 
+            this._txtFechaNacimiento.Enabled = false;
+            this._txtFechaNacimiento.Location = new System.Drawing.Point(273, 58);
+            this._txtFechaNacimiento.Name = "_txtFechaNacimiento";
+            this._txtFechaNacimiento.Size = new System.Drawing.Size(100, 22);
+            this._txtFechaNacimiento.TabIndex = 12;
             // 
             // FrmIngresarReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this._lblIdReserva);
-            this.Controls.Add(this._lblFechaEgreso);
-            this.Controls.Add(this._lblFechaIngreso);
-            this.Controls.Add(this._lblCantidadHuespedes);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this._txtApellido);
-            this.Controls.Add(this._txtNombre);
+            this.ClientSize = new System.Drawing.Size(1004, 637);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this._btnRefrescar);
+            this.Controls.Add(this._btnAltaCliente);
+            this.Controls.Add(this._lstClientes);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this._lstHoteles);
+            this.Controls.Add(this._lstHabitaciones);
+            this.Controls.Add(this._lblCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._lblNombreHotel);
-            this.Controls.Add(this._cmbNombreHoteles);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this._cmbClientesPorId);
-            this.Controls.Add(this._txtId);
-            this.Controls.Add(this._txtFechaEgreso);
-            this.Controls.Add(this._txtFechaIngreso);
-            this.Controls.Add(this._txtCantidadDeHuespedes);
-            this.Controls.Add(this._txtIdCliente);
-            this.Controls.Add(this._btnAltaHotel);
             this.Name = "FrmIngresarReservas";
             this.Text = "FormIngresarReservas";
             this.Load += new System.EventHandler(this.FrmIngresarConsultarReservas_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,26 +501,45 @@ namespace TPHotel.InterfazFormuario
         #endregion
 
         private System.Windows.Forms.Button _btnAltaHotel;
-        private System.Windows.Forms.TextBox _txtIdCliente;
+        private System.Windows.Forms.TextBox _txtIdHotel;
         private System.Windows.Forms.TextBox _txtCantidadDeHuespedes;
         private System.Windows.Forms.TextBox _txtFechaIngreso;
         private System.Windows.Forms.TextBox _txtFechaEgreso;
-        private System.Windows.Forms.TextBox _txtId;
-        private System.Windows.Forms.ComboBox _cmbClientesPorId;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox _cmbNombreHoteles;
         private System.Windows.Forms.Label _lblNombreHotel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox _txtNombre;
-        private System.Windows.Forms.TextBox _txtApellido;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox _txtDireccionHotel;
+        private System.Windows.Forms.TextBox _txtEstrellas;
+        private System.Windows.Forms.Label _lblCliente;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label _lblCantidadHuespedes;
         private System.Windows.Forms.Label _lblFechaIngreso;
         private System.Windows.Forms.Label _lblFechaEgreso;
-        private System.Windows.Forms.Label _lblIdReserva;
+        private System.Windows.Forms.ListBox _lstHabitaciones;
+        private System.Windows.Forms.ListBox _lstHoteles;
+        private System.Windows.Forms.TextBox _txtNombreHotel;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox _lstClientes;
+        private System.Windows.Forms.Button _btnAltaCliente;
+        private System.Windows.Forms.Button _btnRefrescar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox _txtCantidaPlazas;
+        private System.Windows.Forms.TextBox _txtIdHabitacion;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox _txtPrecio;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox _txtNombreCliente;
+        private System.Windows.Forms.TextBox clienteID;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox _txtApellidoCliente;
+        private System.Windows.Forms.TextBox _txtFechaNacimiento;
     }
 }

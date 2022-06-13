@@ -29,12 +29,10 @@ namespace TPHotel.InterfazFormuario
         /// </summary>
         private void InitializeComponent()
         {
-            this._txtIdHabitacion = new System.Windows.Forms.TextBox();
             this._cmbIdHotel = new System.Windows.Forms.ComboBox();
             this._txtCantidadPlazas = new System.Windows.Forms.TextBox();
             this._txtCategoria = new System.Windows.Forms.TextBox();
             this._txtPrecio = new System.Windows.Forms.TextBox();
-            this._lblIdHabitacion = new System.Windows.Forms.Label();
             this._lblidHotel = new System.Windows.Forms.Label();
             this._lblCantidadPlazas = new System.Windows.Forms.Label();
             this._lblCategoria = new System.Windows.Forms.Label();
@@ -43,13 +41,6 @@ namespace TPHotel.InterfazFormuario
             this._btnAlta = new System.Windows.Forms.Button();
             this._lblPrecio = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // _txtIdHabitacion
-            // 
-            this._txtIdHabitacion.Location = new System.Drawing.Point(173, 65);
-            this._txtIdHabitacion.Name = "_txtIdHabitacion";
-            this._txtIdHabitacion.Size = new System.Drawing.Size(100, 22);
-            this._txtIdHabitacion.TabIndex = 0;
             // 
             // _cmbIdHotel
             // 
@@ -79,15 +70,6 @@ namespace TPHotel.InterfazFormuario
             this._txtPrecio.Name = "_txtPrecio";
             this._txtPrecio.Size = new System.Drawing.Size(100, 22);
             this._txtPrecio.TabIndex = 5;
-            // 
-            // _lblIdHabitacion
-            // 
-            this._lblIdHabitacion.AutoSize = true;
-            this._lblIdHabitacion.Location = new System.Drawing.Point(119, 70);
-            this._lblIdHabitacion.Name = "_lblIdHabitacion";
-            this._lblIdHabitacion.Size = new System.Drawing.Size(21, 17);
-            this._lblIdHabitacion.TabIndex = 6;
-            this._lblIdHabitacion.Text = "ID";
             // 
             // _lblidHotel
             // 
@@ -165,12 +147,10 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._lblCategoria);
             this.Controls.Add(this._lblCantidadPlazas);
             this.Controls.Add(this._lblidHotel);
-            this.Controls.Add(this._lblIdHabitacion);
             this.Controls.Add(this._txtPrecio);
             this.Controls.Add(this._txtCategoria);
             this.Controls.Add(this._txtCantidadPlazas);
             this.Controls.Add(this._cmbIdHotel);
-            this.Controls.Add(this._txtIdHabitacion);
             this.Name = "FrmAltaHabitaciones";
             this.Text = "FrmHabitaciones";
             this.Load += new System.EventHandler(this.FrmAltaHabitaciones_Load);
@@ -180,13 +160,10 @@ namespace TPHotel.InterfazFormuario
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox _txtIdHabitacion;
         private System.Windows.Forms.ComboBox _cmbIdHotel;
         private System.Windows.Forms.TextBox _txtCantidadPlazas;
         private System.Windows.Forms.TextBox _txtCategoria;
         private System.Windows.Forms.TextBox _txtPrecio;
-        private System.Windows.Forms.Label _lblIdHabitacion;
         private System.Windows.Forms.Label _lblidHotel;
         private System.Windows.Forms.Label _lblCantidadPlazas;
         private System.Windows.Forms.Label _lblCategoria;

@@ -60,6 +60,18 @@
     <Compile Include="FrmAltaHoteles.Designer.cs">
       <DependentUpon>FrmAltaHoteles.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaReserva.Designer.cs">
+      <DependentUpon>FrmConsultaReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeseaAgregarClienteNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeseaAgregarClienteNuevo.Designer.cs">
+      <DependentUpon>FrmDeseaAgregarClienteNuevo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAltaHoteles.resx">
       <DependentUpon>FrmAltaHoteles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaReserva.resx">
+      <DependentUpon>FrmConsultaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeseaAgregarClienteNuevo.resx">
+      <DependentUpon>FrmDeseaAgregarClienteNuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarReservas.resx">
       <DependentUpon>FrmIngresarReservas.cs</DependentUpon>

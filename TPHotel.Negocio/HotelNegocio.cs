@@ -69,11 +69,12 @@ namespace TPHotel.Negocio
 
                 {
                     cliente = cl;
+                    
                     break;
                 }
-                else if (cl == null)
+                else if (cliente == null)
                 {
-                    throw new Exception("Cliente inexistente");
+                    throw new IdInexistenteException();
                 }
             }
             //Cliente cliente = _clienteDatos.TraerClientePorID(idCliente);
@@ -117,7 +118,16 @@ namespace TPHotel.Negocio
         }
         public void AgregarReserva(Reserva reserva)
         {
-            EvaluarTransactionResult(_reservaDatos.Insertar(reserva));
+            if (reserva.CantidadHuespedes < 0 || reserva.CantidadHuespedes > 5)
+            {
+                throw new CantidadDeHuespedesMayorAlLaPermitidaException();
+            }
+
+            else
+
+            { 
+                EvaluarTransactionResult(_reservaDatos.Insertar(reserva));
+            }
         }
 
         #endregion

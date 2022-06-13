@@ -23,6 +23,7 @@ namespace TPHotel.Entidades
             //_id = id;
         }
 
+        public int Id { get => _id; set => _id = value; }
         public int Estrellas { get => _estrellas; set => _estrellas = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
         public string Direccion { get => _direccion; set => _direccion = value; }

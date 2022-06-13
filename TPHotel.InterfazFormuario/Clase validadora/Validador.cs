@@ -86,6 +86,8 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
             return numeroSalida;
         }
 
+       
+
         public static bool pedirBool(TextBox parametro, Label lb)
         {
             bool campo;
@@ -97,12 +99,12 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
             }
             return pudeConvertir;
         }
-        public static decimal pedirDecimal(TextBox tx, Label lb)
+        public static double pedirDecimal(TextBox tx, Label lb)
         {
-            decimal retorno = 0;
+            double retorno = 0;
             bool pudeConvertir;
          
-                pudeConvertir = decimal.TryParse(tx.Text, out retorno);
+                pudeConvertir = double.TryParse(tx.Text, out retorno);
                
                 if (!pudeConvertir)
                 {
