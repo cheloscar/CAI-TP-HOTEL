@@ -14,13 +14,13 @@ namespace TPHotel.Entidades
         private bool _amenities;
         private int _id;
 
-        public HotelEntidad(int estrellas, string nombre, string direccion, bool amenities, int id)
+        public HotelEntidad(int estrellas, string nombre, string direccion, bool amenities)
         {
             _estrellas = estrellas;
             _nombre = nombre;
             _direccion = direccion;
             _amenities = amenities;
-            _id = id;
+            //_id = id;
         }
 
         public int Estrellas { get => _estrellas; set => _estrellas = value; }

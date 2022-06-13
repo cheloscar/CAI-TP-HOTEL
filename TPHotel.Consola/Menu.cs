@@ -29,7 +29,10 @@ namespace TPHotel.Consola
             Console.WriteLine("3 - Listar todos los hoteles");
             Console.WriteLine("4 - Listar habitaciones del hotel 1");
             Console.WriteLine("5 - Agregar un cliente");
-            Console.WriteLine("6 - Salir del sistema");
+            Console.WriteLine("6 - Agregar una reserva");
+            Console.WriteLine("7 - Agregar un hotel");
+            Console.WriteLine("8 - Agregar unA habitación");
+            Console.WriteLine("9 - Salir del sistema");
             Console.WriteLine();
             Console.WriteLine("Su opción:");
         }

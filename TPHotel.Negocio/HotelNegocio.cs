@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TPHotel.AccesoDatos;
 using TPHotel.Entidades;
+using TPHotel.Entidades.Excepciones;
+
 
 namespace TPHotel.Negocio
 {
@@ -73,7 +75,6 @@ namespace TPHotel.Negocio
                 {
                     throw new Exception("Cliente inexistente");
                 }
-
             }
             //Cliente cliente = _clienteDatos.TraerClientePorID(idCliente);
             return cliente;
@@ -97,66 +98,40 @@ namespace TPHotel.Negocio
         #region Métodos para la carga de datos
         public void AgregarCliente(Cliente cliente)
         {
-            if (cliente.ID <= 0)
-            {
-                throw new Exception("El id no puede ser menor o igual que cero o contener cadenas de texto");
-                //Puede ser una exception personalizada de "idInválidoException"
-            }
-
-            else
-            { 
-            _clienteDatos.Insertar(cliente);
-                //Incluir TransactionResultException
-
-            }
-
+            EvaluarTransactionResult(_clienteDatos.Insertar(cliente));
         }
-
         public void AgregarHotel(HotelEntidad hotel)
         {
             if (hotel.Estrellas < 0 || hotel.Estrellas > 5)
             {
-                throw new Exception("Debe ser entre 1 y 5 estrellas"); //personalizar exception
+                throw new EstrellasFueraDeRangoExcepcion();
             }
-            else if (hotel.ID <= 0)
-            {
-                throw new Exception("El id no puede ser menor o igual que cero o contener cadenas de texto"); //personalizar exception
-                //Puede ser una exception personalizada de "idInválidoException"            
-            }
-
             else
             {
-                //_desarrollar agregar hotel.
-                //Incluir TransactionResultException
+                EvaluarTransactionResult(_hotelDatos.Insertar(hotel));
             }
         }
-
         public void AgregarHabitacion(Habitacion habitacion)
         {
-            if (habitacion.IdHabitacion <= 0)
-            {
-                throw new Exception("El id no puede ser menor o igual que cero o contener cadenas de texto"); //personalizar exception
-                //Puede ser una exception personalizada de "idInválidoException"
-            }
-
-            else
-            {
-                //_desarrollar agregar habitacion.
-                //Incluir TransactionResultException
-            }
+            EvaluarTransactionResult(_habitacionDatos.Insertar(habitacion));
         }
-
         public void AgregarReserva(Reserva reserva)
         {
-            if (reserva.Id <= 0)
+            EvaluarTransactionResult(_reservaDatos.Insertar(reserva));
+        }
+
+        #endregion
+
+        #region MétodosDeApoyo
+        private void EvaluarTransactionResult(TransactionResult tr)
+        {
+            if (tr.IsOk)
             {
-                throw new Exception("El id no puede ser menor o igual que cero o contener cadenas de texto");
-                //Puede ser una exception personalizada de "idInválidoException"
+                //Transacción Correcta
             }
             else
             {
-                //desarrollar agregar Reserva
-                //Incluir TransactionResultException
+                throw new ErrorEnTransaccionExcepcion(tr.Error);
             }
         }
 

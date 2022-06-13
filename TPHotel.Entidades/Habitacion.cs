@@ -13,11 +13,11 @@ namespace TPHotel.Entidades
         int _cantidadPlazas;
         string _categoria;
         bool _cancelable;
-        decimal _precio;
+        double _precio;
 
-        public Habitacion(int idHabitacion, int idHotel, int cantidadPlazas, string categoria, bool cancelable, decimal precio)
+        public Habitacion(int idHotel, int cantidadPlazas, string categoria, bool cancelable, double precio)
         {
-            _idHabitacion = idHabitacion;
+            //_idHabitacion = idHabitacion;
             _idHotel = idHotel;
             _cantidadPlazas = cantidadPlazas;
             _categoria = categoria;
@@ -30,7 +30,7 @@ namespace TPHotel.Entidades
         public int CantidadPlazas { get => _cantidadPlazas; set => _cantidadPlazas = value; }
         public string Categoria { get => _categoria; set => _categoria = value; }
         public bool Cancelable { get => _cancelable; set => _cancelable = value; }
-        public decimal Precio { get => _precio; set => _precio = value; }
+        public double Precio { get => _precio; set => _precio = value; }
 
         public override string ToString()
         {

@@ -66,8 +66,19 @@ namespace TPHotel.Consola
                 }
                 else if (_opcionMenu == 5)
                 {
-                    
                     _hotel.AgregarCliente(Interacciones.SolicitarDatosCliente());
+                }
+                else if (_opcionMenu == 6)
+                {
+                    _hotel.AgregarReserva(Interacciones.SolicitarDatosReserva());
+                }
+                else if (_opcionMenu == 7)
+                {
+                    _hotel.AgregarHotel(Interacciones.SolicitarDatosHotel());
+                }
+                else if (_opcionMenu == 8)
+                {
+                    _hotel.AgregarHabitacion(Interacciones.SolicitarDatosHabitacion());
                 }
                 else
                 {

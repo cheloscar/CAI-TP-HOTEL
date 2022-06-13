@@ -22,7 +22,7 @@ namespace TPHotel.Entidades
         private DateTime _fechaEgreso;
         private int _id;
 
-        public Reserva(int idHabitacion, int idCliente, int cantidadHuespedes, DateTime fechaIngreso, DateTime fechaEgreso, int id)
+        public Reserva(int idHabitacion, int idCliente, int cantidadHuespedes, DateTime fechaIngreso, DateTime fechaEgreso)
         {
             _idHabitacion = idHabitacion;
             _idCliente = idCliente;
@@ -30,7 +30,7 @@ namespace TPHotel.Entidades
             
             _fechaIngreso = fechaIngreso;
             _fechaEgreso = fechaEgreso;
-            _id = id;
+            //_id = id;
         }
 
         public int IdHabitacion { get => _idHabitacion; set => _idHabitacion = value; }

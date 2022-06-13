@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Excepciones\ErrorEnTransaccionExcepcion.cs" />
+    <Compile Include="Excepciones\EstrellasFueraDeRangoExcepcion.cs" />
+    <Compile Include="Excepciones\IdIgualCeroExcepcion.cs" />
     <Compile Include="Habitacion.cs" />
     <Compile Include="HotelEntidad.cs" />
     <Compile Include="Persona.cs" />
@@ -49,5 +52,6 @@
     <Compile Include="Reserva.cs" />
     <Compile Include="TransactionResult.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
