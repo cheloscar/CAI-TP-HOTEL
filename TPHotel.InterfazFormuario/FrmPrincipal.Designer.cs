@@ -136,6 +136,7 @@ namespace TPHotel.InterfazFormuario
             this.habitacionesToolStripMenuItem1.Name = "habitacionesToolStripMenuItem1";
             this.habitacionesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.habitacionesToolStripMenuItem1.Text = "Habitaciones";
+            this.habitacionesToolStripMenuItem1.Click += new System.EventHandler(this.habitacionesToolStripMenuItem1_Click);
             // 
             // Informes
             // 

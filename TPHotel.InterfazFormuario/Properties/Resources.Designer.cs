@@ -73,6 +73,16 @@ namespace TPHotel.InterfazFormuario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap prox {
+            get {
+                object obj = ResourceManager.GetObject("prox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Signo_de_pregunta {
             get {
                 object obj = ResourceManager.GetObject("Signo de pregunta", resourceCulture);

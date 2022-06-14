@@ -47,14 +47,14 @@ namespace TPHotel.InterfazFormuario
             this._btnDetalle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this._txtHabNmbr = new System.Windows.Forms.TextBox();
+            this._txtEstrellas = new System.Windows.Forms.TextBox();
             this._txtIdHabitacion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this._txtEstrellas = new System.Windows.Forms.TextBox();
-            this._txtHabNmbr = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +64,7 @@ namespace TPHotel.InterfazFormuario
             this._cmbClientes.FormattingEnabled = true;
             this._cmbClientes.Location = new System.Drawing.Point(28, 55);
             this._cmbClientes.Name = "_cmbClientes";
-            this._cmbClientes.Size = new System.Drawing.Size(121, 24);
+            this._cmbClientes.Size = new System.Drawing.Size(240, 24);
             this._cmbClientes.TabIndex = 0;
             this._cmbClientes.SelectedIndexChanged += new System.EventHandler(this._cmbClientes_SelectedIndexChanged);
             this._cmbClientes.SelectionChangeCommitted += new System.EventHandler(this._cmbClientes_SelectionChangeCommitted);
@@ -83,7 +83,7 @@ namespace TPHotel.InterfazFormuario
             this._cmbHotel.FormattingEnabled = true;
             this._cmbHotel.Location = new System.Drawing.Point(6, 55);
             this._cmbHotel.Name = "_cmbHotel";
-            this._cmbHotel.Size = new System.Drawing.Size(121, 24);
+            this._cmbHotel.Size = new System.Drawing.Size(236, 24);
             this._cmbHotel.TabIndex = 2;
             this._cmbHotel.SelectionChangeCommitted += new System.EventHandler(this._cmbHotel_SelectionChangeCommitted);
             // 
@@ -98,6 +98,7 @@ namespace TPHotel.InterfazFormuario
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -221,6 +222,7 @@ namespace TPHotel.InterfazFormuario
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this._txtHabNmbr);
             this.groupBox2.Controls.Add(this._txtEstrellas);
             this.groupBox2.Controls.Add(this._txtIdHabitacion);
@@ -237,6 +239,20 @@ namespace TPHotel.InterfazFormuario
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Habitaciones por hotel";
+            // 
+            // _txtHabNmbr
+            // 
+            this._txtHabNmbr.Location = new System.Drawing.Point(101, 261);
+            this._txtHabNmbr.Name = "_txtHabNmbr";
+            this._txtHabNmbr.Size = new System.Drawing.Size(100, 22);
+            this._txtHabNmbr.TabIndex = 12;
+            // 
+            // _txtEstrellas
+            // 
+            this._txtEstrellas.Location = new System.Drawing.Point(101, 289);
+            this._txtEstrellas.Name = "_txtEstrellas";
+            this._txtEstrellas.Size = new System.Drawing.Size(100, 22);
+            this._txtEstrellas.TabIndex = 11;
             // 
             // _txtIdHabitacion
             // 
@@ -290,20 +306,6 @@ namespace TPHotel.InterfazFormuario
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "ID Hotel";
-            // 
-            // _txtEstrellas
-            // 
-            this._txtEstrellas.Location = new System.Drawing.Point(101, 289);
-            this._txtEstrellas.Name = "_txtEstrellas";
-            this._txtEstrellas.Size = new System.Drawing.Size(100, 22);
-            this._txtEstrellas.TabIndex = 11;
-            // 
-            // _txtHabNmbr
-            // 
-            this._txtHabNmbr.Location = new System.Drawing.Point(101, 261);
-            this._txtHabNmbr.Name = "_txtHabNmbr";
-            this._txtHabNmbr.Size = new System.Drawing.Size(100, 22);
-            this._txtHabNmbr.TabIndex = 12;
             // 
             // FrmInformes
             // 

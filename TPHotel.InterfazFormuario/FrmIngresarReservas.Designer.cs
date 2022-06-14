@@ -70,17 +70,15 @@ namespace TPHotel.InterfazFormuario
             this.label14 = new System.Windows.Forms.Label();
             this._txtApellidoCliente = new System.Windows.Forms.TextBox();
             this._txtFechaNacimiento = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // _btnAltaHotel
             // 
-            this._btnAltaHotel.Location = new System.Drawing.Point(144, 151);
+            this._btnAltaHotel.Location = new System.Drawing.Point(371, 13);
             this._btnAltaHotel.Name = "_btnAltaHotel";
             this._btnAltaHotel.Size = new System.Drawing.Size(117, 99);
             this._btnAltaHotel.TabIndex = 0;
@@ -237,7 +235,6 @@ namespace TPHotel.InterfazFormuario
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Salmon;
-            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this._txtFechaEgreso);
             this.groupBox1.Controls.Add(this._txtCantidadDeHuespedes);
             this.groupBox1.Controls.Add(this._txtFechaIngreso);
@@ -247,7 +244,7 @@ namespace TPHotel.InterfazFormuario
             this.groupBox1.Controls.Add(this._btnAltaHotel);
             this.groupBox1.Location = new System.Drawing.Point(10, 360);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(785, 279);
+            this.groupBox1.Size = new System.Drawing.Size(649, 147);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -395,7 +392,7 @@ namespace TPHotel.InterfazFormuario
             this.groupBox4.Controls.Add(this._txtFechaNacimiento);
             this.groupBox4.Location = new System.Drawing.Point(381, 240);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(414, 100);
+            this.groupBox4.Size = new System.Drawing.Size(379, 100);
             this.groupBox4.TabIndex = 34;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Detalle cliente seleccionado";
@@ -468,20 +465,11 @@ namespace TPHotel.InterfazFormuario
             this._txtFechaNacimiento.Size = new System.Drawing.Size(100, 22);
             this._txtFechaNacimiento.TabIndex = 12;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TPHotel.InterfazFormuario.Properties.Resources.uno_dos_tres_cuatro;
-            this.pictureBox1.Location = new System.Drawing.Point(480, -99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(305, 384);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmIngresarReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 637);
+            this.ClientSize = new System.Drawing.Size(804, 511);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -505,7 +493,6 @@ namespace TPHotel.InterfazFormuario
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -554,6 +541,5 @@ namespace TPHotel.InterfazFormuario
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox _txtApellidoCliente;
         private System.Windows.Forms.TextBox _txtFechaNacimiento;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -26,6 +26,18 @@ namespace TPHotel.InterfazFormuario
         {
             int numero = 0;
 
+        
+            List<Reserva> res = _hotelNegocio.TraerReservas();
+            //List<Habitacion> hb = _hotelNegocio.TraerHabitaciones();
+            List<HotelEntidad> htl = _hotelNegocio.TraerHoteles();
+
+            List<Habitacion> habitacionesEncontradas = new List<Habitacion>();
+
+            //foreach (Reserva rs in res)
+            //{
+            //    if(rs.IdHabitacion == )
+            //}
+
             //try
             //{
             //    numero = Validador.pedirInteger(textBox1, label1);
@@ -65,6 +77,10 @@ namespace TPHotel.InterfazFormuario
 
                 //}
             }
-         
+
+        private void FrmConsultarHoteles_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

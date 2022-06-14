@@ -110,6 +110,7 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this.textBox1);
             this.Name = "FrmConsultarHoteles";
             this.Text = "FrmConsultarHoteles";
+            this.Load += new System.EventHandler(this.FrmConsultarHoteles_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

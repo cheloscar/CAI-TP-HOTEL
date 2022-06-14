@@ -78,7 +78,14 @@ namespace TPHotel.InterfazFormuario
 
         private void hotelesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+            Proximamente frm = new Proximamente();
+            frm.Show();
+        }
+
+        private void habitacionesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Proximamente frm = new Proximamente();
+            frm.Show();
         }
     }
 }
