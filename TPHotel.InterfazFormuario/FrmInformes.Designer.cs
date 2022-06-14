@@ -47,12 +47,14 @@ namespace TPHotel.InterfazFormuario
             this._btnDetalle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this._txtIdHabitacion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this._txtEstrellas = new System.Windows.Forms.TextBox();
+            this._txtHabNmbr = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -219,7 +221,9 @@ namespace TPHotel.InterfazFormuario
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this._txtHabNmbr);
+            this.groupBox2.Controls.Add(this._txtEstrellas);
+            this.groupBox2.Controls.Add(this._txtIdHabitacion);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
@@ -234,14 +238,39 @@ namespace TPHotel.InterfazFormuario
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Habitaciones por hotel";
             // 
-            // label2
+            // _txtIdHabitacion
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "ID Hotel";
+            this._txtIdHabitacion.Location = new System.Drawing.Point(101, 228);
+            this._txtIdHabitacion.Name = "_txtIdHabitacion";
+            this._txtIdHabitacion.Size = new System.Drawing.Size(100, 22);
+            this._txtIdHabitacion.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(23, 266);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 17);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Categoria";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 294);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 17);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Precio";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(37, 238);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(19, 17);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Id";
             // 
             // button1
             // 
@@ -253,39 +282,28 @@ namespace TPHotel.InterfazFormuario
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label8
+            // label2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 233);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "ID Hotel";
             // 
-            // label9
+            // _txtEstrellas
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 294);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 17);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "label9";
+            this._txtEstrellas.Location = new System.Drawing.Point(101, 289);
+            this._txtEstrellas.Name = "_txtEstrellas";
+            this._txtEstrellas.Size = new System.Drawing.Size(100, 22);
+            this._txtEstrellas.TabIndex = 11;
             // 
-            // label10
+            // _txtHabNmbr
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(11, 266);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 17);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "label10";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(101, 228);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 10;
+            this._txtHabNmbr.Location = new System.Drawing.Point(101, 261);
+            this._txtHabNmbr.Name = "_txtHabNmbr";
+            this._txtHabNmbr.Size = new System.Drawing.Size(100, 22);
+            this._txtHabNmbr.TabIndex = 12;
             // 
             // FrmInformes
             // 
@@ -326,10 +344,12 @@ namespace TPHotel.InterfazFormuario
         private System.Windows.Forms.TextBox _txtHabitacion;
         private System.Windows.Forms.TextBox _txtFechaIngreso;
         private System.Windows.Forms.TextBox _txtNombreYApellido;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox _txtIdHabitacion;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox _txtHabNmbr;
+        private System.Windows.Forms.TextBox _txtEstrellas;
     }
 }

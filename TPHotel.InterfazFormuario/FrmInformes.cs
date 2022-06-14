@@ -84,9 +84,9 @@ namespace TPHotel.InterfazFormuario
             }
 
             else
-            { 
-            _lstReservas.DataSource = null;
-            _lstReservas.DataSource = listadoDeReservas;
+            {
+                _lstReservas.DataSource = null;
+                _lstReservas.DataSource = listadoDeReservas;
             }
         }
 
@@ -96,6 +96,38 @@ namespace TPHotel.InterfazFormuario
         }
 
         private void _cmbClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //List<Habitacion> listaHabitaciones = new List<Habitacion>();
+            //HotelEntidad htl = (HotelEntidad)_cmbHotel.SelectedValue;
+
+            //listaHabitaciones = _hotelnegocio.TraerHabitaciones(htl.ID);
+
+            //if (listaHabitaciones.Count == 0)
+            //{
+            //    MessageBox.Show("El hotel no posee habitaciones");
+            //}
+
+            //else
+            //{
+            //    _lstHabitaciones.DataSource = null;
+            //    _lstHabitaciones.DataSource = listaHabitaciones;
+            //}
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Habitacion habitacionSeleccionada =(Habitacion)_lstHabitaciones.SelectedValue;
+            //List<Habitacion> habitaciones = _hotelnegocio.TraerHabitaciones(.ID);
+
+
+            _txtIdHabitacion.Text = habitacionSeleccionada.IdHabitacion.ToString();
+            _txtHabNmbr.Text = habitacionSeleccionada.Categoria;
+            _txtEstrellas.Text = habitacionSeleccionada.Precio.ToString();
+
+
+        }
+
+        private void _cmbHotel_SelectionChangeCommitted(object sender, EventArgs e)
         {
             List<Habitacion> listaHabitaciones = new List<Habitacion>();
             HotelEntidad htl = (HotelEntidad)_cmbHotel.SelectedValue;
@@ -112,15 +144,7 @@ namespace TPHotel.InterfazFormuario
                 _lstHabitaciones.DataSource = null;
                 _lstHabitaciones.DataSource = listaHabitaciones;
             }
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Habitacion habitacionSeleccionado = (Habitacion)_
-        }
-
-        private void _cmbHotel_SelectionChangeCommitted(object sender, EventArgs e)
-        {
 
         }
     }
