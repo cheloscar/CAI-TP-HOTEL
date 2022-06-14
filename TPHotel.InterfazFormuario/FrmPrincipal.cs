@@ -75,5 +75,10 @@ namespace TPHotel.InterfazFormuario
             FrmInformes frm = new FrmInformes();
             frm.Show();
         }
+
+        private void hotelesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

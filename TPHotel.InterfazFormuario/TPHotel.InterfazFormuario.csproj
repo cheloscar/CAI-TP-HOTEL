@@ -66,6 +66,12 @@
     <Compile Include="FrmConsultaReserva.Designer.cs">
       <DependentUpon>FrmConsultaReserva.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultarHoteles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarHoteles.Designer.cs">
+      <DependentUpon>FrmConsultarHoteles.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDeseaAgregarClienteNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultaReserva.resx">
       <DependentUpon>FrmConsultaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarHoteles.resx">
+      <DependentUpon>FrmConsultarHoteles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDeseaAgregarClienteNuevo.resx">
       <DependentUpon>FrmDeseaAgregarClienteNuevo.cs</DependentUpon>
@@ -172,6 +181,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Signo de pregunta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uno dos tres cuatro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

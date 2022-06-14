@@ -38,7 +38,6 @@ namespace TPHotel.InterfazFormuario
             this.habitacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.reservasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hotelesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.habitacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Informes = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,7 +109,6 @@ namespace TPHotel.InterfazFormuario
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem1,
-            this.reservasToolStripMenuItem1,
             this.hotelesToolStripMenuItem1,
             this.habitacionesToolStripMenuItem1,
             this.Informes});
@@ -126,17 +124,12 @@ namespace TPHotel.InterfazFormuario
             this.clientesToolStripMenuItem1.Text = "Clientes";
             this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
-            // reservasToolStripMenuItem1
-            // 
-            this.reservasToolStripMenuItem1.Name = "reservasToolStripMenuItem1";
-            this.reservasToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.reservasToolStripMenuItem1.Text = "Reservas";
-            // 
             // hotelesToolStripMenuItem1
             // 
             this.hotelesToolStripMenuItem1.Name = "hotelesToolStripMenuItem1";
             this.hotelesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.hotelesToolStripMenuItem1.Text = "Hoteles";
+            this.hotelesToolStripMenuItem1.Click += new System.EventHandler(this.hotelesToolStripMenuItem1_Click);
             // 
             // habitacionesToolStripMenuItem1
             // 
@@ -181,7 +174,6 @@ namespace TPHotel.InterfazFormuario
         private System.Windows.Forms.ToolStripMenuItem habitacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem reservasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem hotelesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem habitacionesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem Informes;
