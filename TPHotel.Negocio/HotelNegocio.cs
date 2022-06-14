@@ -107,6 +107,11 @@ namespace TPHotel.Negocio
             return cliente;
 
         }
+
+        //public Habitacion TraerHabitacionPorIDHabitacion(int idhabitacion)
+        //{
+        //    List<>
+        //}
         #endregion
 
         #region Métodos para la carga de datos

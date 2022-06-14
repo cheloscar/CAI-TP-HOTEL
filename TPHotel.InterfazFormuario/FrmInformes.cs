@@ -32,21 +32,28 @@ namespace TPHotel.InterfazFormuario
         private void _btnBuscarCliente_Click(object sender, EventArgs e)
         {
             Reserva reserva =(Reserva)_lstReservas.SelectedValue;
+           
 
             Cliente cliente = _hotelnegocio.TraerClientePorNumeroDeReserva(reserva.Id);
+            List<HotelEntidad> listaHoteles = new List<HotelEntidad>();
+            List<Habitacion> listaHabitaciones = new List<Habitacion>();
+            //listaHabitaciones = _hotelnegocio.TraerHabitaciones(reserva.);
 
             _txtIdReserva.Text = reserva.Id.ToString();
             _txtNombreYApellido.Text = cliente.Nombre + " " + cliente.Apellido;
             _txtFechaIngreso.Text = reserva.FechaIngreso.ToString();
             _txtEgreso.Text = reserva.FechaEgreso.ToString();
+            _txtHabitacion.Text = reserva.IdHabitacion.ToString();
 
         }
 
         public void CargarListas()
         {
             List<Cliente> listaDeClientes = new List<Cliente>();
+            List<HotelEntidad> listaDeHoteles = new List<HotelEntidad>();
 
             listaDeClientes = _hotelnegocio.TraerClientes();
+            listaDeHoteles = _hotelnegocio.TraerHoteles();
 
             //_cmbClienteID.DataSource = listaClientes;
             //_cmbClienteID.DisplayMember = "ComboDisplay";
@@ -56,6 +63,11 @@ namespace TPHotel.InterfazFormuario
 
             _cmbClientes.DisplayMember = "ComboDisplay";
             //_cmbClientes.ValueMember = "ID";
+
+            _cmbHotel.DataSource = null;
+            _cmbHotel.DataSource = listaDeHoteles;
+
+            _cmbHotel.DisplayMember = "ComboDisplay";
 
         }
 
@@ -76,6 +88,40 @@ namespace TPHotel.InterfazFormuario
             _lstReservas.DataSource = null;
             _lstReservas.DataSource = listadoDeReservas;
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _cmbClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<Habitacion> listaHabitaciones = new List<Habitacion>();
+            HotelEntidad htl = (HotelEntidad)_cmbHotel.SelectedValue;
+
+            listaHabitaciones = _hotelnegocio.TraerHabitaciones(htl.ID);
+
+            if (listaHabitaciones.Count == 0)
+            {
+                MessageBox.Show("El hotel no posee habitaciones");
+            }
+
+            else
+            {
+                _lstHabitaciones.DataSource = null;
+                _lstHabitaciones.DataSource = listaHabitaciones;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Habitacion habitacionSeleccionado = (Habitacion)_
+        }
+
+        private void _cmbHotel_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
         }
     }
 }

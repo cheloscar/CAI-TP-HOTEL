@@ -32,22 +32,27 @@ namespace TPHotel.InterfazFormuario
             this._cmbClientes = new System.Windows.Forms.ComboBox();
             this._lstReservas = new System.Windows.Forms.ListBox();
             this._cmbHotel = new System.Windows.Forms.ComboBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this._lstHabitaciones = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this._txtEgreso = new System.Windows.Forms.TextBox();
+            this._txtHabitacion = new System.Windows.Forms.TextBox();
+            this._txtFechaIngreso = new System.Windows.Forms.TextBox();
+            this._txtNombreYApellido = new System.Windows.Forms.TextBox();
+            this._txtIdReserva = new System.Windows.Forms.TextBox();
             this._btnDetalle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this._txtIdReserva = new System.Windows.Forms.TextBox();
-            this._txtNombreYApellido = new System.Windows.Forms.TextBox();
-            this._txtFechaIngreso = new System.Windows.Forms.TextBox();
-            this._txtHabitacion = new System.Windows.Forms.TextBox();
-            this._txtEgreso = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +64,7 @@ namespace TPHotel.InterfazFormuario
             this._cmbClientes.Name = "_cmbClientes";
             this._cmbClientes.Size = new System.Drawing.Size(121, 24);
             this._cmbClientes.TabIndex = 0;
+            this._cmbClientes.SelectedIndexChanged += new System.EventHandler(this._cmbClientes_SelectedIndexChanged);
             this._cmbClientes.SelectionChangeCommitted += new System.EventHandler(this._cmbClientes_SelectionChangeCommitted);
             // 
             // _lstReservas
@@ -77,15 +83,16 @@ namespace TPHotel.InterfazFormuario
             this._cmbHotel.Name = "_cmbHotel";
             this._cmbHotel.Size = new System.Drawing.Size(121, 24);
             this._cmbHotel.TabIndex = 2;
+            this._cmbHotel.SelectionChangeCommitted += new System.EventHandler(this._cmbHotel_SelectionChangeCommitted);
             // 
-            // listBox2
+            // _lstHabitaciones
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(6, 98);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(380, 84);
-            this.listBox2.TabIndex = 3;
+            this._lstHabitaciones.FormattingEnabled = true;
+            this._lstHabitaciones.ItemHeight = 16;
+            this._lstHabitaciones.Location = new System.Drawing.Point(6, 98);
+            this._lstHabitaciones.Name = "_lstHabitaciones";
+            this._lstHabitaciones.Size = new System.Drawing.Size(380, 84);
+            this._lstHabitaciones.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -103,12 +110,93 @@ namespace TPHotel.InterfazFormuario
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this._lstReservas);
             this.groupBox1.Controls.Add(this._cmbClientes);
-            this.groupBox1.Location = new System.Drawing.Point(24, 86);
+            this.groupBox1.Location = new System.Drawing.Point(12, 86);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(436, 372);
+            this.groupBox1.Size = new System.Drawing.Size(448, 372);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reservas por cliente";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(86, 296);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Fecha ingreso";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(0, 264);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(190, 17);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Nombre y apellido del cliente";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(89, 322);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 17);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Fecha egreso";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(109, 350);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 17);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Habitacion";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(113, 238);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Id reserva";
+            // 
+            // _txtEgreso
+            // 
+            this._txtEgreso.Location = new System.Drawing.Point(238, 319);
+            this._txtEgreso.Name = "_txtEgreso";
+            this._txtEgreso.Size = new System.Drawing.Size(169, 22);
+            this._txtEgreso.TabIndex = 8;
+            // 
+            // _txtHabitacion
+            // 
+            this._txtHabitacion.Location = new System.Drawing.Point(238, 350);
+            this._txtHabitacion.Name = "_txtHabitacion";
+            this._txtHabitacion.Size = new System.Drawing.Size(100, 22);
+            this._txtHabitacion.TabIndex = 7;
+            // 
+            // _txtFechaIngreso
+            // 
+            this._txtFechaIngreso.Location = new System.Drawing.Point(238, 291);
+            this._txtFechaIngreso.Name = "_txtFechaIngreso";
+            this._txtFechaIngreso.Size = new System.Drawing.Size(169, 22);
+            this._txtFechaIngreso.TabIndex = 6;
+            // 
+            // _txtNombreYApellido
+            // 
+            this._txtNombreYApellido.Location = new System.Drawing.Point(238, 261);
+            this._txtNombreYApellido.Name = "_txtNombreYApellido";
+            this._txtNombreYApellido.Size = new System.Drawing.Size(169, 22);
+            this._txtNombreYApellido.TabIndex = 5;
+            // 
+            // _txtIdReserva
+            // 
+            this._txtIdReserva.Location = new System.Drawing.Point(238, 233);
+            this._txtIdReserva.Name = "_txtIdReserva";
+            this._txtIdReserva.Size = new System.Drawing.Size(30, 22);
+            this._txtIdReserva.TabIndex = 4;
             // 
             // _btnDetalle
             // 
@@ -131,12 +219,17 @@ namespace TPHotel.InterfazFormuario
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.listBox2);
+            this.groupBox2.Controls.Add(this._lstHabitaciones);
             this.groupBox2.Controls.Add(this._cmbHotel);
             this.groupBox2.Location = new System.Drawing.Point(466, 86);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(392, 225);
+            this.groupBox2.Size = new System.Drawing.Size(392, 372);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Habitaciones por hotel";
@@ -150,85 +243,49 @@ namespace TPHotel.InterfazFormuario
             this.label2.TabIndex = 4;
             this.label2.Text = "ID Hotel";
             // 
-            // _txtIdReserva
+            // button1
             // 
-            this._txtIdReserva.Location = new System.Drawing.Point(181, 233);
-            this._txtIdReserva.Name = "_txtIdReserva";
-            this._txtIdReserva.Size = new System.Drawing.Size(30, 22);
-            this._txtIdReserva.TabIndex = 4;
+            this.button1.Location = new System.Drawing.Point(6, 196);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Detalle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // _txtNombreYApellido
+            // label8
             // 
-            this._txtNombreYApellido.Location = new System.Drawing.Point(181, 261);
-            this._txtNombreYApellido.Name = "_txtNombreYApellido";
-            this._txtNombreYApellido.Size = new System.Drawing.Size(169, 22);
-            this._txtNombreYApellido.TabIndex = 5;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 233);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 17);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "label8";
             // 
-            // _txtFechaIngreso
+            // label9
             // 
-            this._txtFechaIngreso.Location = new System.Drawing.Point(181, 291);
-            this._txtFechaIngreso.Name = "_txtFechaIngreso";
-            this._txtFechaIngreso.Size = new System.Drawing.Size(169, 22);
-            this._txtFechaIngreso.TabIndex = 6;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 294);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 17);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "label9";
             // 
-            // _txtHabitacion
+            // label10
             // 
-            this._txtHabitacion.Location = new System.Drawing.Point(181, 350);
-            this._txtHabitacion.Name = "_txtHabitacion";
-            this._txtHabitacion.Size = new System.Drawing.Size(100, 22);
-            this._txtHabitacion.TabIndex = 7;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 266);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 17);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "label10";
             // 
-            // _txtEgreso
+            // textBox1
             // 
-            this._txtEgreso.Location = new System.Drawing.Point(181, 319);
-            this._txtEgreso.Name = "_txtEgreso";
-            this._txtEgreso.Size = new System.Drawing.Size(169, 22);
-            this._txtEgreso.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(89, 238);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Id reserva";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 350);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 17);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Habitacion";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 324);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 17);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Fecha egreso";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 266);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(169, 17);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Nombre y apellido Cliente";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(47, 294);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 17);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Fecha ingreso";
+            this.textBox1.Location = new System.Drawing.Point(101, 228);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 10;
             // 
             // FrmInformes
             // 
@@ -253,7 +310,7 @@ namespace TPHotel.InterfazFormuario
         private System.Windows.Forms.ComboBox _cmbClientes;
         private System.Windows.Forms.ListBox _lstReservas;
         private System.Windows.Forms.ComboBox _cmbHotel;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox _lstHabitaciones;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
@@ -269,5 +326,10 @@ namespace TPHotel.InterfazFormuario
         private System.Windows.Forms.TextBox _txtHabitacion;
         private System.Windows.Forms.TextBox _txtFechaIngreso;
         private System.Windows.Forms.TextBox _txtNombreYApellido;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }
