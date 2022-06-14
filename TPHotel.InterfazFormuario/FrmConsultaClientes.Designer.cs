@@ -261,7 +261,7 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._btnBuscarPorIdReserva);
             this.Controls.Add(this._txtIdReserva);
             this.Name = "FrmConsultaClientes";
-            this.Text = "FormConsultaClientes";
+            this.Text = "Consulta de clientes";
             this.Load += new System.EventHandler(this.FrmConsultaClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

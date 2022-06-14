@@ -99,7 +99,7 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
             }
             return pudeConvertir;
         }
-        public static double pedirDecimal(TextBox tx, Label lb)
+        public static double pedirDouble(TextBox tx, Label lb)
         {
             double retorno = 0;
             bool pudeConvertir;

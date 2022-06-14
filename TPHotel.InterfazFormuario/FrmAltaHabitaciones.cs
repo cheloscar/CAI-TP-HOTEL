@@ -49,7 +49,7 @@ namespace TPHotel.InterfazFormuario
             //idHabitacion = Validador.pedirInteger(_txtIdHabitacion, _lblIdHabitacion);
             cancelable = Checked(_chkCancelable);
             CantidadPlazas = Validador.pedirInteger(_txtCantidadPlazas, _lblCantidadPlazas);
-            precio = Validador.pedirDecimal(_txtPrecio, _lblPrecio);
+            precio = Validador.pedirDouble(_txtPrecio, _lblPrecio);
 
             if ( _txtCantidadPlazas.Text == string.Empty || _txtPrecio.Text == string.Empty || _txtCategoria.Text == string.Empty)
 
@@ -74,6 +74,12 @@ namespace TPHotel.InterfazFormuario
                 {
                     Habitacion habitacion = new Habitacion(idHabitacion, CantidadPlazas, _txtCategoria.Text, cancelable, precio);
                     _hotelNegocio.AgregarHabitacion(habitacion);
+
+                    MessageBox.Show("Habitación agregada con éxito");
+
+                    _txtCantidadPlazas.Text = string.Empty;
+                    _txtCategoria.Text = string.Empty;
+                    _txtPrecio.Text = string.Empty;
                 }
 
                 catch (Exception ex)

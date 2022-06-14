@@ -134,7 +134,7 @@ namespace TPHotel.InterfazFormuario
             this._chkAmenities.TabIndex = 11;
             this._chkAmenities.UseVisualStyleBackColor = true;
             // 
-            // FrmHoteles
+            // FrmAltaHoteles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,8 +150,8 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._txtId);
             this.Controls.Add(this._txtEstrellas);
             this.Controls.Add(this._btnAlta);
-            this.Name = "FrmHoteles";
-            this.Text = "FrmHoteles";
+            this.Name = "FrmAltaHoteles";
+            this.Text = "Ingreso de hoteles";
             this.Load += new System.EventHandler(this.FrmHoteles_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

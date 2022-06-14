@@ -49,3 +49,4 @@ C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Inte
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.pdb
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmDeseaAgregarClienteNuevo.resources
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmConsultaReserva.resources
+C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmInformes.resources

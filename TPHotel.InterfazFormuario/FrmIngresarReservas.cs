@@ -314,12 +314,8 @@ namespace TPHotel.InterfazFormuario
                 _txtIdHabitacion.Text = habitacionseleccionada.IdHabitacion.ToString();
                 _txtCantidaPlazas.Text = habitacionseleccionada.CantidadPlazas.ToString();
                 _txtPrecio.Text = habitacionseleccionada.Precio.ToString();
+            }
 
-            }
-            else
-            {
-                MessageBox.Show("Es nulo");
-            }
         }
 
         private void _lstClientes_SelectedIndexChanged(object sender, EventArgs e)

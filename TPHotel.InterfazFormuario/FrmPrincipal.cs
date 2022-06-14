@@ -66,7 +66,14 @@ namespace TPHotel.InterfazFormuario
 
         private void hotelesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FrmAltaHoteles frm = new FrmAltaHoteles();
+            frm.Show();
+        }
 
+        private void reservasPorClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmInformes frm = new FrmInformes();
+            frm.Show();
         }
     }
 }

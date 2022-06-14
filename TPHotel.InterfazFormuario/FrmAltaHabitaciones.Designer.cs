@@ -152,7 +152,7 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._txtCantidadPlazas);
             this.Controls.Add(this._cmbIdHotel);
             this.Name = "FrmAltaHabitaciones";
-            this.Text = "FrmHabitaciones";
+            this.Text = "Ingreso de habitaciones";
             this.Load += new System.EventHandler(this.FrmAltaHabitaciones_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

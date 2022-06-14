@@ -207,7 +207,7 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._txtDireccion);
             this.Controls.Add(this._txtFechaAlta);
             this.Name = "FrmAltaClientes";
-            this.Text = "FormIngresarClientes";
+            this.Text = "Ingreso de clientes";
             this.Load += new System.EventHandler(this.FormIngresarConsultarClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

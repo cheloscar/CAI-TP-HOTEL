@@ -57,7 +57,7 @@ namespace TPHotel.Negocio
         public Cliente TraerCliente(int idCliente)
         {
             Cliente cliente = null;
-            //Por problemas con la API se debe hacer esto.
+            
 
             List<Cliente> listadoDeCliente = new List<Cliente>();
 
@@ -69,10 +69,8 @@ namespace TPHotel.Negocio
 
                 {
                     cliente = cl;
-                    
-                    break;
                 }
-                else if (cliente == null)
+                else if (cl == null)
                 {
                     throw new IdInexistenteException();
                 }
@@ -85,6 +83,21 @@ namespace TPHotel.Negocio
             Reserva reserva = _reservaDatos.TraerReservaPorNumeroDeReserva(idReserva);
 
             return reserva;
+        }
+
+        public List<Reserva> TraerReservaPorIdCliente(int idcliente)
+        {
+            List<Reserva> listadoReservas = TraerReservas();
+            List<Reserva> listaReservasEncontradas = new List<Reserva>();
+
+            foreach (Reserva rs in listadoReservas)
+            {
+                if (rs.IdCliente == idcliente)
+                {
+                    listaReservasEncontradas.Add(rs);
+                }
+            }
+            return listaReservasEncontradas;
         }
         public Cliente TraerClientePorNumeroDeReserva(int idReserva)
         {
