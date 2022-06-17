@@ -77,6 +77,7 @@ namespace TPHotel.InterfazFormuario
             this._lstReservas.Name = "_lstReservas";
             this._lstReservas.Size = new System.Drawing.Size(369, 84);
             this._lstReservas.TabIndex = 1;
+            this._lstReservas.SelectedIndexChanged += new System.EventHandler(this._lstReservas_SelectedIndexChanged);
             // 
             // _cmbHotel
             // 

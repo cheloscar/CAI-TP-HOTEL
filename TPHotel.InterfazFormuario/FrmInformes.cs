@@ -81,12 +81,33 @@ namespace TPHotel.InterfazFormuario
             if (listadoDeReservas.Count == 0)
             {
                 MessageBox.Show("El cliente seleccionado no posee reservas");
+                _lstReservas.DataSource = null;
+                _lstReservas.Items.Clear();
+                _txtIdReserva.Text = string.Empty;
+                _txtNombreYApellido.Text = string.Empty;
+                _txtFechaIngreso.Text = string.Empty;
+                _txtEgreso.Text = string.Empty;
+                _txtHabitacion.Text = string.Empty;
+
+                _txtIdReserva.Enabled = false;
+                _txtNombreYApellido.Enabled = false;
+                _txtFechaIngreso.Enabled = false;
+                _txtEgreso.Enabled = false;
+                _txtHabitacion.Enabled = false;
+
+                _btnDetalle.Enabled = false;
             }
 
             else
             {
                 _lstReservas.DataSource = null;
                 _lstReservas.DataSource = listadoDeReservas;
+                _txtIdReserva.Enabled = true;
+                _txtNombreYApellido.Enabled = true;
+                _txtFechaIngreso.Enabled = true;
+                _txtEgreso.Enabled = true;
+                _txtHabitacion.Enabled = true;
+                _btnDetalle.Enabled = true;
             }
         }
 
@@ -145,6 +166,11 @@ namespace TPHotel.InterfazFormuario
                 _lstHabitaciones.DataSource = listaHabitaciones;
             }
 
+
+        }
+
+        private void _lstReservas_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
