@@ -7,26 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TPHotel.Negocio;
+
 
 namespace TPHotel.InterfazFormuario
 {
-    public partial class FrmDeseaAgregarClienteNuevo : Form
+    public partial class FrmInicio : Form
     {
-        public FrmDeseaAgregarClienteNuevo()
+        public FrmInicio()
         {
             InitializeComponent();
         }
 
-        private void _btnSI_Click(object sender, EventArgs e)
+        private void FrmInicio_Shown(object sender, EventArgs e)
         {
-            FrmAltaCliente frm = new FrmAltaCliente(this);
+            Program._hotelNegocio = new HotelNegocio();
+            FrmPrincipal frm = new FrmPrincipal(this);
             frm.Show();
-            
-        }
-
-        private void FrmDeseaAgregarClienteNuevo_Load(object sender, EventArgs e)
-        {
-
+            this.Hide();
         }
     }
 }

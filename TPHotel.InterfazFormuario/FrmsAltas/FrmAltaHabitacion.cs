@@ -13,14 +13,14 @@ using TPHotel.InterfazFormuario.Clase_validadora;
 
 namespace TPHotel.InterfazFormuario
 {
-    public partial class FrmAltaHabitaciones : Form
+    public partial class FrmAltaHabitacion : Form
     {
-       private HotelNegocio _hotelNegocio;
-        public FrmAltaHabitaciones()
+
+        public FrmAltaHabitacion(Form padre)
         {
             InitializeComponent();
+            this.Owner = padre;
 
-            _hotelNegocio = new HotelNegocio();
             CargarListas();
         }
 
@@ -73,7 +73,7 @@ namespace TPHotel.InterfazFormuario
                 try
                 {
                     Habitacion habitacion = new Habitacion(idHabitacion, CantidadPlazas, _txtCategoria.Text, cancelable, precio);
-                    _hotelNegocio.AgregarHabitacion(habitacion);
+                    Program._hotelNegocio.AgregarHabitacion(habitacion);
 
                     MessageBox.Show("Habitación agregada con éxito");
 
@@ -111,7 +111,7 @@ namespace TPHotel.InterfazFormuario
         {
             List<HotelEntidad> listaHoteles = new List<HotelEntidad>();
 
-            listaHoteles = _hotelNegocio.TraerHoteles();
+            listaHoteles = Program._hotelNegocio.TraerHoteles();
             _cmbIdHotel.DataSource = null;
 
             _cmbIdHotel.DataSource = listaHoteles;
@@ -122,6 +122,11 @@ namespace TPHotel.InterfazFormuario
         private void FrmAltaHabitaciones_Load(object sender, EventArgs e)
         {
             CargarListas();
+        }
+
+        private void FrmAltaHabitaciones_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
         }
     }
 }

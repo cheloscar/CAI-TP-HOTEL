@@ -16,76 +16,77 @@ namespace TPHotel.InterfazFormuario
     public partial class FrmPrincipal : Form
     {
         
-        public FrmPrincipal()
+        public FrmPrincipal(Form padre)
         {
             InitializeComponent();
-        }
-
-        private void _btnIngresarConsultarClientes_Click(object sender, EventArgs e)
-        {
+            this.Owner = padre;
             
         }
 
-        private void _btnIngresarConsultarReservas_Click(object sender, EventArgs e)
+        private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            FrmIngresarReservas frm = new FrmIngresarReservas();
+        }
+
+        #region Opciones del menú Tira ALTAS
+        private void Cliente_MenuTiraAltas_Click(object sender, EventArgs e)
+        {
+            FrmAltaCliente frm = new FrmAltaCliente(this);
             frm.Show();
+            this.Hide();
         }
+        
 
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Reserva_MenuTiraAltas_Click(object sender, EventArgs e)
         {
-            FrmAltaClientes frm = new FrmAltaClientes(this);
-
+            FrmAltaReserva frm = new FrmAltaReserva(this);
             frm.Show();
+            this.Hide();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Habitacion_MenuTiraAltas_Click(object sender, EventArgs e)
         {
-
+            FrmAltaHabitacion frm = new FrmAltaHabitacion(this);
+            frm.Show();
+            this.Hide();
         }
 
-        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void Hotel_MenuTiraAltas_Click(object sender, EventArgs e)
+        {
+            FrmAltaHotel frm = new FrmAltaHotel(this);
+            frm.Show();
+            this.Hide();
+        }
+        #endregion
+
+        #region Opciones del menú Tira CONSULTAS
+        private void Informes_MenuTiraConsultas_Click(object sender, EventArgs e)
+        {
+            FrmInformes frm = new FrmInformes(this);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void Hoteles_MenuTiraConsultas_Click(object sender, EventArgs e)
+        {
+            Proximamente frm = new Proximamente();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void Habitaciones_MenuTiraConsultas_Click(object sender, EventArgs e)
+        {
+            FrmConsultarHabitaciones frm = new FrmConsultarHabitaciones(this);
+            frm.Show();
+            this.Hide();
+        }
+        private void Clientes_MenuTiraConsultas_Click(object sender, EventArgs e)
         {
             FrmConsultaClientes frm = new FrmConsultaClientes(this);
             frm.Show();
             this.Hide();
         }
 
-        private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmIngresarReservas frm = new FrmIngresarReservas();
-            frm.Show();
-        }
+        #endregion
 
-        private void habitacionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmAltaHabitaciones frm = new FrmAltaHabitaciones();
-
-            frm.Show();
-        }
-
-        private void hotelesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmAltaHoteles frm = new FrmAltaHoteles();
-            frm.Show();
-        }
-
-        private void reservasPorClienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmInformes frm = new FrmInformes();
-            frm.Show();
-        }
-
-        private void hotelesToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Proximamente frm = new Proximamente();
-            frm.Show();
-        }
-
-        private void habitacionesToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Proximamente frm = new Proximamente();
-            frm.Show();
-        }
     }
 }

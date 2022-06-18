@@ -1,7 +1,7 @@
 ﻿
 namespace TPHotel.InterfazFormuario
 {
-    partial class FrmAltaHabitaciones
+    partial class FrmAltaHabitacion
     {
         /// <summary>
         /// Required designer variable.
@@ -45,83 +45,93 @@ namespace TPHotel.InterfazFormuario
             // _cmbIdHotel
             // 
             this._cmbIdHotel.FormattingEnabled = true;
-            this._cmbIdHotel.Location = new System.Drawing.Point(173, 103);
+            this._cmbIdHotel.Location = new System.Drawing.Point(238, 154);
+            this._cmbIdHotel.Margin = new System.Windows.Forms.Padding(4);
             this._cmbIdHotel.Name = "_cmbIdHotel";
-            this._cmbIdHotel.Size = new System.Drawing.Size(100, 24);
+            this._cmbIdHotel.Size = new System.Drawing.Size(136, 32);
             this._cmbIdHotel.TabIndex = 1;
             // 
             // _txtCantidadPlazas
             // 
-            this._txtCantidadPlazas.Location = new System.Drawing.Point(173, 147);
+            this._txtCantidadPlazas.Location = new System.Drawing.Point(238, 220);
+            this._txtCantidadPlazas.Margin = new System.Windows.Forms.Padding(4);
             this._txtCantidadPlazas.Name = "_txtCantidadPlazas";
-            this._txtCantidadPlazas.Size = new System.Drawing.Size(100, 22);
+            this._txtCantidadPlazas.Size = new System.Drawing.Size(136, 29);
             this._txtCantidadPlazas.TabIndex = 2;
             // 
             // _txtCategoria
             // 
-            this._txtCategoria.Location = new System.Drawing.Point(173, 192);
+            this._txtCategoria.Location = new System.Drawing.Point(238, 288);
+            this._txtCategoria.Margin = new System.Windows.Forms.Padding(4);
             this._txtCategoria.Name = "_txtCategoria";
-            this._txtCategoria.Size = new System.Drawing.Size(100, 22);
+            this._txtCategoria.Size = new System.Drawing.Size(136, 29);
             this._txtCategoria.TabIndex = 3;
             // 
             // _txtPrecio
             // 
-            this._txtPrecio.Location = new System.Drawing.Point(173, 233);
+            this._txtPrecio.Location = new System.Drawing.Point(238, 350);
+            this._txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this._txtPrecio.Name = "_txtPrecio";
-            this._txtPrecio.Size = new System.Drawing.Size(100, 22);
-            this._txtPrecio.TabIndex = 5;
+            this._txtPrecio.Size = new System.Drawing.Size(136, 29);
+            this._txtPrecio.TabIndex = 4;
             // 
             // _lblidHotel
             // 
             this._lblidHotel.AutoSize = true;
-            this._lblidHotel.Location = new System.Drawing.Point(81, 110);
+            this._lblidHotel.Location = new System.Drawing.Point(111, 165);
+            this._lblidHotel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblidHotel.Name = "_lblidHotel";
-            this._lblidHotel.Size = new System.Drawing.Size(72, 17);
+            this._lblidHotel.Size = new System.Drawing.Size(103, 25);
             this._lblidHotel.TabIndex = 7;
             this._lblidHotel.Text = "ID HOTEL";
             // 
             // _lblCantidadPlazas
             // 
             this._lblCantidadPlazas.AutoSize = true;
-            this._lblCantidadPlazas.Location = new System.Drawing.Point(-4, 150);
+            this._lblCantidadPlazas.Location = new System.Drawing.Point(-6, 225);
+            this._lblCantidadPlazas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblCantidadPlazas.Name = "_lblCantidadPlazas";
-            this._lblCantidadPlazas.Size = new System.Drawing.Size(157, 17);
+            this._lblCantidadPlazas.Size = new System.Drawing.Size(230, 25);
             this._lblCantidadPlazas.TabIndex = 8;
             this._lblCantidadPlazas.Text = "CANTIDAD DE PLAZAS";
             // 
             // _lblCategoria
             // 
             this._lblCategoria.AutoSize = true;
-            this._lblCategoria.Location = new System.Drawing.Point(65, 195);
+            this._lblCategoria.Location = new System.Drawing.Point(89, 292);
+            this._lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblCategoria.Name = "_lblCategoria";
-            this._lblCategoria.Size = new System.Drawing.Size(88, 17);
+            this._lblCategoria.Size = new System.Drawing.Size(130, 25);
             this._lblCategoria.TabIndex = 9;
             this._lblCategoria.Text = "CATEGORIA";
             // 
             // _lblcCancelable
             // 
             this._lblcCancelable.AutoSize = true;
-            this._lblcCancelable.Location = new System.Drawing.Point(119, 289);
+            this._lblcCancelable.Location = new System.Drawing.Point(164, 434);
+            this._lblcCancelable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblcCancelable.Name = "_lblcCancelable";
-            this._lblcCancelable.Size = new System.Drawing.Size(97, 17);
+            this._lblcCancelable.Size = new System.Drawing.Size(145, 25);
             this._lblcCancelable.TabIndex = 11;
             this._lblcCancelable.Text = "CANCELABLE";
             // 
             // _chkCancelable
             // 
             this._chkCancelable.AutoSize = true;
-            this._chkCancelable.Location = new System.Drawing.Point(220, 289);
+            this._chkCancelable.Location = new System.Drawing.Point(302, 434);
+            this._chkCancelable.Margin = new System.Windows.Forms.Padding(4);
             this._chkCancelable.Name = "_chkCancelable";
-            this._chkCancelable.Size = new System.Drawing.Size(18, 17);
-            this._chkCancelable.TabIndex = 12;
+            this._chkCancelable.Size = new System.Drawing.Size(22, 21);
+            this._chkCancelable.TabIndex = 5;
             this._chkCancelable.UseVisualStyleBackColor = true;
             // 
             // _btnAlta
             // 
-            this._btnAlta.Location = new System.Drawing.Point(198, 343);
+            this._btnAlta.Location = new System.Drawing.Point(272, 514);
+            this._btnAlta.Margin = new System.Windows.Forms.Padding(4);
             this._btnAlta.Name = "_btnAlta";
-            this._btnAlta.Size = new System.Drawing.Size(75, 23);
-            this._btnAlta.TabIndex = 13;
+            this._btnAlta.Size = new System.Drawing.Size(103, 34);
+            this._btnAlta.TabIndex = 6;
             this._btnAlta.Text = "ALTA";
             this._btnAlta.UseVisualStyleBackColor = true;
             this._btnAlta.Click += new System.EventHandler(this._btnAlta_Click);
@@ -129,17 +139,18 @@ namespace TPHotel.InterfazFormuario
             // _lblPrecio
             // 
             this._lblPrecio.AutoSize = true;
-            this._lblPrecio.Location = new System.Drawing.Point(94, 238);
+            this._lblPrecio.Location = new System.Drawing.Point(129, 357);
+            this._lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblPrecio.Name = "_lblPrecio";
-            this._lblPrecio.Size = new System.Drawing.Size(59, 17);
+            this._lblPrecio.Size = new System.Drawing.Size(87, 25);
             this._lblPrecio.TabIndex = 14;
             this._lblPrecio.Text = "PRECIO";
             // 
             // FrmAltaHabitaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 450);
+            this.ClientSize = new System.Drawing.Size(488, 675);
             this.Controls.Add(this._lblPrecio);
             this.Controls.Add(this._btnAlta);
             this.Controls.Add(this._chkCancelable);
@@ -151,8 +162,10 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._txtCategoria);
             this.Controls.Add(this._txtCantidadPlazas);
             this.Controls.Add(this._cmbIdHotel);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAltaHabitaciones";
             this.Text = "Ingreso de habitaciones";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmAltaHabitaciones_FormClosing);
             this.Load += new System.EventHandler(this.FrmAltaHabitaciones_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

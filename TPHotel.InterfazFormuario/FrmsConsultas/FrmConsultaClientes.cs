@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TPHotel.Entidades;
+using TPHotel.Entidades.Excepciones;
 using TPHotel.Negocio;
 using TPHotel.InterfazFormuario.Clase_validadora;
 
@@ -15,7 +16,6 @@ namespace TPHotel.InterfazFormuario
 {
     public partial class FrmConsultaClientes : Form
     {
-        private HotelNegocio _hotelNegocio;
         public FrmConsultaClientes(Form padre)
         {
             InitializeComponent();
@@ -26,33 +26,34 @@ namespace TPHotel.InterfazFormuario
         private void _btnBuscarPorIdReserva_Click(object sender, EventArgs e)
         {
             int numero = 0;
-            _hotelNegocio = new HotelNegocio();
-
 
             try
             {
 
                
-                    numero = Validador.pedirInteger(_txtIdReserva, _lblIDReserva);
+                numero = Validador.pedirInteger(_txtIdReserva, _lblIDReserva);
 
                
-                Cliente cli = _hotelNegocio.TraerClientePorNumeroDeReserva(numero);
+                Cliente cli = Program._hotelNegocio.TraerClientePorNumeroDeReserva(numero);
                 //cli = new Cliente(cli.ID, cli.FechaAlta, cli.Activo, cli.Nombre, cli.Apellido, cli.Direccion, cli.Telefono, cli.Email, cli.FechaNacimiento);
-                
-                _txtId.Text = cli.ID.ToString();
-                _txtFechaAlta.Text = cli.FechaAlta.ToString();
-                _txtActivo.Text = cli.Activo.ToString();
-                _txtNombre.Text = cli.Nombre;
-                _txtApellido.Text = cli.Apellido;
-                _txtDireccion.Text = cli.Direccion;
-                _txtTelefono.Text = cli.Telefono;
-                _txtEmail.Text = cli.Email;
-                _txtFechaNacimiento.Text = cli.FechaNacimiento.ToString();
 
+                if (cli != null)
+                {
+                    _txtId.Text = cli.ID.ToString();
+                    _txtFechaAlta.Text = cli.FechaAlta.ToString();
+                    _txtActivo.Text = cli.Activo.ToString();
+                    _txtNombre.Text = cli.Nombre;
+                    _txtApellido.Text = cli.Apellido;
+                    _txtDireccion.Text = cli.Direccion;
+                    _txtTelefono.Text = cli.Telefono;
+                    _txtEmail.Text = cli.Email;
+                    _txtFechaNacimiento.Text = cli.FechaNacimiento.ToString();
+                }
+                else { throw new ReservaInexistenteExcepcion(); }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("no existe cliente");
+                MessageBox.Show("no existe esa reserva.");
             }
 
             Validador.Vaciar(_txtId);
@@ -66,6 +67,11 @@ namespace TPHotel.InterfazFormuario
         private void FrmConsultaClientes_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmConsultaClientes_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
         }
     }
 }

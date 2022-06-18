@@ -55,16 +55,18 @@ namespace TPHotel.InterfazFormuario
             // 
             // _txtIdReserva
             // 
-            this._txtIdReserva.Location = new System.Drawing.Point(131, 56);
+            this._txtIdReserva.Location = new System.Drawing.Point(180, 84);
+            this._txtIdReserva.Margin = new System.Windows.Forms.Padding(4);
             this._txtIdReserva.Name = "_txtIdReserva";
-            this._txtIdReserva.Size = new System.Drawing.Size(36, 22);
+            this._txtIdReserva.Size = new System.Drawing.Size(48, 29);
             this._txtIdReserva.TabIndex = 0;
             // 
             // _btnBuscarPorIdReserva
             // 
-            this._btnBuscarPorIdReserva.Location = new System.Drawing.Point(184, 56);
+            this._btnBuscarPorIdReserva.Location = new System.Drawing.Point(281, 59);
+            this._btnBuscarPorIdReserva.Margin = new System.Windows.Forms.Padding(4);
             this._btnBuscarPorIdReserva.Name = "_btnBuscarPorIdReserva";
-            this._btnBuscarPorIdReserva.Size = new System.Drawing.Size(75, 53);
+            this._btnBuscarPorIdReserva.Size = new System.Drawing.Size(298, 80);
             this._btnBuscarPorIdReserva.TabIndex = 1;
             this._btnBuscarPorIdReserva.Text = "Buscar por ID Reserva";
             this._btnBuscarPorIdReserva.UseVisualStyleBackColor = true;
@@ -73,80 +75,91 @@ namespace TPHotel.InterfazFormuario
             // _lblIDReserva
             // 
             this._lblIDReserva.AutoSize = true;
-            this._lblIDReserva.Location = new System.Drawing.Point(37, 56);
+            this._lblIDReserva.Location = new System.Drawing.Point(51, 84);
+            this._lblIDReserva.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblIDReserva.Name = "_lblIDReserva";
-            this._lblIDReserva.Size = new System.Drawing.Size(72, 17);
+            this._lblIDReserva.Size = new System.Drawing.Size(101, 25);
             this._lblIDReserva.TabIndex = 2;
             this._lblIDReserva.Text = "Ingrese ID";
             // 
             // _txtId
             // 
-            this._txtId.Location = new System.Drawing.Point(40, 157);
+            this._txtId.Location = new System.Drawing.Point(55, 236);
+            this._txtId.Margin = new System.Windows.Forms.Padding(4);
             this._txtId.Name = "_txtId";
-            this._txtId.Size = new System.Drawing.Size(29, 22);
+            this._txtId.Size = new System.Drawing.Size(38, 29);
             this._txtId.TabIndex = 3;
             // 
             // _txtFechaAlta
             // 
-            this._txtFechaAlta.Location = new System.Drawing.Point(75, 157);
+            this._txtFechaAlta.Location = new System.Drawing.Point(103, 236);
+            this._txtFechaAlta.Margin = new System.Windows.Forms.Padding(4);
             this._txtFechaAlta.Name = "_txtFechaAlta";
-            this._txtFechaAlta.Size = new System.Drawing.Size(100, 22);
+            this._txtFechaAlta.Size = new System.Drawing.Size(136, 29);
             this._txtFechaAlta.TabIndex = 4;
             // 
             // _txtActivo
             // 
-            this._txtActivo.Location = new System.Drawing.Point(181, 157);
+            this._txtActivo.Location = new System.Drawing.Point(249, 236);
+            this._txtActivo.Margin = new System.Windows.Forms.Padding(4);
             this._txtActivo.Name = "_txtActivo";
-            this._txtActivo.Size = new System.Drawing.Size(100, 22);
+            this._txtActivo.Size = new System.Drawing.Size(136, 29);
             this._txtActivo.TabIndex = 5;
             // 
             // _txtNombre
             // 
-            this._txtNombre.Location = new System.Drawing.Point(287, 157);
+            this._txtNombre.Location = new System.Drawing.Point(395, 236);
+            this._txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this._txtNombre.Name = "_txtNombre";
-            this._txtNombre.Size = new System.Drawing.Size(100, 22);
+            this._txtNombre.Size = new System.Drawing.Size(136, 29);
             this._txtNombre.TabIndex = 6;
             // 
             // _txtApellido
             // 
-            this._txtApellido.Location = new System.Drawing.Point(393, 157);
+            this._txtApellido.Location = new System.Drawing.Point(540, 236);
+            this._txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this._txtApellido.Name = "_txtApellido";
-            this._txtApellido.Size = new System.Drawing.Size(100, 22);
+            this._txtApellido.Size = new System.Drawing.Size(136, 29);
             this._txtApellido.TabIndex = 7;
             // 
             // _txtFechaNacimiento
             // 
-            this._txtFechaNacimiento.Location = new System.Drawing.Point(817, 157);
+            this._txtFechaNacimiento.Location = new System.Drawing.Point(1123, 236);
+            this._txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this._txtFechaNacimiento.Name = "_txtFechaNacimiento";
-            this._txtFechaNacimiento.Size = new System.Drawing.Size(153, 22);
+            this._txtFechaNacimiento.Size = new System.Drawing.Size(209, 29);
             this._txtFechaNacimiento.TabIndex = 8;
             // 
             // _txtEmail
             // 
-            this._txtEmail.Location = new System.Drawing.Point(711, 157);
+            this._txtEmail.Location = new System.Drawing.Point(978, 236);
+            this._txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this._txtEmail.Name = "_txtEmail";
-            this._txtEmail.Size = new System.Drawing.Size(100, 22);
+            this._txtEmail.Size = new System.Drawing.Size(136, 29);
             this._txtEmail.TabIndex = 9;
             // 
             // _txtTelefono
             // 
-            this._txtTelefono.Location = new System.Drawing.Point(605, 157);
+            this._txtTelefono.Location = new System.Drawing.Point(832, 236);
+            this._txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this._txtTelefono.Name = "_txtTelefono";
-            this._txtTelefono.Size = new System.Drawing.Size(100, 22);
+            this._txtTelefono.Size = new System.Drawing.Size(136, 29);
             this._txtTelefono.TabIndex = 10;
             // 
             // _txtDireccion
             // 
-            this._txtDireccion.Location = new System.Drawing.Point(499, 157);
+            this._txtDireccion.Location = new System.Drawing.Point(686, 236);
+            this._txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this._txtDireccion.Name = "_txtDireccion";
-            this._txtDireccion.Size = new System.Drawing.Size(100, 22);
+            this._txtDireccion.Size = new System.Drawing.Size(136, 29);
             this._txtDireccion.TabIndex = 11;
             // 
             // _btnEditar
             // 
-            this._btnEditar.Location = new System.Drawing.Point(298, 198);
+            this._btnEditar.Location = new System.Drawing.Point(410, 297);
+            this._btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this._btnEditar.Name = "_btnEditar";
-            this._btnEditar.Size = new System.Drawing.Size(75, 57);
+            this._btnEditar.Size = new System.Drawing.Size(103, 86);
             this._btnEditar.TabIndex = 12;
             this._btnEditar.Text = "Editar";
             this._btnEditar.UseVisualStyleBackColor = true;
@@ -155,89 +168,98 @@ namespace TPHotel.InterfazFormuario
             // _lblId
             // 
             this._lblId.AutoSize = true;
-            this._lblId.Location = new System.Drawing.Point(48, 133);
+            this._lblId.Location = new System.Drawing.Point(66, 200);
+            this._lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblId.Name = "_lblId";
-            this._lblId.Size = new System.Drawing.Size(21, 17);
+            this._lblId.Size = new System.Drawing.Size(31, 25);
             this._lblId.TabIndex = 13;
             this._lblId.Text = "ID";
             // 
             // _lblFechaAlta
             // 
             this._lblFechaAlta.AutoSize = true;
-            this._lblFechaAlta.Location = new System.Drawing.Point(75, 132);
+            this._lblFechaAlta.Location = new System.Drawing.Point(103, 198);
+            this._lblFechaAlta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblFechaAlta.Name = "_lblFechaAlta";
-            this._lblFechaAlta.Size = new System.Drawing.Size(92, 17);
+            this._lblFechaAlta.Size = new System.Drawing.Size(137, 25);
             this._lblFechaAlta.TabIndex = 14;
             this._lblFechaAlta.Text = "FECHA ALTA";
             // 
             // _lblActivo
             // 
             this._lblActivo.AutoSize = true;
-            this._lblActivo.Location = new System.Drawing.Point(201, 132);
+            this._lblActivo.Location = new System.Drawing.Point(276, 198);
+            this._lblActivo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblActivo.Name = "_lblActivo";
-            this._lblActivo.Size = new System.Drawing.Size(58, 17);
+            this._lblActivo.Size = new System.Drawing.Size(89, 25);
             this._lblActivo.TabIndex = 15;
             this._lblActivo.Text = "ACTIVO";
             // 
             // _lblNombre
             // 
             this._lblNombre.AutoSize = true;
-            this._lblNombre.Location = new System.Drawing.Point(305, 133);
+            this._lblNombre.Location = new System.Drawing.Point(419, 200);
+            this._lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblNombre.Name = "_lblNombre";
-            this._lblNombre.Size = new System.Drawing.Size(68, 17);
+            this._lblNombre.Size = new System.Drawing.Size(98, 25);
             this._lblNombre.TabIndex = 16;
             this._lblNombre.Text = "NOMBRE";
             // 
             // _lblApellido
             // 
             this._lblApellido.AutoSize = true;
-            this._lblApellido.Location = new System.Drawing.Point(407, 132);
+            this._lblApellido.Location = new System.Drawing.Point(560, 198);
+            this._lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblApellido.Name = "_lblApellido";
-            this._lblApellido.Size = new System.Drawing.Size(75, 17);
+            this._lblApellido.Size = new System.Drawing.Size(109, 25);
             this._lblApellido.TabIndex = 17;
             this._lblApellido.Text = "APELLIDO";
             // 
             // _lblDireccion
             // 
             this._lblDireccion.AutoSize = true;
-            this._lblDireccion.Location = new System.Drawing.Point(508, 132);
+            this._lblDireccion.Location = new System.Drawing.Point(698, 198);
+            this._lblDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblDireccion.Name = "_lblDireccion";
-            this._lblDireccion.Size = new System.Drawing.Size(82, 17);
+            this._lblDireccion.Size = new System.Drawing.Size(122, 25);
             this._lblDireccion.TabIndex = 18;
             this._lblDireccion.Text = "DIRECCION";
             // 
             // _lblTelefono
             // 
             this._lblTelefono.AutoSize = true;
-            this._lblTelefono.Location = new System.Drawing.Point(616, 132);
+            this._lblTelefono.Location = new System.Drawing.Point(847, 198);
+            this._lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblTelefono.Name = "_lblTelefono";
-            this._lblTelefono.Size = new System.Drawing.Size(83, 17);
+            this._lblTelefono.Size = new System.Drawing.Size(120, 25);
             this._lblTelefono.TabIndex = 19;
             this._lblTelefono.Text = "TELEFONO";
             // 
             // _lblEmail
             // 
             this._lblEmail.AutoSize = true;
-            this._lblEmail.Location = new System.Drawing.Point(733, 132);
+            this._lblEmail.Location = new System.Drawing.Point(1008, 198);
+            this._lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblEmail.Name = "_lblEmail";
-            this._lblEmail.Size = new System.Drawing.Size(48, 17);
+            this._lblEmail.Size = new System.Drawing.Size(72, 25);
             this._lblEmail.TabIndex = 20;
             this._lblEmail.Text = "EMAIL";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(805, 132);
+            this.label9.Location = new System.Drawing.Point(1107, 198);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 17);
+            this.label9.Size = new System.Drawing.Size(243, 25);
             this.label9.TabIndex = 21;
             this.label9.Text = "FECHA DE NACIMIENTO";
             // 
             // FrmConsultaClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 285);
+            this.ClientSize = new System.Drawing.Size(1350, 428);
             this.Controls.Add(this.label9);
             this.Controls.Add(this._lblEmail);
             this.Controls.Add(this._lblTelefono);
@@ -260,8 +282,10 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._lblIDReserva);
             this.Controls.Add(this._btnBuscarPorIdReserva);
             this.Controls.Add(this._txtIdReserva);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmConsultaClientes";
             this.Text = "Consulta de clientes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmConsultaClientes_FormClosing);
             this.Load += new System.EventHandler(this.FrmConsultaClientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TPHotel.Entidades.Excepciones
 {
-    public class CantidadDeHuespedesMayorAlLaPermitidaException :Exception
+    public class CantidadDeHuespedesMayorAlLaPermitidaException : Exception
     {
-        public CantidadDeHuespedesMayorAlLaPermitidaException() : base("No se permite dicha cantidad de huespedes")
+        public CantidadDeHuespedesMayorAlLaPermitidaException() : base ("Ha ingresado una cantidad inválida.")
         {
-            
+
         }
     }
 }

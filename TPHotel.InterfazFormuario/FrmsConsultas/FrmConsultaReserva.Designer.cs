@@ -49,17 +49,19 @@ namespace TPHotel.InterfazFormuario
             // _lblIDReserva
             // 
             this._lblIDReserva.AutoSize = true;
-            this._lblIDReserva.Location = new System.Drawing.Point(30, 50);
+            this._lblIDReserva.Location = new System.Drawing.Point(41, 75);
+            this._lblIDReserva.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._lblIDReserva.Name = "_lblIDReserva";
-            this._lblIDReserva.Size = new System.Drawing.Size(72, 17);
+            this._lblIDReserva.Size = new System.Drawing.Size(101, 25);
             this._lblIDReserva.TabIndex = 5;
             this._lblIDReserva.Text = "Ingrese ID";
             // 
             // _btnBuscarPorIdReserva
             // 
-            this._btnBuscarPorIdReserva.Location = new System.Drawing.Point(187, 50);
+            this._btnBuscarPorIdReserva.Location = new System.Drawing.Point(257, 75);
+            this._btnBuscarPorIdReserva.Margin = new System.Windows.Forms.Padding(4);
             this._btnBuscarPorIdReserva.Name = "_btnBuscarPorIdReserva";
-            this._btnBuscarPorIdReserva.Size = new System.Drawing.Size(75, 53);
+            this._btnBuscarPorIdReserva.Size = new System.Drawing.Size(257, 80);
             this._btnBuscarPorIdReserva.TabIndex = 4;
             this._btnBuscarPorIdReserva.Text = "Buscar por ID Reserva";
             this._btnBuscarPorIdReserva.UseVisualStyleBackColor = true;
@@ -67,112 +69,125 @@ namespace TPHotel.InterfazFormuario
             // 
             // _txtIdReserva
             // 
-            this._txtIdReserva.Location = new System.Drawing.Point(130, 65);
+            this._txtIdReserva.Location = new System.Drawing.Point(179, 98);
+            this._txtIdReserva.Margin = new System.Windows.Forms.Padding(4);
             this._txtIdReserva.Name = "_txtIdReserva";
-            this._txtIdReserva.Size = new System.Drawing.Size(36, 22);
+            this._txtIdReserva.Size = new System.Drawing.Size(48, 29);
             this._txtIdReserva.TabIndex = 3;
             // 
             // _txtFechaEgreso
             // 
-            this._txtFechaEgreso.Location = new System.Drawing.Point(630, 164);
+            this._txtFechaEgreso.Location = new System.Drawing.Point(866, 246);
+            this._txtFechaEgreso.Margin = new System.Windows.Forms.Padding(4);
             this._txtFechaEgreso.Name = "_txtFechaEgreso";
-            this._txtFechaEgreso.Size = new System.Drawing.Size(100, 22);
+            this._txtFechaEgreso.Size = new System.Drawing.Size(136, 29);
             this._txtFechaEgreso.TabIndex = 20;
             // 
             // _txtFechaIngreso
             // 
-            this._txtFechaIngreso.Location = new System.Drawing.Point(489, 164);
+            this._txtFechaIngreso.Location = new System.Drawing.Point(672, 246);
+            this._txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
             this._txtFechaIngreso.Name = "_txtFechaIngreso";
-            this._txtFechaIngreso.Size = new System.Drawing.Size(100, 22);
+            this._txtFechaIngreso.Size = new System.Drawing.Size(136, 29);
             this._txtFechaIngreso.TabIndex = 16;
             // 
             // _txtNumeroDeHuespedes
             // 
-            this._txtNumeroDeHuespedes.Location = new System.Drawing.Point(364, 164);
+            this._txtNumeroDeHuespedes.Location = new System.Drawing.Point(500, 246);
+            this._txtNumeroDeHuespedes.Margin = new System.Windows.Forms.Padding(4);
             this._txtNumeroDeHuespedes.Name = "_txtNumeroDeHuespedes";
-            this._txtNumeroDeHuespedes.Size = new System.Drawing.Size(100, 22);
+            this._txtNumeroDeHuespedes.Size = new System.Drawing.Size(136, 29);
             this._txtNumeroDeHuespedes.TabIndex = 15;
             // 
             // _txtIdHabitacion
             // 
-            this._txtIdHabitacion.Location = new System.Drawing.Point(224, 164);
+            this._txtIdHabitacion.Location = new System.Drawing.Point(308, 246);
+            this._txtIdHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this._txtIdHabitacion.Name = "_txtIdHabitacion";
-            this._txtIdHabitacion.Size = new System.Drawing.Size(100, 22);
+            this._txtIdHabitacion.Size = new System.Drawing.Size(136, 29);
             this._txtIdHabitacion.TabIndex = 14;
             // 
             // _txtIDCliente
             // 
-            this._txtIDCliente.Location = new System.Drawing.Point(118, 164);
+            this._txtIDCliente.Location = new System.Drawing.Point(162, 246);
+            this._txtIDCliente.Margin = new System.Windows.Forms.Padding(4);
             this._txtIDCliente.Name = "_txtIDCliente";
-            this._txtIDCliente.Size = new System.Drawing.Size(100, 22);
+            this._txtIDCliente.Size = new System.Drawing.Size(136, 29);
             this._txtIDCliente.TabIndex = 13;
             // 
             // ReservaID
             // 
-            this.ReservaID.Location = new System.Drawing.Point(58, 164);
+            this.ReservaID.Location = new System.Drawing.Point(80, 246);
+            this.ReservaID.Margin = new System.Windows.Forms.Padding(4);
             this.ReservaID.Name = "ReservaID";
-            this.ReservaID.Size = new System.Drawing.Size(29, 22);
+            this.ReservaID.Size = new System.Drawing.Size(38, 29);
             this.ReservaID.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 144);
+            this.label1.Location = new System.Drawing.Point(76, 216);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 17);
+            this.label1.Size = new System.Drawing.Size(31, 25);
             this.label1.TabIndex = 21;
             this.label1.Text = "ID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(127, 144);
+            this.label2.Location = new System.Drawing.Point(175, 216);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.Size = new System.Drawing.Size(120, 25);
             this.label2.TabIndex = 22;
             this.label2.Text = "ID CLIENTE";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(221, 144);
+            this.label3.Location = new System.Drawing.Point(304, 216);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 17);
+            this.label3.Size = new System.Drawing.Size(159, 25);
             this.label3.TabIndex = 23;
             this.label3.Text = "ID HABITACION";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(334, 144);
+            this.label4.Location = new System.Drawing.Point(459, 216);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 17);
+            this.label4.Size = new System.Drawing.Size(187, 25);
             this.label4.TabIndex = 24;
             this.label4.Text = "NRO. HUESPEDES";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(486, 144);
+            this.label5.Location = new System.Drawing.Point(668, 216);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 17);
+            this.label5.Size = new System.Drawing.Size(175, 25);
             this.label5.TabIndex = 25;
             this.label5.Text = "FECHA INGRESO";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(627, 144);
+            this.label6.Location = new System.Drawing.Point(862, 216);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 17);
+            this.label6.Size = new System.Drawing.Size(169, 25);
             this.label6.TabIndex = 26;
             this.label6.Text = "FECHA EGRESO";
             // 
             // FrmConsultaReserva
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1100, 675);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -188,8 +203,11 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._lblIDReserva);
             this.Controls.Add(this._btnBuscarPorIdReserva);
             this.Controls.Add(this._txtIdReserva);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmConsultaReserva";
             this.Text = "Consulta de reservas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmConsultaReserva_FormClosing);
+            this.Load += new System.EventHandler(this.FrmConsultaReserva_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

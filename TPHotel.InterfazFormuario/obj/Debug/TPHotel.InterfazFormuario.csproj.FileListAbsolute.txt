@@ -35,12 +35,8 @@ C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.Inte
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.csproj.AssemblyReference.cache
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.csproj.SuggestedBindingRedirects.cache
-C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaHabitaciones.resources
-C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaHoteles.resources
-C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmIngresarReservas.resources
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmPrincipal.resources
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmConsultaClientes.resources
-C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaClientes.resources
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.Properties.Resources.resources
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.csproj.GenerateResource.cache
 C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.csproj.CoreCompileInputs.cache
@@ -52,3 +48,13 @@ C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormu
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmInformes.resources
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmConsultarHoteles.resources
 C:\Users\Administrador\Documents\GitHub\Hotel\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.Proximamente.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmConsultaReserva.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmDeseaAgregarClienteNuevo.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmInformes.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.Proximamente.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmInicio.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmConsultarHabitaciones.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaHabitacion.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaHotel.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaReserva.resources
+C:\Users\mgarayalde\OneDrive\Facultad\PracticasCAI2022\CAI-TP-HOTEL\TPHotel.InterfazFormuario\obj\Debug\TPHotel.InterfazFormuario.FrmAltaCliente.resources

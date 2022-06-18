@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TPHotel.Entidades;
+using TPHotel.Negocio;
 
 namespace TPHotel.InterfazFormuario
 {
     static class Program
     {
+        public static HotelNegocio _hotelNegocio;
+        
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -16,7 +20,9 @@ namespace TPHotel.InterfazFormuario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmInicio());
+
         }
+        
     }
 }

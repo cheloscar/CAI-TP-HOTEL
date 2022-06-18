@@ -16,9 +16,10 @@ namespace TPHotel.InterfazFormuario
     public partial class FrmConsultaReserva : Form
     {
         private HotelNegocio _hotelNegocio;
-        public FrmConsultaReserva()
+        public FrmConsultaReserva(Form padre)
         {
             InitializeComponent();
+            this.Owner = padre;
             _hotelNegocio = new HotelNegocio();
         }
 
@@ -67,6 +68,16 @@ namespace TPHotel.InterfazFormuario
 
             //Validador.Vaciar(_txtId);
 
+        }
+
+        private void FrmConsultaReserva_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmConsultaReserva_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Close();
         }
     }
 }

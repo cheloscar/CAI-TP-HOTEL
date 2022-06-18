@@ -13,14 +13,13 @@ using TPHotel.InterfazFormuario.Clase_validadora;
 
 namespace TPHotel.InterfazFormuario
 {
-    public partial class FrmIngresarReservas : Form
+    public partial class FrmAltaReserva : Form
     {
-        private HotelNegocio _hotelNegocio;
         private Cliente _cliente;
-        public FrmIngresarReservas()
+        public FrmAltaReserva(Form padre)
         {
             InitializeComponent();
-            _hotelNegocio = new HotelNegocio();
+            this.Owner = padre;
         }
 
         //public FrmIngresarReservas(Cliente cliente)
@@ -85,7 +84,7 @@ namespace TPHotel.InterfazFormuario
                     Reserva reserva = new Reserva(habitacion.IdHabitacion, cliente.ID,
                         Convert.ToInt32(_txtCantidadDeHuespedes.Text), fechaIngreso, fechaEgreso);
 
-                    _hotelNegocio.AgregarReserva(reserva);
+                    Program._hotelNegocio.AgregarReserva(reserva);
 
                     MessageBox.Show("Reserva agregafa con éxito");
 
@@ -107,7 +106,7 @@ namespace TPHotel.InterfazFormuario
         {
             List<HotelEntidad> listaHoteles = new List<HotelEntidad>();
 
-            listaHoteles = _hotelNegocio.TraerHoteles();
+            listaHoteles = Program._hotelNegocio.TraerHoteles();
 
             _lstHoteles.DataSource = null;
             _lstHoteles.DataSource = listaHoteles;
@@ -121,7 +120,7 @@ namespace TPHotel.InterfazFormuario
 
             List<Cliente> listaClientes = new List<Cliente>();
 
-            listaClientes = _hotelNegocio.TraerClientes();
+            listaClientes = Program._hotelNegocio.TraerClientes();
             //_cmbClientesPorId.DataSource = null;
 
             //_cmbClienteID.DataSource = listaClientes;
@@ -209,7 +208,7 @@ namespace TPHotel.InterfazFormuario
                 
                 if (dialogResult == DialogResult.Yes)
                 {
-                    FrmAltaClientes frm = new FrmAltaClientes(this);
+                    FrmAltaCliente frm = new FrmAltaCliente(this);
 
                     frm.Show();
                 }
@@ -266,7 +265,7 @@ namespace TPHotel.InterfazFormuario
             
              //ListaHabitaciones = _hotelNegocio.TraerHabitaciones(hotelSeleccionado.ID);
            // _lstHabitaciones.DataSource = null;
-            _lstHabitaciones.DataSource = _hotelNegocio.TraerHabitaciones(hotelSeleccionado.ID);
+            _lstHabitaciones.DataSource = Program._hotelNegocio.TraerHabitaciones(hotelSeleccionado.ID);
 
             _txtIdHotel.Text = hotelSeleccionado.ID.ToString();
             _txtNombreHotel.Text = hotelSeleccionado.Nombre;
@@ -282,7 +281,7 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnAltaCliente_Click(object sender, EventArgs e)
         {
-            FrmAltaClientes frm = new FrmAltaClientes(this);
+            FrmAltaCliente frm = new FrmAltaCliente(this);
             frm.Show();
 
             
@@ -290,7 +289,7 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnRefrescar_Click(object sender, EventArgs e)
         {
-            List<Cliente> listaCliente = _hotelNegocio.TraerClientes();
+            List<Cliente> listaCliente = Program._hotelNegocio.TraerClientes();
             _lstClientes.DataSource = listaCliente;
         }
 
@@ -328,6 +327,11 @@ namespace TPHotel.InterfazFormuario
             _txtNombreCliente.Text = clienteSelecciondo.Nombre;
             _txtApellidoCliente.Text = clienteSelecciondo.Apellido;
 
+        }
+
+        private void FrmIngresarReservas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
         }
     }
 }

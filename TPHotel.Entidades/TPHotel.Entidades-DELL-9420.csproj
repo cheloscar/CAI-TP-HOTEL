@@ -45,8 +45,8 @@
     <Compile Include="Excepciones\CantidadDeHuespedesMayorAlLaPermitidaException.cs" />
     <Compile Include="Excepciones\ErrorEnTransaccionExcepcion.cs" />
     <Compile Include="Excepciones\EstrellasFueraDeRangoExcepcion.cs" />
-    <Compile Include="Excepciones\IdNoPositivoExcepcion.cs" />
-    <Compile Include="Excepciones\ReservaInexistenteExcepcion.cs" />
+    <Compile Include="Excepciones\IdIgualCeroExcepcion.cs" />
+    <Compile Include="Excepciones\IdInexistenteException.cs" />
     <Compile Include="Habitacion.cs" />
     <Compile Include="HotelEntidad.cs" />
     <Compile Include="Persona.cs" />

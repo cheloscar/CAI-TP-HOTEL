@@ -13,14 +13,12 @@ using TPHotel.InterfazFormuario.Clase_validadora;
 
 namespace TPHotel.InterfazFormuario
 {
-    public partial class FrmAltaClientes : Form
+    public partial class FrmAltaCliente : Form
     {
-        private HotelNegocio _hotelNegocio;
         
-        public FrmAltaClientes(Form padre)
+        public FrmAltaCliente(Form padre)
         {
             InitializeComponent();
-            _hotelNegocio = new HotelNegocio();
             this.Owner = padre;
         }
 
@@ -31,16 +29,17 @@ namespace TPHotel.InterfazFormuario
             //_cmbActivo.Items.Add("NO");
             _txtFechaAlta.Enabled = false;
         }
-
+        //Al parecer esto no se usa, lo comento:
+        /*
         private void LlenarGrilla(DataGridView grilla)
         {
             List<Cliente> lst = new List<Cliente>();
-            lst = _hotelNegocio.TraerClientes();
+            lst = Program._hotelNegocio.TraerClientes();
 
             grilla.DataSource = lst;
 
         }
-
+        */ 
         private void button1_Click(object sender, EventArgs e)
         {
             List<CombinadoraDeControles> listaCombinadora = new List<CombinadoraDeControles>();
@@ -109,7 +108,7 @@ namespace TPHotel.InterfazFormuario
                     _txtEmail.Text.ToString(), DateTime.Now);
 
 
-                    _hotelNegocio.AgregarCliente(cli);
+                    Program._hotelNegocio.AgregarCliente(cli);
 
                     _txtFechaAlta.Enabled = true;
                     _txtFechaAlta.Text = fechaAlta.ToString();
@@ -195,6 +194,11 @@ namespace TPHotel.InterfazFormuario
         private void _txtId_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmAltaClientes_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
         }
     }
 }

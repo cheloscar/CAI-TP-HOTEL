@@ -13,13 +13,12 @@ using TPHotel.InterfazFormuario.Clase_validadora;
 
 namespace TPHotel.InterfazFormuario
 {
-    public partial class FrmAltaHoteles : Form
+    public partial class FrmAltaHotel : Form
     {
-        private HotelNegocio _hotelNegocio;
-        public FrmAltaHoteles()
+        public FrmAltaHotel(Form padre)
         {
             InitializeComponent();
-            _hotelNegocio = new HotelNegocio();
+            this.Owner = padre;
         }
 
         private void _btnAlta_Click(object sender, EventArgs e)
@@ -58,7 +57,7 @@ namespace TPHotel.InterfazFormuario
                 {
                     HotelEntidad hotel = new HotelEntidad(numeroEstrellas,
                         _txtNombre.Text, _txtDireccion.Text, amenities);
-                    _hotelNegocio.AgregarHotel(hotel);
+                    Program._hotelNegocio.AgregarHotel(hotel);
 
                     MessageBox.Show("Hotel agregado exitosamente");
                 }
@@ -91,5 +90,9 @@ namespace TPHotel.InterfazFormuario
             return resultado;
         }
 
+        private void FrmAltaHoteles_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
+        }
     }
 }
