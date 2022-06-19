@@ -38,7 +38,7 @@
             this.lblIniciando.Font = new System.Drawing.Font("Lucida Sans Unicode", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIniciando.Location = new System.Drawing.Point(126, 80);
             this.lblIniciando.Name = "lblIniciando";
-            this.lblIniciando.Size = new System.Drawing.Size(583, 103);
+            this.lblIniciando.Size = new System.Drawing.Size(416, 73);
             this.lblIniciando.TabIndex = 0;
             this.lblIniciando.Text = "Inicializando.";
             // 
@@ -48,17 +48,18 @@
             this.lblEspere.Font = new System.Drawing.Font("Lucida Sans Unicode", 26.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEspere.Location = new System.Drawing.Point(140, 244);
             this.lblEspere.Name = "lblEspere";
-            this.lblEspere.Size = new System.Drawing.Size(582, 76);
+            this.lblEspere.Size = new System.Drawing.Size(413, 54);
             this.lblEspere.TabIndex = 1;
             this.lblEspere.Text = "Por favor espere...";
             // 
             // FrmInicio
             // 
-            this.ClientSize = new System.Drawing.Size(863, 457);
+            this.ClientSize = new System.Drawing.Size(725, 457);
             this.Controls.Add(this.lblEspere);
             this.Controls.Add(this.lblIniciando);
             this.Name = "FrmInicio";
             this.Text = "Rich Texan Hotel";
+            this.Activated += new System.EventHandler(this.FrmInicio_Activated);
             this.Shown += new System.EventHandler(this.FrmInicio_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

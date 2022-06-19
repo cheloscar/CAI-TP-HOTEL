@@ -23,10 +23,6 @@ namespace TPHotel.InterfazFormuario
             
         }
 
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
-        }
-
         #region Opciones del menú Tira ALTAS
         private void Cliente_MenuTiraAltas_Click(object sender, EventArgs e)
         {
@@ -88,5 +84,9 @@ namespace TPHotel.InterfazFormuario
 
         #endregion
 
+        private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
+        }
     }
 }
