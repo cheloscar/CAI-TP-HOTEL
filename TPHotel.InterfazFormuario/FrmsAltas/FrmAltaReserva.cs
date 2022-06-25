@@ -56,7 +56,8 @@ namespace TPHotel.InterfazFormuario
 
             fechaEgreso = Validador.pedirFecha(_txtFechaEgreso.Text);
             fechaIngreso = Validador.pedirFecha(_txtFechaIngreso.Text);
-            
+            //Agregado 25/06/22
+            cantidadDeHuespedes = Validador.pedirInteger(_txtCantidadDeHuespedes,_lblCantidadHuespedes);
 
 
             if (_txtCantidadDeHuespedes.Text == string.Empty ||
@@ -66,17 +67,28 @@ namespace TPHotel.InterfazFormuario
 
                 MessageBox.Show(resultado);
             }
+            else if (_txtIdHabitacion.Text == string.Empty)
+            {
+                MessageBox.Show("El hotel no posee habitaciones");
+            }
+            else if (cantidadDeHuespedes <= 0)
+            {
+                MessageBox.Show("Ingrese cantidad válida");
+                _txtCantidadDeHuespedes.Text = string.Empty;
+            }
+
             else if (fechaIngreso.ToString() == "1/1/0001 00:00:00")
             {
-                MessageBox.Show("Ingrese fecha válidas");
-                _txtFechaEgreso.Text = string.Empty;
+                MessageBox.Show("Ingrese fecha válida");
+                _txtFechaIngreso.Text = string.Empty;
 
             }
             else if (fechaEgreso.ToString() == "1/1/0001 00:00:00")
             {
                 MessageBox.Show("Ingrese fecha válida");
-                _txtFechaIngreso.Text = string.Empty;
+                _txtFechaEgreso.Text = string.Empty;
             }
+
             else
             {
                 try
@@ -86,7 +98,7 @@ namespace TPHotel.InterfazFormuario
 
                     Program._hotelNegocio.AgregarReserva(reserva);
 
-                    MessageBox.Show("Reserva agregafa con éxito");
+                    MessageBox.Show("Reserva agregada con éxito");
 
                     _txtCantidadDeHuespedes.Text = string.Empty;
                     _txtFechaEgreso.Text = string.Empty;
@@ -271,6 +283,13 @@ namespace TPHotel.InterfazFormuario
             _txtNombreHotel.Text = hotelSeleccionado.Nombre;
             _txtDireccionHotel.Text = hotelSeleccionado.Direccion;
             _txtPrecio.Text = hotelSeleccionado.Estrellas.ToString();
+            
+               if (_lstHabitaciones.Items.Count == 0)
+            {
+                _txtIdHabitacion.Text = string.Empty;
+                _txtCantidaPlazas.Text = string.Empty;
+                _txtPrecio.Text = string.Empty;
+            }
 
         }
 
