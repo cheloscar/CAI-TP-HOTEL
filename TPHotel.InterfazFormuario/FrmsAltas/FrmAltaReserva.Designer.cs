@@ -83,7 +83,7 @@ namespace TPHotel.InterfazFormuario
             this._btnAltaHotel.Name = "_btnAltaHotel";
             this._btnAltaHotel.Size = new System.Drawing.Size(161, 148);
             this._btnAltaHotel.TabIndex = 0;
-            this._btnAltaHotel.Text = "ALTA HOTEL";
+            this._btnAltaHotel.Text = "Alta reserva";
             this._btnAltaHotel.UseVisualStyleBackColor = true;
             this._btnAltaHotel.Click += new System.EventHandler(this.button1_Click);
             // 
