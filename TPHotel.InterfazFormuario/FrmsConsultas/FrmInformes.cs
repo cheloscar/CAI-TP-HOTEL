@@ -24,6 +24,8 @@ namespace TPHotel.InterfazFormuario
         private void FrmInformes_Load(object sender, EventArgs e)
         {
             CargarListas();
+            _btnDetalle.Enabled = false;
+            button1.Enabled = false;
         }
 
 
