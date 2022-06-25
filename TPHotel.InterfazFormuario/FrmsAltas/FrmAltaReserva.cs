@@ -31,6 +31,10 @@ namespace TPHotel.InterfazFormuario
         private void FrmIngresarConsultarReservas_Load(object sender, EventArgs e)
         {
             CargarListas();
+            
+             _txtIdHabitacion.Text = string.Empty;
+             _txtCantidaPlazas.Text = string.Empty;
+             _txtPrecio.Text = string.Empty;
         }
 
         private void button1_Click(object sender, EventArgs e)
