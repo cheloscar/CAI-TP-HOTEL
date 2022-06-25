@@ -91,5 +91,18 @@ namespace TPHotel.InterfazFormuario
             _cmbHotel.DisplayMember = "ComboDisplay";
 
         }
+        
+          private void button1_Click(object sender, EventArgs e)
+        {
+            //Agregar al GITHUB desde la web 25/06/22
+
+            Habitacion habitacionSeleccionada = (Habitacion)_lstHabitaciones.SelectedValue;
+            //List<Habitacion> habitaciones = _hotelnegocio.TraerHabitaciones(.ID);
+
+
+            _txtIdHabitacion.Text = habitacionSeleccionada.IdHabitacion.ToString();
+            _txtHabNmbr.Text = habitacionSeleccionada.Categoria;
+            _txtEstrellas.Text = habitacionSeleccionada.Precio.ToString();
+        }
     }
 }
