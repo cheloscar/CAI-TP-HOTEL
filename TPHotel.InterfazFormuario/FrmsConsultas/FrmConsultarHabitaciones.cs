@@ -23,6 +23,11 @@ namespace TPHotel.InterfazFormuario
         private void FrmConsultarHoteles_Load(object sender, EventArgs e)
         {
             CargarListas();
+             _txtIdHabitacion.Enabled = false;
+            _txtHabNmbr.Enabled = false;
+            _txtEstrellas.Enabled = false;
+
+            button1.Enabled = false;
         }
 
         private void _cmbHotel_SelectionChangeCommitted(object sender, EventArgs e)
