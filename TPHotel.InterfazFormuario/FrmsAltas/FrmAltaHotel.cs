@@ -23,7 +23,7 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnAlta_Click(object sender, EventArgs e)
         {
-            List<CombinadoraDeControles> listaCombinadora = new List<CombinadoraDeControles>();
+    List<CombinadoraDeControles> listaCombinadora = new List<CombinadoraDeControles>();
             string resultado = "";
             int numeroEstrellas = 0;
             int numeroID = 0;
@@ -44,11 +44,18 @@ namespace TPHotel.InterfazFormuario
             amenities = Checked(_chkAmenities);
 
             if (_txtId.Text == string.Empty || _txtNombre.Text == string.Empty || _txtEstrellas.Text == string.Empty
-                || _txtDireccion.Text == string.Empty )
+                || _txtDireccion.Text == string.Empty)
             {
                 resultado = Validador.PedirStringLista(listaCombinadora);
                 MessageBox.Show(resultado);
             }
+            
+            else if (numeroEstrellas <= 0)
+            {
+                MessageBox.Show("Ingrese número de estrellas válido");
+                _txtEstrellas.Text = string.Empty;
+            }
+
             else
             {
                 try
@@ -58,11 +65,11 @@ namespace TPHotel.InterfazFormuario
                     Program._hotelNegocio.AgregarHotel(hotel);
 
                     MessageBox.Show("Hotel agregado exitosamente");
-                    
+
                     _txtNombre.Text = string.Empty;
                     _txtDireccion.Text = string.Empty;
                     _txtEstrellas.Text = string.Empty;
-                    
+
                     _lblAmenities.BackColor = System.Drawing.Color.Transparent;
                     _lblDireccion.BackColor = System.Drawing.Color.Transparent;
                     _lblEstrellas.BackColor = System.Drawing.Color.Transparent;
@@ -71,7 +78,11 @@ namespace TPHotel.InterfazFormuario
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.ToString());
+                    MessageBox.Show("NO PUEDE PASARSE DE LAS 5 ESTRELLAS \n \n" + " Mensaje original " + ex.ToString());
+                }
+                finally
+                {
+                    _txtEstrellas.Text = string.Empty;
                 }
                 
             }
