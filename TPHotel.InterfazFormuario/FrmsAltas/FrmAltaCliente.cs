@@ -101,6 +101,7 @@ namespace TPHotel.InterfazFormuario
                     _txtTelefono.Text = string.Empty;
                     _txtEmail.Text = string.Empty;
                     _txtFechaNacimiento.Text = string.Empty;
+                    _txtFechaAlta.Text = string.Empty;
                     
                     _lblFechaAlta.BackColor = System.Drawing.Color.Transparent;
                     _lblNombre.BackColor = System.Drawing.Color.Transparent;
