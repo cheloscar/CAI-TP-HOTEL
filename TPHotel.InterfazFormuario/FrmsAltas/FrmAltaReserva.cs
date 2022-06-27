@@ -197,7 +197,7 @@ namespace TPHotel.InterfazFormuario
             _txtIdHotel.Text = hotelSeleccionado.ID.ToString();
             _txtNombreHotel.Text = hotelSeleccionado.Nombre;
             _txtDireccionHotel.Text = hotelSeleccionado.Direccion;
-            _txtPrecio.Text = hotelSeleccionado.Estrellas.ToString();
+            _txtEstrellas.Text = hotelSeleccionado.Estrellas.ToString();
             
                if (_lstHabitaciones.Items.Count == 0)
             {
@@ -261,12 +261,4 @@ namespace TPHotel.InterfazFormuario
             clienteID.Text = clienteSelecciondo.ID.ToString();
             _txtNombreCliente.Text = clienteSelecciondo.Nombre;
             _txtApellidoCliente.Text = clienteSelecciondo.Apellido;
-
-        }
-
-        private void FrmIngresarReservas_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Owner.Show();
-        }
-    }
-}
+            _txtFechaNacimiento.Text = clienteSelecciondo.FechaNacimiento.ToString();
