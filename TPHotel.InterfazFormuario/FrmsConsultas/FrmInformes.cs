@@ -37,7 +37,6 @@ namespace TPHotel.InterfazFormuario
             Cliente cliente = Program._hotelNegocio.TraerClientePorNumeroDeReserva(reserva.Id);
             List<HotelEntidad> listaHoteles = new List<HotelEntidad>();
             List<Habitacion> listaHabitaciones = new List<Habitacion>();
-            //listaHabitaciones = _hotelnegocio.TraerHabitaciones(reserva.);
 
             _txtIdReserva.Text = reserva.Id.ToString();
             _txtNombreYApellido.Text = cliente.Nombre + " " + cliente.Apellido;
@@ -54,15 +53,11 @@ namespace TPHotel.InterfazFormuario
 
             listaDeClientes = Program._hotelNegocio.TraerClientes();
             listaDeHoteles = Program._hotelNegocio.TraerHoteles();
-
-            //_cmbClienteID.DataSource = listaClientes;
-            //_cmbClienteID.DisplayMember = "ComboDisplay";
-            //_cmbClienteID.ValueMember = "ID";
+            
             _cmbClientes.DataSource = null;
             _cmbClientes.DataSource = listaDeClientes;
-
             _cmbClientes.DisplayMember = "ComboDisplay";
-            //_cmbClientes.ValueMember = "ID";
+            
 
             _cmbHotel.DataSource = null;
             _cmbHotel.DataSource = listaDeHoteles;
@@ -75,7 +70,6 @@ namespace TPHotel.InterfazFormuario
         {
             List<Reserva> listadoDeReservas = new List<Reserva>();
             Cliente cliente = (Cliente)_cmbClientes.SelectedValue;
-            //int id = cliente.ID;
             listadoDeReservas = Program._hotelNegocio.TraerReservaPorIdCliente(cliente.ID);
 
             if (listadoDeReservas.Count == 0)
@@ -118,27 +112,12 @@ namespace TPHotel.InterfazFormuario
 
         private void _cmbClientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //List<Habitacion> listaHabitaciones = new List<Habitacion>();
-            //HotelEntidad htl = (HotelEntidad)_cmbHotel.SelectedValue;
-
-            //listaHabitaciones = _hotelnegocio.TraerHabitaciones(htl.ID);
-
-            //if (listaHabitaciones.Count == 0)
-            //{
-            //    MessageBox.Show("El hotel no posee habitaciones");
-            //}
-
-            //else
-            //{
-            //    _lstHabitaciones.DataSource = null;
-            //    _lstHabitaciones.DataSource = listaHabitaciones;
-            //}
+   
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Habitacion habitacionSeleccionada = (Habitacion)_lstHabitaciones.SelectedValue;
-            //List<Habitacion> habitaciones = _hotelnegocio.TraerHabitaciones(.ID);
 
 
             _txtIdHabitacion.Text = habitacionSeleccionada.IdHabitacion.ToString();
@@ -179,12 +158,10 @@ namespace TPHotel.InterfazFormuario
                 _lstHabitaciones.DataSource = null;
                 _lstHabitaciones.DataSource = listaHabitaciones;
                 
-                //Agregado 25/06/22
                 _txtIdHabitacion.Enabled = true;
                 _txtHabNmbr.Enabled = true;
                 _txtEstrellas.Enabled = true;
                 button1.Enabled = true;
-                //
             }
 
 
