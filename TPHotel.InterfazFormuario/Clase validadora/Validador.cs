@@ -58,7 +58,6 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
             }
             return todojunto;
 
-           // throw new Exception();
             
         }
         public static int pedirInteger(TextBox numero, Label lb)
@@ -70,18 +69,13 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
 
             if (pudeConvertir == false)
             {
-                //MessageBox.Show("El campo " + lb.Text + "debe ser numérico");
-
-                //numero.Text = string.Empty;
-                //throw new Exception("El campo " + lb.Text + "debe ser numérico");
-
                 numeroSalida = -1;
             }
 
             else if(numero.Text == string.Empty)
             {
                 numeroSalida = 0;
-                //numero.Text = string.Empty;
+               
             }
             return numeroSalida;
         }
