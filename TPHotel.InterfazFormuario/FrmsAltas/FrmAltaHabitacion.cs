@@ -35,18 +35,18 @@ namespace TPHotel.InterfazFormuario
             double precio = 0;
             bool cancelable;
 
-            //CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtIdHabitacion, _lblIdHabitacion);
+            
             CombinadoraDeControles txtlb2 = new CombinadoraDeControles(_txtCantidadPlazas, _lblCantidadPlazas);
             CombinadoraDeControles txtlb3 = new CombinadoraDeControles(_txtPrecio, _lblPrecio);
             CombinadoraDeControles txtlb4 = new CombinadoraDeControles(_txtCategoria, _lblCategoria);
             
-            //listaCombinadora.Add(txtlb1);
+        
             listaCombinadora.Add(txtlb2);
             listaCombinadora.Add(txtlb3);
             listaCombinadora.Add(txtlb4);
 
 
-            //idHabitacion = Validador.pedirInteger(_txtIdHabitacion, _lblIdHabitacion);
+            
             cancelable = Checked(_chkCancelable);
             CantidadPlazas = Validador.pedirInteger(_txtCantidadPlazas, _lblCantidadPlazas);
             precio = Validador.pedirDouble(_txtPrecio, _lblPrecio);
