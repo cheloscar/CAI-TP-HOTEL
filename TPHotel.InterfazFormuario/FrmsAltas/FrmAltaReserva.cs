@@ -262,3 +262,4 @@ namespace TPHotel.InterfazFormuario
             _txtNombreCliente.Text = clienteSelecciondo.Nombre;
             _txtApellidoCliente.Text = clienteSelecciondo.Apellido;
             _txtFechaNacimiento.Text = clienteSelecciondo.FechaNacimiento.ToString();
+        }
