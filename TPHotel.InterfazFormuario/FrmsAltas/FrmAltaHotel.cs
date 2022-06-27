@@ -60,7 +60,6 @@ namespace TPHotel.InterfazFormuario
                     MessageBox.Show("Hotel agregado exitosamente");
                     
                     _txtNombre.Text = string.Empty;
-                    _txtId.Text = string.Empty;
                     _txtDireccion.Text = string.Empty;
                     _txtEstrellas.Text = string.Empty;
                     
