@@ -61,11 +61,13 @@ namespace TPHotel.InterfazFormuario
             else if (CantidadPlazas == -1)
             {
                 MessageBox.Show("Ingrese numero válido de número de plazas");
+                _txtCantidadPlazas.Text = string.Empty;
             }
 
             else if (precio == -1)
             {
                 MessageBox.Show("Ingrese un precio válido");
+                _txtPrecio.Text = string.Empty;
 
             }
             else
