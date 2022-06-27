@@ -63,6 +63,12 @@ namespace TPHotel.InterfazFormuario
                     _txtId.Text = string.Empty;
                     _txtDireccion.Text = string.Empty;
                     _txtEstrellas.Text = string.Empty;
+                    
+                    _lblAmenities.BackColor = System.Drawing.Color.Transparent;
+                    _lblDireccion.BackColor = System.Drawing.Color.Transparent;
+                    _lblEstrellas.BackColor = System.Drawing.Color.Transparent;
+                    _lblId.BackColor = System.Drawing.Color.Transparent;
+                    _lblNombre.BackColor = System.Drawing.Color.Transparent;
                 }
                 catch (Exception ex)
                 {
