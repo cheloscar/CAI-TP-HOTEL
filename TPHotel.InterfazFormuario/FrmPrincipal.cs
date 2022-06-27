@@ -64,7 +64,7 @@ namespace TPHotel.InterfazFormuario
 
         private void Hoteles_MenuTiraConsultas_Click(object sender, EventArgs e)
         {
-            Proximamente frm = new Proximamente();
+            Proximamente frm = new Proximamente(this);
             frm.Show();
             this.Hide();
         }
