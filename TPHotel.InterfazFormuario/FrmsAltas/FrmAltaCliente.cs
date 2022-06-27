@@ -24,22 +24,9 @@ namespace TPHotel.InterfazFormuario
 
         private void FormIngresarConsultarClientes_Load(object sender, EventArgs e)
         {
-            // LlenarGrilla(dataGridView1);
-            //_cmbActivo.Items.Add("SI");
-            //_cmbActivo.Items.Add("NO");
             _txtFechaAlta.Enabled = false;
         }
-        //Al parecer esto no se usa, lo comento:
-        /*
-        private void LlenarGrilla(DataGridView grilla)
-        {
-            List<Cliente> lst = new List<Cliente>();
-            lst = Program._hotelNegocio.TraerClientes();
 
-            grilla.DataSource = lst;
-
-        }
-        */ 
         private void button1_Click(object sender, EventArgs e)
         {
             List<CombinadoraDeControles> listaCombinadora = new List<CombinadoraDeControles>();
@@ -49,9 +36,7 @@ namespace TPHotel.InterfazFormuario
             DateTime fechaNacimiento = DateTime.Now;
             bool activo;
 
-                //CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtId, _lblId);
-                //CombinadoraDeControles txtlb2 = new CombinadoraDeControles(_txtFechaAlta, _lblFechaAlta);
-                //CombinadoraDeControles txtlb3 = new CombinadoraDeControles(_txtActivo, _lblActivo);
+
                 CombinadoraDeControles txtlb4 = new CombinadoraDeControles(_txtNombre, _lblNombre);
                 CombinadoraDeControles txtlb5 = new CombinadoraDeControles(_txtApellido, _lblApellido);
                 CombinadoraDeControles txtlb6 = new CombinadoraDeControles(_txtDireccion, _lblDireccion);
@@ -59,9 +44,6 @@ namespace TPHotel.InterfazFormuario
                 CombinadoraDeControles txtlb8 = new CombinadoraDeControles(_txtEmail, _lblEmail);
                 CombinadoraDeControles txtlb9 = new CombinadoraDeControles(_txtFechaNacimiento, _lblFechaDeNacimiento);
 
-                //listaCombinadora.Add(txtlb1);
-                //listaCombinadora.Add(txtlb2);
-               // listaCombinadora.Add(txtlb3);
                 listaCombinadora.Add(txtlb4);
                 listaCombinadora.Add(txtlb5);
                 listaCombinadora.Add(txtlb6);
@@ -71,7 +53,6 @@ namespace TPHotel.InterfazFormuario
 
 
           
-            //numero = Validador.pedirInteger(_txtId, _lblId);
             activo = Checked(_chkActivo);
             fechaAlta = DateTime.Now;
             fechaNacimiento = Validador.pedirFecha(txtlb9.CajaDeTexto.Text);
@@ -81,7 +62,7 @@ namespace TPHotel.InterfazFormuario
 
             if (txtlb4.ToString() == string.Empty || txtlb5.ToString() == string.Empty || txtlb6.ToString() == string.Empty
                  || txtlb7.ToString() == string.Empty || txtlb8.ToString() == string.Empty || txtlb9.ToString() == string.Empty)
-            //|| fechaAlta      
+                 
             {
 
                 resultado = Validador.PedirStringLista(listaCombinadora);
@@ -92,7 +73,6 @@ namespace TPHotel.InterfazFormuario
             }
             else if (fechaNacimiento.ToString() == "1/1/0001 00:00:00")
             {
-                //da de alta cliente abriendo try catch
                 MessageBox.Show("Ingrese fecha válida");
                 _txtFechaNacimiento.Text = string.Empty;
             }
@@ -115,17 +95,19 @@ namespace TPHotel.InterfazFormuario
 
                     MessageBox.Show("Cliente agregado exitosamente");
                     
-
-                    this.Close();
+                    _txtNombre.Text = string.Empty;
+                    _txtApellido.Text = string.Empty;
+                    _txtDireccion.Text = string.Empty;
+                    _txtTelefono.Text = string.Empty;
+                    _txtEmail.Text = string.Empty;
+                    _txtFechaNacimiento.Text = string.Empty;
                 }
 
 
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                    //_lblId.BackColor = System.Drawing.Color.White;
                     _lblFechaAlta.BackColor = System.Drawing.Color.White;
-                    //_lblActivo.BackColor = System.Drawing.Color.White;
                     _lblNombre.BackColor = System.Drawing.Color.White;
                     _lblApellido.BackColor = System.Drawing.Color.White;
                     _lblEmail.BackColor = System.Drawing.Color.White;
