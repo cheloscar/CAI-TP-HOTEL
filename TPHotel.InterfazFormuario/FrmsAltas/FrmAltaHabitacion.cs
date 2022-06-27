@@ -80,6 +80,11 @@ namespace TPHotel.InterfazFormuario
                     _txtCantidadPlazas.Text = string.Empty;
                     _txtCategoria.Text = string.Empty;
                     _txtPrecio.Text = string.Empty;
+                    
+                    
+                    _lblCantidadPlazas.BackColor = System.Drawing.Color.Transparent;
+                    _lblCategoria.BackColor = System.Drawing.Color.Transparent;
+                    _lblPrecio.BackColor = System.Drawing.Color.Transparent;
                 }
 
                 catch (Exception ex)
