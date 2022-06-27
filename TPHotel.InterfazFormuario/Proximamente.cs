@@ -12,9 +12,10 @@ namespace TPHotel.InterfazFormuario
 {
     public partial class Proximamente : Form
     {
-        public Proximamente()
+        public Proximamente(Form padre)
         {
             InitializeComponent();
+            this.Owner = padre;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,8 +25,8 @@ namespace TPHotel.InterfazFormuario
 
         private void CE_Click(object sender, EventArgs e)
         {
-            this.Owner.Show(); 
-            this.Close();
+           this.Hide();
+           Owner.Show();
         }
     }
 }
