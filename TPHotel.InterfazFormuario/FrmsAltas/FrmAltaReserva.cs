@@ -101,6 +101,11 @@ namespace TPHotel.InterfazFormuario
                     _txtCantidadDeHuespedes.Text = string.Empty;
                     _txtFechaEgreso.Text = string.Empty;
                     _txtFechaIngreso.Text = string.Empty;
+                    
+
+                    _lblCantidadHuespedes.BackColor = System.Drawing.Color.Transparent;
+                    _lblFechaEgreso.BackColor = System.Drawing.Color.Transparent;
+                    _lblFechaIngreso.BackColor = System.Drawing.Color.Transparent;
 
                 }
                 
