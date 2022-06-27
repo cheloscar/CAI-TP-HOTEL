@@ -263,3 +263,10 @@ namespace TPHotel.InterfazFormuario
             _txtApellidoCliente.Text = clienteSelecciondo.Apellido;
             _txtFechaNacimiento.Text = clienteSelecciondo.FechaNacimiento.ToString();
         }
+        
+           private void FrmIngresarReservas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
+        }
+    }
+}
