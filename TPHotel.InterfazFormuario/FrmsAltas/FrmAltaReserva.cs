@@ -22,11 +22,6 @@ namespace TPHotel.InterfazFormuario
             this.Owner = padre;
         }
 
-        //public FrmIngresarReservas(Cliente cliente)
-        //{
-        //    InitializeComponent();
-        //    _cliente = cliente;
-        //}
 
         private void FrmIngresarConsultarReservas_Load(object sender, EventArgs e)
         {
@@ -52,7 +47,6 @@ namespace TPHotel.InterfazFormuario
             CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtCantidadDeHuespedes, _lblCantidadHuespedes);
             CombinadoraDeControles txtlb2 = new CombinadoraDeControles(_txtFechaIngreso, _lblFechaIngreso);
             CombinadoraDeControles txtlb3 = new CombinadoraDeControles(_txtFechaEgreso, _lblFechaEgreso);
-            //CombinadoraDeControles txtlb4 = new CombinadoraDeControles(_txtId, _lblIdReserva);
 
             listaCombinadora.Add(txtlb1);
             listaCombinadora.Add(txtlb2);
@@ -109,12 +103,13 @@ namespace TPHotel.InterfazFormuario
                     _txtFechaIngreso.Text = string.Empty;
 
                 }
+                
                 catch (Exception ex)
+                
                 {
                     MessageBox.Show(ex.ToString());
                 }
             }
-
 
         }
 
@@ -126,23 +121,11 @@ namespace TPHotel.InterfazFormuario
 
             _lstHoteles.DataSource = null;
             _lstHoteles.DataSource = listaHoteles;
-            //_cmbClienteID.DataSource = null;
-
-            //_cmbNombreHoteles.DataSource = null;
-
-            //_cmbNombreHoteles.DataSource = listaHoteles;
-            //_cmbNombreHoteles.DisplayMember = "ComboDisplay";
-            //_cmbNombreHoteles.ValueMember = "Nombre";
-
+  
             List<Cliente> listaClientes = new List<Cliente>();
 
             listaClientes = Program._hotelNegocio.TraerClientes();
-            //_cmbClientesPorId.DataSource = null;
-
-            //_cmbClienteID.DataSource = listaClientes;
-            //_cmbClienteID.DisplayMember = "ComboDisplay";
-            //_cmbClienteID.ValueMember = "ID";
-
+            
             _lstClientes.DataSource = null;
             _lstClientes.DataSource = listaClientes;
         }
@@ -154,10 +137,6 @@ namespace TPHotel.InterfazFormuario
 
         private void _cmbClientesPorId_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            
-
-
             // MessageBox.Show("pasó");
         }
 
@@ -168,49 +147,11 @@ namespace TPHotel.InterfazFormuario
 
         private void button2_Click(object sender, EventArgs e)
         {
-           // int id = Validador.pedirInteger(_txtIdABuscar, _lblCliente);
-            //Cliente cliente = _hotelNegocio.TraerCliente(Convert.ToInt32(_cmbClienteID.SelectedValue));
-
-            //if (id == -1)
-            //{
-            //    MessageBox.Show("Ingrese código válido, sin letras y con numero mayores a cero");
-            //}
-
-            //else
-            //{
-            //    try
-            //    {
-            //        Cliente cli = _hotelNegocio.TraerCliente(id);
-
-
-
-            //    }
-
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message.ToString());
-
-            //        FrmDeseaAgregarClienteNuevo frm = new FrmDeseaAgregarClienteNuevo();
-            //        frm.Show();
-            //    }
-            //    finally
-            //    {
-
-            //        //_txtId.Text = _cliente.ID.ToString();
-            //        //_txtNombre.Text = _cliente.Nombre;
-            //        //_txtApellido.Text = _cliente.Apellido;
-
-            //    }
-
-            //}
+         //Quedo sin efecto//
 
             try
             {
-               // Cliente cli = _hotelNegocio.TraerCliente(id);
-                //(Convert.ToInt32(_cmbClienteID.SelectedValue));
-                //_txtIdCliente.Text = cli.ID.ToString();
-                //_txtNombre.Text = cli.Nombre;
-                //_txtApellido.Text = cli.Apellido;
+              
             }
 
             catch (Exception ex)
@@ -234,53 +175,18 @@ namespace TPHotel.InterfazFormuario
                     
                 }
             }
-                //object algo = _cmbClientesPorId.SelectedValue;
-
-            //MessageBox.Show(algo.ToString());
-            
-
-            //_txtIdCliente.Text = cliente.ID.ToString();
-            //_txtNombre.Text = cliente.Nombre;
-            //_txtApellido.Text = cliente.Apellido;
+                
         }
 
         private void _cmbNombreHoteles_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // List<Habitacion> listaHabitaciones = new List<Habitacion>();
-           // List<HotelEntidad> listaHoteles = new List<HotelEntidad>();
-
-           // HotelEntidad hotel = null;
-
-           // listaHoteles = _hotelNegocio.TraerHoteles();
-
-           // foreach (HotelEntidad ht in listaHoteles)
-               
-           // { 
-           //     if (ht.Nombre == (_cmbNombreHoteles.SelectedValue).ToString())
-           //     {
-           //         hotel = ht;
-           //     }
-           // }
-
-           //listaHabitaciones = _hotelNegocio.TraerHabitaciones(hotel.ID);
-
-           // _cmbHabitacionesPorID.DataSource = null;
-           // _cmbHabitacionesPorID.DataSource = listaHabitaciones;
-           // _cmbHabitacionesPorID.DisplayMember = "ComboDisplay";
-           // _cmbHabitacionesPorID.ValueMember = "IdHabitacion";
-
+        
         }
 
         private void _lstHoteles_SelectedIndexChanged(object sender, EventArgs e)
         {
              List<Habitacion> listaHabitaciones = new List<Habitacion>();
-            
-
              HotelEntidad hotelSeleccionado = (HotelEntidad)_lstHoteles.SelectedItem;
-
-            
-             //ListaHabitaciones = _hotelNegocio.TraerHabitaciones(hotelSeleccionado.ID);
-           // _lstHabitaciones.DataSource = null;
             _lstHabitaciones.DataSource = Program._hotelNegocio.TraerHabitaciones(hotelSeleccionado.ID);
 
             _txtIdHotel.Text = hotelSeleccionado.ID.ToString();
@@ -306,6 +212,7 @@ namespace TPHotel.InterfazFormuario
         {
             FrmAltaCliente frm = new FrmAltaCliente(this);
             frm.Show();
+            this.Hide();
 
             
         }
