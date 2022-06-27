@@ -32,17 +32,15 @@ namespace TPHotel.InterfazFormuario
             CombinadoraDeControles txtlb1 = new CombinadoraDeControles(_txtEstrellas, _lblEstrellas);
             CombinadoraDeControles txtlb2 = new CombinadoraDeControles(_txtNombre, _lblNombre);
             CombinadoraDeControles txtlb3 = new CombinadoraDeControles(_txtDireccion, _lblDireccion);
-            //CombinadoraDeControles txtlb4 = new CombinadoraDeControles(_txtAmenities, _lblAmenities);
             CombinadoraDeControles txtlb5 = new CombinadoraDeControles(_txtId, _lblId);
 
             listaCombinadora.Add(txtlb1);
             listaCombinadora.Add(txtlb2);
             listaCombinadora.Add(txtlb3);
-            //listaCombinadora.Add(txtlb4);
             listaCombinadora.Add(txtlb5);
 
             numeroEstrellas = Validador.pedirInteger(_txtEstrellas, _lblEstrellas);
-            numeroID = Validador.pedirInteger(_txtId, _lblId); //ya no corre.
+            numeroID = Validador.pedirInteger(_txtId, _lblId); //ya no corre, dado que la API lo hace automático.
             amenities = Checked(_chkAmenities);
 
             if (_txtId.Text == string.Empty || _txtNombre.Text == string.Empty || _txtEstrellas.Text == string.Empty
@@ -60,6 +58,11 @@ namespace TPHotel.InterfazFormuario
                     Program._hotelNegocio.AgregarHotel(hotel);
 
                     MessageBox.Show("Hotel agregado exitosamente");
+                    
+                    _txtNombre.Text = string.Empty;
+                    _txtId.Text = string.Empty;
+                    _txtDireccion.Text = string.Empty;
+                    _txtEstrellas.Text = string.Empty;
                 }
                 catch (Exception ex)
                 {
