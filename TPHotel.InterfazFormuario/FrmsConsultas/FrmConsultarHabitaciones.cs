@@ -40,8 +40,7 @@ namespace TPHotel.InterfazFormuario
             if (listaHabitaciones.Count == 0)
             {
                 MessageBox.Show("El hotel no posee habitaciones");
-                //Agregado el 25/06/22
-                 _lstHabitaciones.DataSource = null;
+                _lstHabitaciones.DataSource = null;
                 _lstHabitaciones.Items.Clear();
 
                 _txtIdHabitacion.Text = string.Empty;
@@ -53,7 +52,6 @@ namespace TPHotel.InterfazFormuario
                 _txtEstrellas.Enabled = false;
 
                 button1.Enabled = false;
-                //
             }
 
             else
@@ -61,12 +59,10 @@ namespace TPHotel.InterfazFormuario
                 _lstHabitaciones.DataSource = null;
                 _lstHabitaciones.DataSource = listaHabitaciones;
                 
-                //Agregado el 25/06/22
                 _txtIdHabitacion.Enabled = true;
                 _txtHabNmbr.Enabled = true;
                 _txtEstrellas.Enabled = true;
                 button1.Enabled = true;
-                //
             }
 
 
@@ -78,33 +74,16 @@ namespace TPHotel.InterfazFormuario
         }
         public void CargarListas()
         {
-            //List<Cliente> listaDeClientes = new List<Cliente>();
-            //List<HotelEntidad> listaDeHoteles = new List<HotelEntidad>();
-
-            //listaDeClientes = _hotelnegocio.TraerClientes();
-            //listaDeHoteles = _hotelnegocio.TraerHoteles();
-
-            //_cmbClienteID.DataSource = listaClientes;
-            //_cmbClienteID.DisplayMember = "ComboDisplay";
-            //_cmbClienteID.ValueMember = "ID";
-
-            //_cmbClientes.ValueMember = "ID";
-
             _cmbHotel.DataSource = null;
             _cmbHotel.DataSource = Program._hotelNegocio.TraerHoteles();
 
             _cmbHotel.DisplayMember = "ComboDisplay";
-
         }
         
           private void button1_Click(object sender, EventArgs e)
         {
-            //Agregar al GITHUB desde la web 25/06/22
 
             Habitacion habitacionSeleccionada = (Habitacion)_lstHabitaciones.SelectedValue;
-            //List<Habitacion> habitaciones = _hotelnegocio.TraerHabitaciones(.ID);
-
-
             _txtIdHabitacion.Text = habitacionSeleccionada.IdHabitacion.ToString();
             _txtHabNmbr.Text = habitacionSeleccionada.Categoria;
             _txtEstrellas.Text = habitacionSeleccionada.Precio.ToString();
