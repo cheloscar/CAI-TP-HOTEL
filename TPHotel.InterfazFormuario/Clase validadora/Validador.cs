@@ -109,6 +109,7 @@ namespace TPHotel.InterfazFormuario.Clase_validadora
                 if (!pudeConvertir)
                 {
                     pudeConvertir = false;
+                    retorno = -1;
                 }
              
             return retorno;
