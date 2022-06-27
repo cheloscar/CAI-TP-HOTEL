@@ -31,7 +31,6 @@ namespace TPHotel.InterfazFormuario
             string resultado = "";
             int idHabitacion = 0;
             int CantidadPlazas = 0;
-            string categoria = "";
             double precio = 0;
             bool cancelable;
 
