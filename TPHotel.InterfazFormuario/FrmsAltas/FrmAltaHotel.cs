@@ -80,7 +80,8 @@ namespace TPHotel.InterfazFormuario
 
         private void FrmHoteles_Load(object sender, EventArgs e)
         {
-
+            _txtId.Enabled = false;
+            _txtId.Text = "Automático";
         }
         private bool Checked(CheckBox chk)
         {
