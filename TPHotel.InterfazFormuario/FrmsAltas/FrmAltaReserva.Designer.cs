@@ -462,7 +462,7 @@ namespace TPHotel.InterfazFormuario
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(187, 25);
             this.label13.TabIndex = 30;
-            this.label13.Text = "FECHA ALTA";
+            this.label13.Text = "FECHA NAC";
             // 
             // _txtNombreCliente
             // 
