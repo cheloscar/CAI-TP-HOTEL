@@ -143,7 +143,7 @@ namespace TPHotel.InterfazFormuario
             // _txtDireccionHotel
             // 
             this._txtDireccionHotel.Enabled = false;
-            this._txtDireccionHotel.Location = new System.Drawing.Point(167, 58);
+            this._txtDireccionHotel.Location = new System.Drawing.Point(230, 87);
             this._txtDireccionHotel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._txtDireccionHotel.Name = "_txtDireccionHotel";
             this._txtDireccionHotel.Size = new System.Drawing.Size(136, 29);
@@ -152,7 +152,7 @@ namespace TPHotel.InterfazFormuario
             // _txtEstrellas
             // 
             this._txtEstrellas.Enabled = false;
-            this._txtEstrellas.Location = new System.Drawing.Point(344, 58);
+            this._txtEstrellas.Location = new System.Drawing.Point(375, 87);
             this._txtEstrellas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._txtEstrellas.Name = "_txtEstrellas";
             this._txtEstrellas.Size = new System.Drawing.Size(136, 29);
@@ -305,7 +305,7 @@ namespace TPHotel.InterfazFormuario
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(291, 38);
+            this.label6.Location = new System.Drawing.Point(388, 57);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 25);
