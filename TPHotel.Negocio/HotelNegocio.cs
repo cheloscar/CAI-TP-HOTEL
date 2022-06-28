@@ -118,8 +118,12 @@ namespace TPHotel.Negocio
             Reserva reserva = TraerReserva(idReserva);
             Cliente cliente = TraerCliente(reserva.IdCliente);
 
-            return cliente;
+            if (reserva == null || cliente == null)
+            {
+                throw new ReservaInexistenteExcepcion();
+            }
 
+            return cliente;
         }
 
         //public Habitacion TraerHabitacionPorIDHabitacion(int idhabitacion)

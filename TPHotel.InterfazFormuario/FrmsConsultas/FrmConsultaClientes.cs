@@ -25,20 +25,26 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnBuscarPorIdReserva_Click(object sender, EventArgs e)
         {
-            int numero = 0;
+                        int numero = 0;
+            numero = Validador.pedirInteger(_txtIdReserva, _lblIDReserva);
 
-            try
+            if (numero <= -1)
             {
+                MessageBox.Show("Ingrese número válido");
+                _txtIdReserva.Text = string.Empty;
+            }
 
-               
-                numero = Validador.pedirInteger(_txtIdReserva, _lblIDReserva);
+            else
+            {
+                try
 
-               
-                Cliente cli = Program._hotelNegocio.TraerClientePorNumeroDeReserva(numero);
-                //cli = new Cliente(cli.ID, cli.FechaAlta, cli.Activo, cli.Nombre, cli.Apellido, cli.Direccion, cli.Telefono, cli.Email, cli.FechaNacimiento);
 
-                if (cli != null)
+
                 {
+
+
+                    Cliente cli = Program._hotelNegocio.TraerClientePorNumeroDeReserva(numero);
+
                     _txtId.Text = cli.ID.ToString();
                     _txtFechaAlta.Text = cli.FechaAlta.ToString();
                     _txtActivo.Text = cli.Activo.ToString();
@@ -48,15 +54,22 @@ namespace TPHotel.InterfazFormuario
                     _txtTelefono.Text = cli.Telefono;
                     _txtEmail.Text = cli.Email;
                     _txtFechaNacimiento.Text = cli.FechaNacimiento.ToString();
-                }
-                else { throw new ReservaInexistenteExcepcion(); }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("no existe esa reserva.");
-            }
 
-            Validador.Vaciar(_txtId);
+
+
+                }
+
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("NO EXISTE DICHA RESERVA \n \n Mensaje original " + ex.ToString());
+                }
+
+                finally
+                {
+                    Validador.Vaciar(_txtIdReserva);
+                }
+            }
         }
 
         private void _btnEditar_Click(object sender, EventArgs e)
