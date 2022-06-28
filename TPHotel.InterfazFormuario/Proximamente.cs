@@ -18,15 +18,15 @@ namespace TPHotel.InterfazFormuario
             this.Owner = padre;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CE_Click(object sender, EventArgs e)
         {
            this.Hide();
            Owner.Show();
+        }
+
+        private void Proximamente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Owner.Show();
         }
     }
 }

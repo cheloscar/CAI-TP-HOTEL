@@ -40,8 +40,9 @@ namespace TPHotel.InterfazFormuario
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::TPHotel.InterfazFormuario.Properties.Resources.prox;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(551, 767);
+            this.pictureBox1.Size = new System.Drawing.Size(758, 1150);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -49,18 +50,19 @@ namespace TPHotel.InterfazFormuario
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 638);
+            this.label1.Location = new System.Drawing.Point(125, 957);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 52);
+            this.label1.Size = new System.Drawing.Size(538, 70);
             this.label1.TabIndex = 1;
             this.label1.Text = "PROXIMAMENTE";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // CE
             // 
-            this.CE.Location = new System.Drawing.Point(169, 693);
+            this.CE.Location = new System.Drawing.Point(232, 1040);
+            this.CE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CE.Name = "CE";
-            this.CE.Size = new System.Drawing.Size(193, 61);
+            this.CE.Size = new System.Drawing.Size(265, 92);
             this.CE.TabIndex = 2;
             this.CE.Text = "CERRAR";
             this.CE.UseVisualStyleBackColor = true;
@@ -68,14 +70,16 @@ namespace TPHotel.InterfazFormuario
             // 
             // Proximamente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 767);
+            this.ClientSize = new System.Drawing.Size(758, 1150);
             this.Controls.Add(this.CE);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Proximamente";
             this.Text = "Proximamente";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Proximamente_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

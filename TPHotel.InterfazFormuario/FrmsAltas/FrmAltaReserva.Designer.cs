@@ -79,7 +79,7 @@ namespace TPHotel.InterfazFormuario
             // _btnAltaHotel
             // 
             this._btnAltaHotel.Location = new System.Drawing.Point(510, 20);
-            this._btnAltaHotel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._btnAltaHotel.Margin = new System.Windows.Forms.Padding(4);
             this._btnAltaHotel.Name = "_btnAltaHotel";
             this._btnAltaHotel.Size = new System.Drawing.Size(161, 148);
             this._btnAltaHotel.TabIndex = 0;
@@ -90,8 +90,8 @@ namespace TPHotel.InterfazFormuario
             // _txtIdHotel
             // 
             this._txtIdHotel.Enabled = false;
-            this._txtIdHotel.Location = new System.Drawing.Point(23, 87);
-            this._txtIdHotel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtIdHotel.Location = new System.Drawing.Point(84, 129);
+            this._txtIdHotel.Margin = new System.Windows.Forms.Padding(4);
             this._txtIdHotel.Name = "_txtIdHotel";
             this._txtIdHotel.Size = new System.Drawing.Size(41, 29);
             this._txtIdHotel.TabIndex = 1;
@@ -99,7 +99,7 @@ namespace TPHotel.InterfazFormuario
             // _txtCantidadDeHuespedes
             // 
             this._txtCantidadDeHuespedes.Location = new System.Drawing.Point(198, 32);
-            this._txtCantidadDeHuespedes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtCantidadDeHuespedes.Margin = new System.Windows.Forms.Padding(4);
             this._txtCantidadDeHuespedes.Name = "_txtCantidadDeHuespedes";
             this._txtCantidadDeHuespedes.Size = new System.Drawing.Size(136, 29);
             this._txtCantidadDeHuespedes.TabIndex = 2;
@@ -107,7 +107,7 @@ namespace TPHotel.InterfazFormuario
             // _txtFechaIngreso
             // 
             this._txtFechaIngreso.Location = new System.Drawing.Point(198, 76);
-            this._txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
             this._txtFechaIngreso.Name = "_txtFechaIngreso";
             this._txtFechaIngreso.Size = new System.Drawing.Size(136, 29);
             this._txtFechaIngreso.TabIndex = 3;
@@ -115,7 +115,7 @@ namespace TPHotel.InterfazFormuario
             // _txtFechaEgreso
             // 
             this._txtFechaEgreso.Location = new System.Drawing.Point(198, 118);
-            this._txtFechaEgreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtFechaEgreso.Margin = new System.Windows.Forms.Padding(4);
             this._txtFechaEgreso.Name = "_txtFechaEgreso";
             this._txtFechaEgreso.Size = new System.Drawing.Size(136, 29);
             this._txtFechaEgreso.TabIndex = 4;
@@ -143,19 +143,19 @@ namespace TPHotel.InterfazFormuario
             // _txtDireccionHotel
             // 
             this._txtDireccionHotel.Enabled = false;
-            this._txtDireccionHotel.Location = new System.Drawing.Point(230, 87);
-            this._txtDireccionHotel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtDireccionHotel.Location = new System.Drawing.Point(160, 84);
+            this._txtDireccionHotel.Margin = new System.Windows.Forms.Padding(4);
             this._txtDireccionHotel.Name = "_txtDireccionHotel";
-            this._txtDireccionHotel.Size = new System.Drawing.Size(136, 29);
+            this._txtDireccionHotel.Size = new System.Drawing.Size(339, 29);
             this._txtDireccionHotel.TabIndex = 11;
             // 
             // _txtEstrellas
             // 
             this._txtEstrellas.Enabled = false;
-            this._txtEstrellas.Location = new System.Drawing.Point(375, 87);
-            this._txtEstrellas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtEstrellas.Location = new System.Drawing.Point(398, 127);
+            this._txtEstrellas.Margin = new System.Windows.Forms.Padding(4);
             this._txtEstrellas.Name = "_txtEstrellas";
-            this._txtEstrellas.Size = new System.Drawing.Size(136, 29);
+            this._txtEstrellas.Size = new System.Drawing.Size(75, 29);
             this._txtEstrellas.TabIndex = 12;
             // 
             // _lblCliente
@@ -171,7 +171,7 @@ namespace TPHotel.InterfazFormuario
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 57);
+            this.label3.Location = new System.Drawing.Point(18, 130);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 25);
@@ -182,7 +182,7 @@ namespace TPHotel.InterfazFormuario
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(94, 57);
+            this.label4.Location = new System.Drawing.Point(18, 38);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 25);
@@ -224,7 +224,7 @@ namespace TPHotel.InterfazFormuario
             this._lstHabitaciones.FormattingEnabled = true;
             this._lstHabitaciones.ItemHeight = 24;
             this._lstHabitaciones.Location = new System.Drawing.Point(23, 231);
-            this._lstHabitaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._lstHabitaciones.Margin = new System.Windows.Forms.Padding(4);
             this._lstHabitaciones.Name = "_lstHabitaciones";
             this._lstHabitaciones.Size = new System.Drawing.Size(447, 100);
             this._lstHabitaciones.TabIndex = 22;
@@ -235,7 +235,7 @@ namespace TPHotel.InterfazFormuario
             this._lstHoteles.FormattingEnabled = true;
             this._lstHoteles.ItemHeight = 24;
             this._lstHoteles.Location = new System.Drawing.Point(21, 76);
-            this._lstHoteles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._lstHoteles.Margin = new System.Windows.Forms.Padding(4);
             this._lstHoteles.Name = "_lstHoteles";
             this._lstHoteles.Size = new System.Drawing.Size(460, 100);
             this._lstHoteles.TabIndex = 23;
@@ -244,10 +244,10 @@ namespace TPHotel.InterfazFormuario
             // _txtNombreHotel
             // 
             this._txtNombreHotel.Enabled = false;
-            this._txtNombreHotel.Location = new System.Drawing.Point(84, 87);
-            this._txtNombreHotel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtNombreHotel.Location = new System.Drawing.Point(160, 35);
+            this._txtNombreHotel.Margin = new System.Windows.Forms.Padding(4);
             this._txtNombreHotel.Name = "_txtNombreHotel";
-            this._txtNombreHotel.Size = new System.Drawing.Size(136, 29);
+            this._txtNombreHotel.Size = new System.Drawing.Size(339, 29);
             this._txtNombreHotel.TabIndex = 24;
             // 
             // groupBox1
@@ -261,9 +261,9 @@ namespace TPHotel.InterfazFormuario
             this.groupBox1.Controls.Add(this._lblFechaEgreso);
             this.groupBox1.Controls.Add(this._btnAltaHotel);
             this.groupBox1.Location = new System.Drawing.Point(14, 540);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(892, 220);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
@@ -274,7 +274,7 @@ namespace TPHotel.InterfazFormuario
             this._lstClientes.FormattingEnabled = true;
             this._lstClientes.ItemHeight = 24;
             this._lstClientes.Location = new System.Drawing.Point(23, 378);
-            this._lstClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._lstClientes.Margin = new System.Windows.Forms.Padding(4);
             this._lstClientes.Name = "_lstClientes";
             this._lstClientes.Size = new System.Drawing.Size(447, 100);
             this._lstClientes.TabIndex = 26;
@@ -283,7 +283,7 @@ namespace TPHotel.InterfazFormuario
             // _btnAltaCliente
             // 
             this._btnAltaCliente.Location = new System.Drawing.Point(261, 488);
-            this._btnAltaCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._btnAltaCliente.Margin = new System.Windows.Forms.Padding(4);
             this._btnAltaCliente.Name = "_btnAltaCliente";
             this._btnAltaCliente.Size = new System.Drawing.Size(221, 44);
             this._btnAltaCliente.TabIndex = 27;
@@ -294,7 +294,7 @@ namespace TPHotel.InterfazFormuario
             // _btnRefrescar
             // 
             this._btnRefrescar.Location = new System.Drawing.Point(55, 489);
-            this._btnRefrescar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._btnRefrescar.Margin = new System.Windows.Forms.Padding(4);
             this._btnRefrescar.Name = "_btnRefrescar";
             this._btnRefrescar.Size = new System.Drawing.Size(184, 42);
             this._btnRefrescar.TabIndex = 28;
@@ -305,7 +305,7 @@ namespace TPHotel.InterfazFormuario
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(388, 57);
+            this.label6.Location = new System.Drawing.Point(249, 130);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 25);
@@ -315,7 +315,7 @@ namespace TPHotel.InterfazFormuario
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(226, 57);
+            this.label7.Location = new System.Drawing.Point(18, 87);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 25);
@@ -332,11 +332,11 @@ namespace TPHotel.InterfazFormuario
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this._txtDireccionHotel);
             this.groupBox2.Controls.Add(this._txtEstrellas);
-            this.groupBox2.Location = new System.Drawing.Point(524, 42);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(524, 13);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(521, 150);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(521, 179);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle hotel seleccionado";
@@ -350,9 +350,9 @@ namespace TPHotel.InterfazFormuario
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this._txtPrecio);
             this.groupBox3.Location = new System.Drawing.Point(524, 201);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(521, 150);
             this.groupBox3.TabIndex = 33;
             this.groupBox3.TabStop = false;
@@ -382,7 +382,7 @@ namespace TPHotel.InterfazFormuario
             // 
             this._txtCantidaPlazas.Enabled = false;
             this._txtCantidaPlazas.Location = new System.Drawing.Point(125, 87);
-            this._txtCantidaPlazas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtCantidaPlazas.Margin = new System.Windows.Forms.Padding(4);
             this._txtCantidaPlazas.Name = "_txtCantidaPlazas";
             this._txtCantidaPlazas.Size = new System.Drawing.Size(136, 29);
             this._txtCantidaPlazas.TabIndex = 24;
@@ -391,7 +391,7 @@ namespace TPHotel.InterfazFormuario
             // 
             this._txtIdHabitacion.Enabled = false;
             this._txtIdHabitacion.Location = new System.Drawing.Point(23, 87);
-            this._txtIdHabitacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtIdHabitacion.Margin = new System.Windows.Forms.Padding(4);
             this._txtIdHabitacion.Name = "_txtIdHabitacion";
             this._txtIdHabitacion.Size = new System.Drawing.Size(41, 29);
             this._txtIdHabitacion.TabIndex = 1;
@@ -410,7 +410,7 @@ namespace TPHotel.InterfazFormuario
             // 
             this._txtPrecio.Enabled = false;
             this._txtPrecio.Location = new System.Drawing.Point(307, 87);
-            this._txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this._txtPrecio.Name = "_txtPrecio";
             this._txtPrecio.Size = new System.Drawing.Size(136, 29);
             this._txtPrecio.TabIndex = 11;
@@ -426,9 +426,9 @@ namespace TPHotel.InterfazFormuario
             this.groupBox4.Controls.Add(this._txtApellidoCliente);
             this.groupBox4.Controls.Add(this._txtFechaNacimiento);
             this.groupBox4.Location = new System.Drawing.Point(524, 360);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(521, 150);
             this.groupBox4.TabIndex = 34;
             this.groupBox4.TabStop = false;
@@ -460,7 +460,7 @@ namespace TPHotel.InterfazFormuario
             this.label13.Location = new System.Drawing.Point(371, 57);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(187, 25);
+            this.label13.Size = new System.Drawing.Size(128, 25);
             this.label13.TabIndex = 30;
             this.label13.Text = "FECHA NAC";
             // 
@@ -468,7 +468,7 @@ namespace TPHotel.InterfazFormuario
             // 
             this._txtNombreCliente.Enabled = false;
             this._txtNombreCliente.Location = new System.Drawing.Point(84, 87);
-            this._txtNombreCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
             this._txtNombreCliente.Name = "_txtNombreCliente";
             this._txtNombreCliente.Size = new System.Drawing.Size(136, 29);
             this._txtNombreCliente.TabIndex = 24;
@@ -477,7 +477,7 @@ namespace TPHotel.InterfazFormuario
             // 
             this.clienteID.Enabled = false;
             this.clienteID.Location = new System.Drawing.Point(23, 87);
-            this.clienteID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clienteID.Margin = new System.Windows.Forms.Padding(4);
             this.clienteID.Name = "clienteID";
             this.clienteID.Size = new System.Drawing.Size(41, 29);
             this.clienteID.TabIndex = 1;
@@ -496,7 +496,7 @@ namespace TPHotel.InterfazFormuario
             // 
             this._txtApellidoCliente.Enabled = false;
             this._txtApellidoCliente.Location = new System.Drawing.Point(230, 87);
-            this._txtApellidoCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtApellidoCliente.Margin = new System.Windows.Forms.Padding(4);
             this._txtApellidoCliente.Name = "_txtApellidoCliente";
             this._txtApellidoCliente.Size = new System.Drawing.Size(136, 29);
             this._txtApellidoCliente.TabIndex = 11;
@@ -505,12 +505,12 @@ namespace TPHotel.InterfazFormuario
             // 
             this._txtFechaNacimiento.Enabled = false;
             this._txtFechaNacimiento.Location = new System.Drawing.Point(375, 87);
-            this._txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this._txtFechaNacimiento.Name = "_txtFechaNacimiento";
             this._txtFechaNacimiento.Size = new System.Drawing.Size(136, 29);
             this._txtFechaNacimiento.TabIndex = 12;
             // 
-            // FrmIngresarReservas
+            // FrmAltaReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -527,8 +527,8 @@ namespace TPHotel.InterfazFormuario
             this.Controls.Add(this._lblCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._lblNombreHotel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FrmIngresarReservas";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmAltaReserva";
             this.Text = "FormIngresarReservas";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmIngresarReservas_FormClosing);
             this.Load += new System.EventHandler(this.FrmIngresarConsultarReservas_Load);
