@@ -25,22 +25,26 @@ namespace TPHotel.InterfazFormuario
 
         private void _btnBuscarPorIdReserva_Click(object sender, EventArgs e)
         {
-            int numero = 0;
+                        int numero = 0;
+            numero = Validador.pedirInteger(_txtIdReserva, _lblIDReserva);
 
-            try
+            if (numero <= -1)
             {
-                numero = Validador.pedirInteger(_txtIdReserva, _lblIDReserva);
+                MessageBox.Show("Ingrese número válido");
+                _txtIdReserva.Text = string.Empty;
+            }
 
-                if (numero <= -1)
+            else
+            {
+                try
+
+
+
                 {
-                    MessageBox.Show("Ingrese número válido");
-                }
 
-                else
-                { 
 
-                Cliente cli = Program._hotelNegocio.TraerClientePorNumeroDeReserva(numero);
-            
+                    Cliente cli = Program._hotelNegocio.TraerClientePorNumeroDeReserva(numero);
+
                     _txtId.Text = cli.ID.ToString();
                     _txtFechaAlta.Text = cli.FechaAlta.ToString();
                     _txtActivo.Text = cli.Activo.ToString();
@@ -51,16 +55,20 @@ namespace TPHotel.InterfazFormuario
                     _txtEmail.Text = cli.Email;
                     _txtFechaNacimiento.Text = cli.FechaNacimiento.ToString();
 
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("NO EXISTE DICHA RESERVA \n \n Mensaje original " + ex.ToString());
-            }
 
-            finally
-            {
-                Validador.Vaciar(_txtIdReserva);
+
+                }
+
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("NO EXISTE DICHA RESERVA \n \n Mensaje original " + ex.ToString());
+                }
+
+                finally
+                {
+                    Validador.Vaciar(_txtIdReserva);
+                }
             }
         }
 
