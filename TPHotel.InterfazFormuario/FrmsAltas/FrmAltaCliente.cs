@@ -85,7 +85,7 @@ namespace TPHotel.InterfazFormuario
 
                     Cliente cli = new Cliente(numero, DateTime.Now, activo,
                     _txtNombre.Text.ToString(), _txtApellido.Text.ToString(), _txtDireccion.Text.ToString(), _txtTelefono.Text.ToString(),
-                    _txtEmail.Text.ToString(), DateTime.Now);
+                    _txtEmail.Text.ToString(), fechaNacimiento);
 
 
                     Program._hotelNegocio.AgregarCliente(cli);
