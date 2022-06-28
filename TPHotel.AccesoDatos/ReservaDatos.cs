@@ -92,7 +92,7 @@ namespace TPHotel.AccesoDatos
             n.Add("idHabitacion", reserva.IdHabitacion.ToString());
             n.Add("idCliente", reserva.IdCliente.ToString());
             n.Add("fechaIngreso", reserva.FechaIngreso.ToString());
-            n.Add("fechaEgreso", reserva.FechaIngreso.ToString());
+            n.Add("fechaEgreso", reserva.FechaEgreso.ToString());
             n.Add("cantidadHuespedes", reserva.CantidadHuespedes.ToString());
             return n;
         }
